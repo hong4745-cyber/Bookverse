@@ -1,0 +1,81 @@
+.hero-section-1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+  padding-top: var(--header-height);
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/images/hero_Patten.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.hero-bg-color {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--pattern-color);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+/* 마키 컨테이너: 6행이 헤더 아래 공간에 꽉 참 */
+.marquee-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height));
+  justify-content: space-between;
+  padding: 0;
+  gap: 6px;
+}
+
+.marquee-row {
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* 마키 트랙 */
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-track.ltr {
+  animation: marquee-ltr linear infinite;
+}
+
+.marquee-track.rtl {
+  animation: marquee-rtl linear infinite;
+}
+
+/* LTR: 왼쪽 → 오른쪽 */
+@keyframes marquee-ltr {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}
+
+/* RTL: 오른쪽 → 왼쪽 */
+@keyframes marquee-rtl {
+  0%   { transform: translateX(calc(-100% / 3)); }
+  100% { transform: translateX(0); }
+}
+
+/* 호버 시 일시정지 */
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}

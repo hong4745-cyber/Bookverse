@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --inner-xl: 1520px;
+  --inner-lg: 1300px;
+  --inner-sm: 1000px;
+  --header-height: 88px;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.inner {
+  width: 100%;
+  max-width: var(--inner-xl);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1520px) {
+  .inner { max-width: var(--inner-lg); }
+}
+
+@media (max-width: 1300px) {
+  .inner { max-width: var(--inner-sm); }
+}

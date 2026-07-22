@@ -1,0 +1,21 @@
+.hero-scroll-outer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroes-track {
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+  height: 100vh;
+  will-change: transform;
+}
+
+/* 각 히어로 섹션을 정확히 100vw × 100vh로 고정 */
+.heroes-track > section {
+  flex: 0 0 100vw;
+  width: 100vw;
+  height: 100vh;
+}

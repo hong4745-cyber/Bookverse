@@ -1,0 +1,145 @@
+.hero-section-2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.s2-bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/images/hero_Patten.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.s2-bg-color {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--pattern-color);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+/* 마키 레이어 */
+.s2-marquee-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.s2-marquee-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 0;
+  gap: 6px;
+}
+
+.s2-marquee-row {
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.s2-marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  will-change: transform;
+}
+
+.s2-marquee-track.ltr {
+  animation: s2-ltr linear infinite;
+}
+
+.s2-marquee-track.rtl {
+  animation: s2-rtl linear infinite;
+}
+
+@keyframes s2-ltr {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}
+
+@keyframes s2-rtl {
+  0%   { transform: translateX(calc(-100% / 3)); }
+  100% { transform: translateX(0); }
+}
+
+/* 텍스트 레이어 */
+.s2-text-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.s2-text-inner {
+  padding-top: var(--header-height);
+}
+
+.s2-small-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+  opacity: 0;
+}
+
+.s2-main-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 24px;
+  line-height: 0.92;
+}
+
+.s2-line {
+  display: block;
+  font-family: 'Bebas Neue', 'Black Han Sans', sans-serif;
+  font-size: clamp(72px, 9.6vw, 146px);
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.01em;
+  opacity: 0;
+}
+
+.s2-desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0;
+  margin-top: 8px;
+}
+
+/* 장식 그래픽 */
+.s2-flower {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  z-index: 3;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.s2-butterfly {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  opacity: 0;
+}

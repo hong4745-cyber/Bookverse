@@ -1,0 +1,196 @@
+.hero-section-3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.s3-bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/images/hero_Patten.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.s3-bg-color {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--pattern-color);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+/* STEP02 잔상 */
+.s3-step2-text {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-top: var(--header-height);
+  pointer-events: none;
+}
+
+.s3-small-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 22px;
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.s3-main-heading {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bebas Neue', 'Black Han Sans', sans-serif;
+  font-size: clamp(56px, 7.5vw, 110px);
+  font-weight: 400;
+  color: #000;
+  line-height: 0.92;
+  opacity: 0.5;
+}
+
+/* 마키 레이어 */
+.s3-marquee-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.s3-marquee-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 0;
+  gap: 6px;
+}
+
+.s3-marquee-row {
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.s3-marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.s3-marquee-track.ltr {
+  animation: s3-ltr linear infinite;
+}
+
+.s3-marquee-track.rtl {
+  animation: s3-rtl linear infinite;
+}
+
+@keyframes s3-ltr {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}
+
+@keyframes s3-rtl {
+  0%   { transform: translateX(calc(-100% / 3)); }
+  100% { transform: translateX(0); }
+}
+
+.s3-book-wrap {
+  flex-shrink: 0;
+}
+
+/* 중앙 스테이지 */
+.s3-center-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--header-height);
+  gap: 40px;
+  opacity: 0;
+}
+
+.s3-curation-text {
+  text-align: center;
+}
+
+.s3-curation-line-1 {
+  font-family: 'Black Han Sans', 'Noto Sans KR', sans-serif;
+  font-size: clamp(24px, 2.6vw, 40px);
+  font-weight: 700;
+  color: #000;
+  opacity: 0;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.s3-curation-line-2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: clamp(20px, 2.6vw, 40px);
+  font-weight: 400;
+  color: #000;
+  opacity: 0;
+}
+
+.s3-books-row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.s3-center-book {
+  transition: transform 0.3s ease;
+}
+
+/* 1520px 기준 — 넉넉한 크기 */
+.s3-center-book .book-cover {
+  width: 140px;
+  height: 210px;
+}
+
+.s3-center-book:hover {
+  transform: translateY(-12px) scale(1.03);
+}
+
+/* 장식 오브젝트 */
+.s3-deco {
+  position: absolute;
+  opacity: 0;
+}
+
+.s3-deco-left {
+  bottom: 80px;
+  left: 80px;
+}
+
+.s3-deco-right {
+  top: calc(var(--header-height) + 60px);
+  right: 80px;
+}
+
+/* 1300px 구간 — 간격 축소 */
+@media (max-width: 1300px) {
+  .s3-books-row { gap: 20px; }
+  .s3-center-book .book-cover { width: 120px; height: 180px; }
+}
+
+/* 1000px 구간 — 크기·간격 모두 축소 */
+@media (max-width: 1000px) {
+  .s3-books-row { gap: 10px; }
+  .s3-center-book .book-cover { width: 85px; height: 128px; }
+  .s3-deco-left, .s3-deco-right { display: none; }
+}
