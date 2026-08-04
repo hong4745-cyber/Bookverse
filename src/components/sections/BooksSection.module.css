@@ -1,0 +1,190 @@
+.section {
+  position: relative;
+  padding: var(--section-pad-y) 0;
+  overflow: hidden;
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+}
+
+.head {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-orange-deep);
+}
+
+.headline {
+  margin-top: 14px;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: 60px;
+  color: var(--color-ink);
+  letter-spacing: -0.01em;
+}
+
+.desc {
+  margin-top: 16px;
+  font-family: var(--font-noto-sans);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+}
+
+/* 추천 도서 5개 */
+.recRow {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  margin-top: 64px;
+}
+
+.recCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recCover {
+  aspect-ratio: 3 / 4;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.recCard:hover .recCover {
+  transform: translateY(-8px);
+}
+
+.recCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.cardAuthor {
+  font-size: 13px;
+  color: var(--color-ink-soft);
+  margin-top: -6px;
+}
+
+/* 이달의 북클럽 */
+.clubBlock {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.subhead {
+  text-align: center;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: 60px;
+  color: var(--color-ink);
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.clubGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 55px;
+  margin-top: 50px;
+}
+
+.clubCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.clubCover {
+  aspect-ratio: 341 / 492;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(23, 23, 26, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.clubCard:hover .clubCover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(23, 23, 26, 0.12);
+}
+
+.clubCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardTitleSm {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.cardAuthorSm {
+  font-size: 11px;
+  color: var(--color-ink-soft);
+  margin-top: -4px;
+}
+
+/* 데코 */
+.decoSparkle {
+  position: absolute;
+  top: -20px;
+  left: 0%;
+  width: 95px;
+  height: 95px;
+  color: #FF8D28;
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .clubBlock {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recRow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .clubGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

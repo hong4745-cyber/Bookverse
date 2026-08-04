@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import './Header.css';
 
-const NAV_ITEMS = ['BOOKS', 'CURATION', 'PROGRAMS', 'SPACE', 'VISIT'];
+const NAV_ITEMS = [
+  { label: 'BOOKS', href: '#books' },
+  { label: 'CURATION', href: '#curation' },
+  { label: 'PROGRAMS', href: '#programs' },
+  { label: 'SPACE', href: '#space' },
+  { label: 'VISIT', href: '#visit' },
+];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +19,7 @@ export default function Header() {
 
         <nav className="nav-center">
           {NAV_ITEMS.map((item) => (
-            <a key={item} href="#" className="nav-item">{item}</a>
+            <a key={item.label} href={item.href} className="nav-item">{item.label}</a>
           ))}
         </nav>
 

@@ -1,0 +1,69 @@
+.map {
+  width: 100%;
+  height: 100%;
+  max-width: 520px;
+}
+
+.roadGrid line {
+  stroke: rgba(23, 23, 26, 0.08);
+  stroke-width: 1;
+}
+
+.linePink {
+  stroke: var(--color-pink);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.lineBlue {
+  stroke: var(--color-blue);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.landmark {
+  fill: var(--color-ink);
+}
+
+.landmarkLabel {
+  font-family: var(--font-kr);
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--color-ink-soft);
+}
+
+.destination {
+  fill: var(--color-ink);
+  stroke: #fff;
+  stroke-width: 4;
+}
+
+.destinationTitle {
+  font-family: var(--font-kr);
+  font-size: 11px;
+  font-weight: 700;
+  fill: #fff;
+  letter-spacing: 0.02em;
+}
+
+.destinationSub {
+  font-family: var(--font-kr);
+  font-size: 7px;
+  font-weight: 600;
+  fill: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.06em;
+}
+
+.station {
+  fill: #fff;
+  stroke: var(--color-ink);
+  stroke-width: 2.5;
+}
+
+.stationLabel {
+  font-family: var(--font-kr);
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--color-ink);
+}

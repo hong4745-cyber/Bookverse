@@ -1,16 +1,16 @@
-import { useRef } from 'react';
 import { BOOK_COVERS } from '../data/books';
 import BookCover from './BookCover';
+import usePatternOffset from '../hooks/usePatternOffset';
 import './HeroSection1.css';
 
 // 6개 행: 방향 및 속도 설정
 const ROW_CONFIG = [
-  { dir: 'ltr', duration: 140 },
-  { dir: 'rtl', duration: 155 },
-  { dir: 'ltr', duration: 165 },
-  { dir: 'rtl', duration: 158 },
-  { dir: 'ltr', duration: 172 },
-  { dir: 'rtl', duration: 180 },
+  { dir: 'ltr', duration: 160 },
+  { dir: 'rtl', duration: 160 },
+  { dir: 'ltr', duration: 160 },
+  { dir: 'rtl', duration: 160 },
+  { dir: 'ltr', duration: 160 },
+  { dir: 'rtl', duration: 160 },
 ];
 
 // 행마다 책 목록을 다르게 섞기
@@ -42,13 +42,15 @@ function MarqueeRow({ config, rowIndex }) {
 }
 
 export default function HeroSection1() {
-  const sectionRef = useRef(null);
+  const [sectionRef, patternOffset] = usePatternOffset();
 
   return (
     <section className="hero-section-1" ref={sectionRef} id="hero1">
-      {/* 배경: 패턴 이미지 + 색상 오버레이 (분리) */}
-      <div className="hero-bg-img" />
-      <div className="hero-bg-color" style={{ '--pattern-color': '#FF8D28' }} />
+      {/* 배경: 패턴 모양에만 색상 적용, 배경은 투명. 문서 절대좌표 기준으로 섹션 경계 없이 이어짐 */}
+      <div
+        className="hero-bg-img"
+        style={{ '--pattern-color': '#FF8D28', '--pattern-offset-y': `${-patternOffset}px` }}
+      />
 
       {/* 마키 행들 */}
       <div className="marquee-container">
@@ -56,6 +58,7 @@ export default function HeroSection1() {
           <MarqueeRow key={i} config={config} rowIndex={i} />
         ))}
       </div>
+
     </section>
   );
 }

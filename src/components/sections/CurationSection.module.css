@@ -1,0 +1,244 @@
+.section {
+  position: relative;
+  padding: var(--section-pad-y) 0;
+  overflow: hidden;
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+}
+
+.head {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-blue-deep);
+}
+
+.headline {
+  margin-top: 14px;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: 70px;
+  color: var(--color-ink);
+}
+
+.desc {
+  margin-top: 16px;
+  font-family: var(--font-noto-sans);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr 1fr;
+  gap: 48px;
+  margin-top: 80px;
+  align-items: stretch;
+}
+
+.colBooks,
+.colCurators {
+  display: flex;
+  flex-direction: column;
+}
+
+.colBooks {
+  color: #000;
+}
+
+/* 좌: 카피 */
+.colCopy {
+  position: relative;
+}
+
+.decoSparkle {
+  width: 100px;
+  height: 100px;
+  color: #2F80ED;
+  opacity: 0.85;
+  margin-top: -20px;
+  margin-bottom: 18px;
+}
+
+.copy {
+  font-family: var(--font-sora);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.32;
+  color: var(--color-ink);
+}
+
+.copyAccent {
+  color: var(--color-blue);
+}
+
+.blurb {
+  margin-top: 22px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+}
+
+.colLabel {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* 중: 추천 도서 */
+.bookList {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bookItem {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--color-line);
+  background: #fff;
+}
+
+.bookThumb {
+  width: 58px;
+  height: 78px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-left: 8px;
+}
+
+.bookTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.bookAuthor {
+  font-size: 16px;
+  color: var(--color-ink-soft);
+  margin-top: 2px;
+}
+
+.bookComment {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #000;
+  margin-top: 6px;
+}
+
+/* 우: 큐레이터 */
+.curatorList {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.curatorCard {
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
+  background: #fff;
+  padding: 22px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.curatorHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.curatorName {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.curatorRole {
+  font-size: 14px;
+  color: var(--color-ink-soft);
+  margin-top: 2px;
+}
+
+.curatorBio {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+}
+
+.socialRow {
+  display: flex;
+  gap: 8px;
+}
+
+.socialBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.socialBtn:hover {
+  background: var(--color-blue);
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  .body {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

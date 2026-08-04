@@ -10,74 +10,58 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('/images/hero_Patten.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  opacity: 0.2;
   pointer-events: none;
 }
 
-.s3-bg-color {
+/* 커튼 레이어 — 헤더 아래 영역을 정확히 반반 */
+.s3-curtain-top {
   position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: var(--pattern-color);
-  mix-blend-mode: color;
-  pointer-events: none;
-}
-
-/* STEP02 잔상 */
-.s3-step2-text {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  padding-top: var(--header-height);
-  pointer-events: none;
-}
-
-.s3-small-title {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 22px;
-  color: #000;
-  opacity: 0.5;
-  margin-bottom: 10px;
-}
-
-.s3-main-heading {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Bebas Neue', 'Black Han Sans', sans-serif;
-  font-size: clamp(56px, 7.5vw, 110px);
-  font-weight: 400;
-  color: #000;
-  line-height: 0.92;
-  opacity: 0.5;
-}
-
-/* 마키 레이어 */
-.s3-marquee-layer {
-  position: absolute;
-  inset: 0;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  height: calc((100vh - var(--header-height)) / 2);
   z-index: 1;
-}
-
-.s3-marquee-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: space-between;
-  padding: 0;
-  gap: 6px;
+}
+
+.s3-curtain-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc((100vh - var(--header-height)) / 2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .s3-marquee-row {
   overflow: hidden;
   width: 100%;
   flex: 1;
+  min-height: 0;
   display: flex;
   align-items: center;
+}
+
+/* 커튼 안 책 크기: 행 높이에 맞게 축소 */
+.s3-curtain-top .book-cover,
+.s3-curtain-bottom .book-cover {
+  width: 70px;
+  height: 104px;
 }
 
 .s3-marquee-track {
@@ -114,12 +98,35 @@
   inset: 0;
   z-index: 3;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: var(--header-height);
-  gap: 40px;
   opacity: 0;
+}
+
+.s3-center-stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.s3-stage-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .s3-curation-text {
@@ -127,8 +134,9 @@
 }
 
 .s3-curation-line-1 {
-  font-family: 'Black Han Sans', 'Noto Sans KR', sans-serif;
-  font-size: clamp(24px, 2.6vw, 40px);
+  font-family: var(--font-headline);
+  font-size: 40px;
+  line-height: 72px;
   font-weight: 700;
   color: #000;
   opacity: 0;
@@ -137,60 +145,117 @@
 }
 
 .s3-curation-line-2 {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: clamp(20px, 2.6vw, 40px);
+  font-family: var(--font-headline);
+  font-size: 40px;
+  line-height: 72px;
   font-weight: 400;
   color: #000;
   opacity: 0;
 }
 
+/* ── Large Desktop 1520px+: 5권 넉넉한 간격 ── */
 .s3-books-row {
   display: flex;
-  gap: 40px;
+  gap: 56px;
   align-items: flex-end;
   justify-content: center;
   flex-wrap: nowrap;
 }
 
 .s3-center-book {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
-/* 1520px 기준 — 넉넉한 크기 */
+.s3-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(calc(-50% + 10px), -50%) scale(0.7);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.s3-play-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.s3-play-circular-text {
+  position: absolute;
+  inset: 0;
+  width: 92px;
+  height: 92px;
+  color: #000;
+  z-index: 1;
+}
+
+.s3-play-circular-text span {
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.s3-play-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.s3-center-book:hover .s3-play-icon {
+  opacity: 1;
+  transform: translate(calc(-50% + 10px), -50%) scale(1);
+}
+
 .s3-center-book .book-cover {
-  width: 140px;
-  height: 210px;
+  width: 200px;
+  height: 300px;
+}
+
+.s3-books-row:has(.s3-center-book:hover) .s3-center-book:not(:hover) {
+  opacity: 0.45;
+  transform: scale(0.95);
 }
 
 .s3-center-book:hover {
-  transform: translateY(-12px) scale(1.03);
+  transform: translateY(-24px) scale(1.22);
+  z-index: 10;
 }
 
-/* 장식 오브젝트 */
-.s3-deco {
-  position: absolute;
-  opacity: 0;
+/* ── Desktop 1300px: 5권 간격 축소 ── */
+@media (max-width: 1520px) {
+  .s3-stage-inner { gap: 40px; }
+  .s3-books-row { gap: 40px; }
+  .s3-center-book .book-cover { width: 170px; height: 255px; }
+  .s3-curation-line-1,
+  .s3-curation-line-2 { font-size: 36px; }
 }
 
-.s3-deco-left {
-  bottom: 80px;
-  left: 80px;
-}
-
-.s3-deco-right {
-  top: calc(var(--header-height) + 60px);
-  right: 80px;
-}
-
-/* 1300px 구간 — 간격 축소 */
+/* ── Small Desktop 1000px: 5권 크기·간격 추가 축소 ── */
 @media (max-width: 1300px) {
-  .s3-books-row { gap: 20px; }
-  .s3-center-book .book-cover { width: 120px; height: 180px; }
+  .s3-stage-inner { gap: 28px; }
+  .s3-books-row { gap: 24px; }
+  .s3-center-book .book-cover { width: 140px; height: 210px; }
+  .s3-curation-line-1,
+  .s3-curation-line-2 { font-size: 28px; }
 }
 
-/* 1000px 구간 — 크기·간격 모두 축소 */
+/* ── 1000px 미만 ── */
 @media (max-width: 1000px) {
-  .s3-books-row { gap: 10px; }
-  .s3-center-book .book-cover { width: 85px; height: 128px; }
-  .s3-deco-left, .s3-deco-right { display: none; }
+  .s3-stage-inner { gap: 20px; }
+  .s3-books-row { gap: 12px; }
+  .s3-center-book .book-cover { width: 100px; height: 150px; }
+  .s3-curation-line-1,
+  .s3-curation-line-2 { font-size: 22px; }
 }

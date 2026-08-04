@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'PairToucan';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607101653@peartoucan-bold/peartoucan-bold/PearToucan-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PairToucan';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607101653@peartoucan-bold/peartoucan-bold/PearToucan-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PairToucan';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607101653@peartoucan-bold/peartoucan-bold/PearToucan-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}

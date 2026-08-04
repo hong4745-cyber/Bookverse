@@ -10,33 +10,33 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('/images/hero_Patten.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
-.s2-bg-color {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: var(--pattern-color);
-  mix-blend-mode: color;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  opacity: 0.2;
   pointer-events: none;
 }
 
 /* 마키 레이어 */
 .s2-marquee-layer {
   position: absolute;
-  inset: 0;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
 }
 
 .s2-marquee-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   justify-content: space-between;
   padding: 0;
   gap: 6px;
@@ -46,6 +46,7 @@
   overflow: hidden;
   width: 100%;
   flex: 1;
+  min-height: 0;
   display: flex;
   align-items: center;
 }
@@ -90,56 +91,41 @@
 }
 
 .s2-small-title {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-noto-sans);
   font-size: 24px;
   font-weight: 400;
   color: #000;
   letter-spacing: 0.08em;
   margin-bottom: 16px;
+  margin-left: 2px;
   opacity: 0;
 }
 
 .s2-main-heading {
   display: flex;
   flex-direction: column;
-  margin: 0 0 24px;
+  margin: 0 0 24px -2px;
   line-height: 0.92;
 }
 
 .s2-line {
   display: block;
-  font-family: 'Bebas Neue', 'Black Han Sans', sans-serif;
-  font-size: clamp(72px, 9.6vw, 146px);
-  font-weight: 400;
+  font-family: var(--font-britannic);
+  font-size: 146px;
+  font-weight: 700;
   color: #000;
   letter-spacing: 0.01em;
+  -webkit-text-stroke: 1.5px #000;
   opacity: 0;
 }
 
 .s2-desc {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--font-noto-sans);
   font-size: 24px;
   font-weight: 400;
   color: #000;
   opacity: 0;
   margin-top: 8px;
+  margin-left: 2px;
 }
 
-/* 장식 그래픽 */
-.s2-flower {
-  position: absolute;
-  top: 100px;
-  right: 80px;
-  z-index: 3;
-  opacity: 0;
-  transform-origin: center;
-}
-
-.s2-butterfly {
-  position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  opacity: 0;
-}

@@ -11,19 +11,16 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('/images/hero_Patten.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-
-.hero-bg-color {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: var(--pattern-color);
-  mix-blend-mode: color;
+  background-color: var(--pattern-color);
+  -webkit-mask-image: url('/images/pattern.svg');
+  mask-image: url('/images/pattern.svg');
+  -webkit-mask-size: 2000px 1100px;
+  mask-size: 2000px 1100px;
+  -webkit-mask-position: 0 var(--pattern-offset-y, 0px);
+  mask-position: 0 var(--pattern-offset-y, 0px);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -43,6 +40,7 @@
   overflow: hidden;
   width: 100%;
   flex: 1;
+  min-height: 0;
   display: flex;
   align-items: center;
 }

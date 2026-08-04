@@ -1,0 +1,1632 @@
+<svg width="2000" height="1100" viewBox="0 0 2000 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.4">
+<g clip-path="url(#clip0_204_22165)">
+<path d="M100 0H0V100H100V0Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="100" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip1_204_22165)">
+<path d="M200 0H100V100H200V0Z" stroke="white" stroke-width="2"/>
+<circle cx="200" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip2_204_22165)">
+<path d="M200 100H100V200H200V100Z" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="101" r="98" transform="rotate(90 199 101)" stroke="white" stroke-width="2"/>
+<circle cx="101" cy="199" r="98" transform="rotate(90 101 199)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip3_204_22165)">
+<path d="M400 200H300V300H400V200Z" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="201" r="98" transform="rotate(90 399 201)" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="299" r="98" transform="rotate(90 301 299)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip4_204_22165)">
+<path d="M1000 600H900V700H1000V600Z" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="601" r="98" transform="rotate(90 999 601)" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="699" r="98" transform="rotate(90 901 699)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip5_204_22165)">
+<path d="M1000 800H900V900H1000V800Z" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="801" r="98" transform="rotate(90 999 801)" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="899" r="98" transform="rotate(90 901 899)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip6_204_22165)">
+<path d="M1200 1000H1100V1100H1200V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1199" cy="1001" r="98" transform="rotate(90 1199 1001)" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="1099" r="98" transform="rotate(90 1101 1099)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip7_204_22165)">
+<path d="M1300 900H1200V1000H1300V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1299" cy="901" r="98" transform="rotate(90 1299 901)" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="999" r="98" transform="rotate(90 1201 999)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip8_204_22165)">
+<path d="M500 100H400V200H500V100Z" stroke="white" stroke-width="2"/>
+<circle cx="401" cy="101" r="98" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="199" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip9_204_22165)">
+<path d="M900 300H800V400H900V300Z" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="301" r="98" stroke="white" stroke-width="2"/>
+<circle cx="899" cy="399" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip10_204_22165)">
+<path d="M1100 200H1000V300H1100V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1001" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="299" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip11_204_22165)">
+<path d="M700 200H600V300H700V200Z" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="699" cy="299" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip12_204_22165)">
+<path d="M100 100H0V200H100V100Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="100" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip13_204_22165)">
+<path d="M1100 600H1000V700H1100V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1050" cy="600" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip14_204_22165)">
+<path d="M1100 900H1000V1000H1100V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1050" cy="900" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip15_204_22165)">
+<path d="M300 100H200V200H300V100Z" stroke="white" stroke-width="2"/>
+<circle cx="200" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip16_204_22165)">
+<path d="M400 100H300V200H400V100Z" stroke="white" stroke-width="2"/>
+<circle cx="350" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip17_204_22165)">
+<path d="M900 200H800V300H900V200Z" stroke="white" stroke-width="2"/>
+<circle cx="850" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip18_204_22165)">
+<path d="M600 200H500V300H600V200Z" stroke="white" stroke-width="2"/>
+<circle cx="550" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip19_204_22165)">
+<path d="M300 0H200V100H300V0Z" stroke="white" stroke-width="2"/>
+<circle cx="201" cy="99" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip20_204_22165)">
+<path d="M500 200H400V300H500V200Z" stroke="white" stroke-width="2"/>
+<circle cx="401" cy="201" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip21_204_22165)">
+<path d="M600 300H500V400H600V300Z" stroke="white" stroke-width="2"/>
+<circle cx="599" cy="301" r="98" stroke="white" stroke-width="2"/>
+<circle cx="599" cy="301" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip22_204_22165)">
+<path d="M1400 400H1300V500H1400V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="401" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip23_204_22165)">
+<path d="M1800 400H1700V500H1800V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="401" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip24_204_22165)">
+<path d="M1700 500H1600V600H1700V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip25_204_22165)">
+<path d="M2000 500H1900V600H2000V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip26_204_22165)">
+<path d="M2000 400H1900V500H2000V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="401" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip27_204_22165)">
+<path d="M1100 1000H1000V1100H1100V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="1001" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="1001" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip28_204_22165)">
+<path d="M1500 800H1400V900H1500V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="801" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip29_204_22165)">
+<path d="M1100 100H1000V200H1100V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="101" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="101" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip30_204_22165)">
+<path d="M1300 0H1200V100H1300V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1299" cy="1" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1299" cy="1" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip31_204_22165)">
+<path d="M900 500H800V600H900V500Z" stroke="white" stroke-width="2"/>
+<circle cx="899" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="899" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip32_204_22165)">
+<path d="M1500 500H1400V600H1500V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip33_204_22165)">
+<path d="M1100 400H1000V500H1100V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="401" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip34_204_22165)">
+<path d="M1400 700H1300V800H1400V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="701" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip35_204_22165)">
+<path d="M2000 800H1900V900H2000V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="801" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip36_204_22165)">
+<path d="M1600 400H1500V500H1600V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1599" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1599" cy="401" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip37_204_22165)">
+<path d="M2000 200H1900V300H2000V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="201" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip38_204_22165)">
+<path d="M1000 200H900V300H1000V200Z" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="201" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip39_204_22165)">
+<path d="M1500 300H1400V400H1500V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="301" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="301" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip40_204_22165)">
+<path d="M1900 100H1800V200H1900V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="101" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="101" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip41_204_22165)">
+<path d="M1800 0H1700V100H1800V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1701" cy="1" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1701" cy="1" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip42_204_22165)">
+<path d="M400 300H300V400H400V300Z" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="399" r="98" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="399" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip43_204_22165)">
+<path d="M1100 800H1000V900H1100V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="899" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="899" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip44_204_22165)">
+<path d="M900 600H800V700H900V600Z" stroke="white" stroke-width="2"/>
+<circle cx="899" cy="699" r="98" stroke="white" stroke-width="2"/>
+<circle cx="899" cy="699" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip45_204_22165)">
+<path d="M1000 300H900V400H1000V300Z" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="399" r="98" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="399" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip46_204_22165)">
+<path d="M200 200H100V300H200V200Z" stroke="white" stroke-width="2"/>
+<circle cx="150" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip47_204_22165)">
+<path d="M600 100H500V200H600V100Z" stroke="white" stroke-width="2"/>
+<circle cx="599" cy="199" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip48_204_22165)">
+<path d="M400 0H300V100H400V0Z" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="0.999996" r="98" transform="rotate(90 399 0.999996)" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="99" r="98" transform="rotate(90 301 99)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip49_204_22165)">
+<path d="M500 300H400V400H500V300Z" stroke="white" stroke-width="2"/>
+<circle cx="450" cy="400" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip50_204_22165)">
+<path d="M1100 700H1000V800H1100V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1050" cy="800" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip51_204_22165)">
+<path d="M1800 700H1700V800H1800V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1750" cy="800" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip52_204_22165)">
+<path d="M1700 900H1600V1000H1700V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1650" cy="1000" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip53_204_22165)">
+<path d="M2000 600H1900V700H2000V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1950" cy="700" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip54_204_22165)">
+<path d="M1600 1000H1500V1100H1600V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1550" cy="1100" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip55_204_22165)">
+<path d="M500 400H400V500H500V400Z" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="401" r="98" transform="rotate(90 499 401)" stroke="white" stroke-width="2"/>
+<circle cx="401" cy="499" r="98" transform="rotate(90 401 499)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip56_204_22165)">
+<path d="M1200 300H1100V400H1200V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1199" cy="301" r="98" transform="rotate(90 1199 301)" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="399" r="98" transform="rotate(90 1101 399)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip57_204_22165)">
+<path d="M1600 0H1500V100H1600V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1599" cy="0.999996" r="98" transform="rotate(90 1599 0.999996)" stroke="white" stroke-width="2"/>
+<circle cx="1501" cy="99" r="98" transform="rotate(90 1501 99)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip58_204_22165)">
+<path d="M1300 100H1200V200H1300V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1299" cy="101" r="98" transform="rotate(90 1299 101)" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="199" r="98" transform="rotate(90 1201 199)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip59_204_22165)">
+<path d="M1500 200H1400V300H1500V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="201" r="98" transform="rotate(90 1499 201)" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="299" r="98" transform="rotate(90 1401 299)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip60_204_22165)">
+<path d="M1800 100H1700V200H1800V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="101" r="98" transform="rotate(90 1799 101)" stroke="white" stroke-width="2"/>
+<circle cx="1701" cy="199" r="98" transform="rotate(90 1701 199)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip61_204_22165)">
+<path d="M1700 300H1600V400H1700V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="301" r="98" transform="rotate(90 1699 301)" stroke="white" stroke-width="2"/>
+<circle cx="1601" cy="399" r="98" transform="rotate(90 1601 399)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip62_204_22165)">
+<path d="M1900 300H1800V400H1900V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1899" cy="301" r="98" transform="rotate(90 1899 301)" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="399" r="98" transform="rotate(90 1801 399)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip63_204_22165)">
+<path d="M800 700H700V800H800V700Z" stroke="white" stroke-width="2"/>
+<circle cx="799" cy="701" r="98" transform="rotate(90 799 701)" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="799" r="98" transform="rotate(90 701 799)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip64_204_22165)">
+<path d="M1000 400H900V500H1000V400Z" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="401" r="98" transform="rotate(90 999 401)" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="499" r="98" transform="rotate(90 901 499)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip65_204_22165)">
+<path d="M800 500H700V600H800V500Z" stroke="white" stroke-width="2"/>
+<circle cx="799" cy="501" r="98" transform="rotate(90 799 501)" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="599" r="98" transform="rotate(90 701 599)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip66_204_22165)">
+<path d="M1700 600H1600V700H1700V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="601" r="98" transform="rotate(90 1699 601)" stroke="white" stroke-width="2"/>
+<circle cx="1601" cy="699" r="98" transform="rotate(90 1601 699)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip67_204_22165)">
+<path d="M600 600H500V700H600V600Z" stroke="white" stroke-width="2"/>
+<circle cx="599" cy="601" r="98" transform="rotate(90 599 601)" stroke="white" stroke-width="2"/>
+<circle cx="501" cy="699" r="98" transform="rotate(90 501 699)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip68_204_22165)">
+<path d="M400 900H300V1000H400V900Z" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="901" r="98" transform="rotate(90 399 901)" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="999" r="98" transform="rotate(90 301 999)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip69_204_22165)">
+<path d="M1200 700H1100V800H1200V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1199" cy="701" r="98" transform="rotate(90 1199 701)" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="799" r="98" transform="rotate(90 1101 799)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip70_204_22165)">
+<path d="M1800 800H1700V900H1800V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="801" r="98" transform="rotate(90 1799 801)" stroke="white" stroke-width="2"/>
+<circle cx="1701" cy="899" r="98" transform="rotate(90 1701 899)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip71_204_22165)">
+<path d="M2000 1000H1900V1100H2000V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1999" cy="1001" r="98" transform="rotate(90 1999 1001)" stroke="white" stroke-width="2"/>
+<circle cx="1901" cy="1099" r="98" transform="rotate(90 1901 1099)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip72_204_22165)">
+<path d="M700 0H600V100H700V0Z" stroke="white" stroke-width="2"/>
+<circle cx="699" cy="0.999996" r="98" transform="rotate(90 699 0.999996)" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="99" r="98" transform="rotate(90 601 99)" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip73_204_22165)">
+<path d="M300 200H200V300H300V200Z" stroke="white" stroke-width="2"/>
+<circle cx="300" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip74_204_22165)">
+<path d="M1100 0H1000V100H1100V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1100" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip75_204_22165)">
+<path d="M600 400H500V500H600V400Z" stroke="white" stroke-width="2"/>
+<circle cx="600" cy="450" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip76_204_22165)">
+<path d="M700 800H600V900H700V800Z" stroke="white" stroke-width="2"/>
+<circle cx="700" cy="850" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip77_204_22165)">
+<path d="M1300 1000H1200V1100H1300V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1300" cy="1050" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip78_204_22165)">
+<path d="M1500 900H1400V1000H1500V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1500" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip79_204_22165)">
+<path d="M600 900H500V1000H600V900Z" stroke="white" stroke-width="2"/>
+<circle cx="600" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip80_204_22165)">
+<path d="M1100 300H1000V400H1100V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1100" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip81_204_22165)">
+<path d="M300 300H200V400H300V300Z" stroke="white" stroke-width="2"/>
+<circle cx="250" cy="400" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip82_204_22165)">
+<path d="M100 700H0V800H100V700Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="800" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip83_204_22165)">
+<path d="M500 1000H400V1100H500V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="450" cy="1100" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip84_204_22165)">
+<path d="M600 800H500V900H600V800Z" stroke="white" stroke-width="2"/>
+<circle cx="550" cy="900" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip85_204_22165)">
+<path d="M600 0H500V100H600V0Z" stroke="white" stroke-width="2"/>
+<circle cx="550" cy="100" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip86_204_22165)">
+<path d="M300 400H200V500H300V400Z" stroke="white" stroke-width="2"/>
+<circle cx="200" cy="450" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip87_204_22165)">
+<path d="M700 600H600V700H700V600Z" stroke="white" stroke-width="2"/>
+<circle cx="600" cy="650" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip88_204_22165)">
+<path d="M600 700H500V800H600V700Z" stroke="white" stroke-width="2"/>
+<circle cx="500" cy="750" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip89_204_22165)">
+<path d="M1000 900H900V1000H1000V900Z" stroke="white" stroke-width="2"/>
+<circle cx="900" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip90_204_22165)">
+<path d="M200 700H100V800H200V700Z" stroke="white" stroke-width="2"/>
+<circle cx="100" cy="750" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip91_204_22165)">
+<path d="M1300 400H1200V500H1300V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1200" cy="450" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip92_204_22165)">
+<path d="M1500 600H1400V700H1500V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1400" cy="650" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip93_204_22165)">
+<path d="M2000 700H1900V800H2000V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1900" cy="750" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip94_204_22165)">
+<path d="M700 300H600V400H700V300Z" stroke="white" stroke-width="2"/>
+<circle cx="600" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip95_204_22165)">
+<path d="M800 0H700V100H800V0Z" stroke="white" stroke-width="2"/>
+<circle cx="700" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip96_204_22165)">
+<path d="M900 100H800V200H900V100Z" stroke="white" stroke-width="2"/>
+<circle cx="800" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip97_204_22165)">
+<path d="M1600 100H1500V200H1600V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1500" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip98_204_22165)">
+<path d="M1700 200H1600V300H1700V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1600" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip99_204_22165)">
+<path d="M1700 0H1600V100H1700V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1600" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip100_204_22165)">
+<path d="M1900 200H1800V300H1900V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1800" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip101_204_22165)">
+<path d="M1800 300H1700V400H1800V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1700" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip102_204_22165)">
+<path d="M1000 100H900V200H1000V100Z" stroke="white" stroke-width="2"/>
+<circle cx="900" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip103_204_22165)">
+<path d="M1000 500H900V600H1000V500Z" stroke="white" stroke-width="2"/>
+<circle cx="900" cy="550" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip104_204_22165)">
+<path d="M800 100H700V200H800V100Z" stroke="white" stroke-width="2"/>
+<circle cx="800" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip105_204_22165)">
+<path d="M1200 100H1100V200H1200V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1200" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip106_204_22165)">
+<path d="M1400 100H1300V200H1400V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1400" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip107_204_22165)">
+<path d="M1300 200H1200V300H1300V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1300" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip108_204_22165)">
+<path d="M1000 0H900V100H1000V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1000" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip109_204_22165)">
+<path d="M500 0H400V100H500V0Z" stroke="white" stroke-width="2"/>
+<circle cx="500" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip110_204_22165)">
+<path d="M800 400H700V500H800V400Z" stroke="white" stroke-width="2"/>
+<circle cx="750" cy="400" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip111_204_22165)">
+<path d="M200 300H100V400H200V300Z" stroke="white" stroke-width="2"/>
+<circle cx="150" cy="300" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip112_204_22165)">
+<path d="M800 300H700V400H800V300Z" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip113_204_22165)">
+<path d="M1400 300H1300V400H1400V300Z" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip114_204_22165)">
+<path d="M700 100H600V200H700V100Z" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip115_204_22165)">
+<path d="M900 400H800V500H900V400Z" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip116_204_22165)">
+<path d="M700 400H600V500H700V400Z" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="401" r="98" stroke="white" stroke-width="2"/>
+<circle cx="699" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip117_204_22165)">
+<path d="M500 700H400V800H500V700Z" stroke="white" stroke-width="2"/>
+<circle cx="401" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip118_204_22165)">
+<path d="M600 1000H500V1100H600V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="501" cy="1001" r="98" stroke="white" stroke-width="2"/>
+<circle cx="599" cy="1099" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip119_204_22165)">
+<path d="M400 600H300V700H400V600Z" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="601" r="98" stroke="white" stroke-width="2"/>
+<circle cx="399" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip120_204_22165)">
+<path d="M300 500H200V600H300V500Z" stroke="white" stroke-width="2"/>
+<circle cx="201" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="299" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip121_204_22165)">
+<path d="M200 800H100V900H200V800Z" stroke="white" stroke-width="2"/>
+<circle cx="101" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="899" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip122_204_22165)">
+<path d="M1200 500H1100V600H1200V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1199" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip123_204_22165)">
+<path d="M1400 600H1300V700H1400V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1301" cy="601" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip124_204_22165)">
+<path d="M1600 700H1500V800H1600V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1501" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1599" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip125_204_22165)">
+<path d="M1900 700H1800V800H1900V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1899" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip126_204_22165)">
+<path d="M400 400H300V500H400V400Z" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip127_204_22165)">
+<path d="M1200 400H1100V500H1200V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip128_204_22165)">
+<path d="M1200 0H1100V100H1200V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="99" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip129_204_22165)">
+<path d="M800 200H700V300H800V200Z" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="201" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip130_204_22165)">
+<path d="M1300 500H1200V600H1300V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip131_204_22165)">
+<path d="M1900 600H1800V700H1900V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="601" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="601" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip132_204_22165)">
+<path d="M100 200H0V300H100V200Z" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="299" r="98" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="299" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip133_204_22165)">
+<path d="M400 500H300V600H400V500Z" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip134_204_22165)">
+<path d="M400 800H300V900H400V800Z" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="801" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip135_204_22165)">
+<path d="M200 400H100V500H200V400Z" stroke="white" stroke-width="2"/>
+<circle cx="101" cy="401" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip136_204_22165)">
+<path d="M500 500H400V600H500V500Z" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="501" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip137_204_22165)">
+<path d="M900 0H800V100H900V0Z" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="99" r="98" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="99" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip138_204_22165)">
+<path d="M600 500H500V600H600V500Z" stroke="white" stroke-width="2"/>
+<circle cx="501" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="501" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip139_204_22165)">
+<path d="M1200 200H1100V300H1200V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="201" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip140_204_22165)">
+<path d="M1500 0H1400V100H1500V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="1" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="1" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip141_204_22165)">
+<path d="M1400 200H1300V300H1400V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1301" cy="201" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1301" cy="201" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip142_204_22165)">
+<path d="M200 500H100V600H200V500Z" stroke="white" stroke-width="2"/>
+<circle cx="101" cy="501" r="98" stroke="white" stroke-width="2"/>
+<circle cx="101" cy="501" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip143_204_22165)">
+<path d="M900 800H800V900H900V800Z" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="801" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip144_204_22165)">
+<path d="M700 900H600V1000H700V900Z" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="901" r="98" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="901" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip145_204_22165)">
+<path d="M300 700H200V800H300V700Z" stroke="white" stroke-width="2"/>
+<circle cx="201" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="201" cy="701" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip146_204_22165)">
+<path d="M1300 700H1200V800H1300V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="701" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="701" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip147_204_22165)">
+<path d="M900 900H800V1000H900V900Z" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="901" r="98" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="901" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip148_204_22165)">
+<path d="M200 600H100V700H200V600Z" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="601" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip149_204_22165)">
+<path d="M300 800H200V900H300V800Z" stroke="white" stroke-width="2"/>
+<circle cx="299" cy="801" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip150_204_22165)">
+<path d="M800 600H700V700H800V600Z" stroke="white" stroke-width="2"/>
+<circle cx="799" cy="601" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip151_204_22165)">
+<path d="M1700 700H1600V800H1700V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="701" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip152_204_22165)">
+<path d="M1600 900H1500V1000H1600V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1599" cy="901" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip153_204_22165)">
+<path d="M1800 500H1700V600H1800V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="501" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip154_204_22165)">
+<path d="M1400 800H1300V900H1400V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="801" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip155_204_22165)">
+<path d="M1700 1000H1600V1100H1700V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1699" cy="1001" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip156_204_22165)">
+<path d="M1800 900H1700V1000H1800V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1799" cy="901" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip157_204_22165)">
+<path d="M100 400H0V500H100V400Z" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip158_204_22165)">
+<path d="M100 500H0V600H100V500Z" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="501" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip159_204_22165)">
+<path d="M100 300H0V400H100V300Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip160_204_22165)">
+<path d="M300 600H200V700H300V600Z" stroke="white" stroke-width="2"/>
+<circle cx="299" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip161_204_22165)">
+<path d="M1100 500H1000V600H1100V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1099" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip162_204_22165)">
+<path d="M1400 1000H1300V1100H1400V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="1099" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip163_204_22165)">
+<path d="M1400 500H1300V600H1400V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1399" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip164_204_22165)">
+<path d="M700 500H600V600H700V500Z" stroke="white" stroke-width="2"/>
+<circle cx="699" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip165_204_22165)">
+<path d="M1000 700H900V800H1000V700Z" stroke="white" stroke-width="2"/>
+<circle cx="999" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip166_204_22165)">
+<path d="M500 600H400V700H500V600Z" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip167_204_22165)">
+<path d="M500 800H400V900H500V800Z" stroke="white" stroke-width="2"/>
+<circle cx="499" cy="899" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip168_204_22165)">
+<path d="M1500 700H1400V800H1500V700Z" stroke="white" stroke-width="2"/>
+<circle cx="1499" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip169_204_22165)">
+<path d="M1900 900H1800V1000H1900V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1899" cy="999" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip170_204_22165)">
+<path d="M700 700H600V800H700V700Z" stroke="white" stroke-width="2"/>
+<circle cx="699" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip171_204_22165)">
+<path d="M100 600H0V700H100V600Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="650" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip172_204_22165)">
+<path d="M1300 600H1200V700H1300V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1250" cy="650" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip173_204_22165)">
+<path d="M1800 1000H1700V1100H1800V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1750" cy="1050" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip174_204_22165)">
+<path d="M1200 800H1100V900H1200V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1150" cy="850" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip175_204_22165)">
+<path d="M800 800H700V900H800V800Z" stroke="white" stroke-width="2"/>
+<circle cx="750" cy="850" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip176_204_22165)">
+<path d="M1400 900H1300V1000H1400V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1350" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip177_204_22165)">
+<path d="M2000 900H1900V1000H2000V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1950" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip178_204_22165)">
+<path d="M1500 1000H1400V1100H1500V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1450" cy="1050" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip179_204_22165)">
+<path d="M900 1000H800V1100H900V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="850" cy="1050" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip180_204_22165)">
+<path d="M1600 800H1500V900H1600V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1550" cy="850" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip181_204_22165)">
+<path d="M1800 600H1700V700H1800V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1750" cy="650" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip182_204_22165)">
+<path d="M1900 800H1800V900H1900V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1850" cy="850" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip183_204_22165)">
+<path d="M1800 200H1700V300H1800V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1750" cy="250" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip184_204_22165)">
+<path d="M1700 100H1600V200H1700V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1650" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip185_204_22165)">
+<path d="M1600 300H1500V400H1600V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1550" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip186_204_22165)">
+<path d="M2000 0H1900V100H2000V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1950" cy="50" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip187_204_22165)">
+<path d="M1500 100H1400V200H1500V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1450" cy="150" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip188_204_22165)">
+<path d="M400 700H300V800H400V700Z" stroke="white" stroke-width="2"/>
+<circle cx="350" cy="750" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip189_204_22165)">
+<path d="M1200 600H1100V700H1200V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip190_204_22165)">
+<path d="M1700 800H1600V900H1700V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1601" cy="899" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip191_204_22165)">
+<path d="M1900 500H1800V600H1900V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="599" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip192_204_22165)">
+<path d="M1000 1000H900V1100H1000V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="901" cy="1099" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip193_204_22165)">
+<path d="M1500 400H1400V500H1500V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1401" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip194_204_22165)">
+<path d="M2000 100H1900V200H2000V100Z" stroke="white" stroke-width="2"/>
+<circle cx="1901" cy="199" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip195_204_22165)">
+<path d="M1700 400H1600V500H1700V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1601" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip196_204_22165)">
+<path d="M1600 200H1500V300H1600V200Z" stroke="white" stroke-width="2"/>
+<circle cx="1501" cy="299" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip197_204_22165)">
+<path d="M1900 0H1800V100H1900V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="99" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip198_204_22165)">
+<path d="M1600 600H1500V700H1600V600Z" stroke="white" stroke-width="2"/>
+<circle cx="1501" cy="699" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip199_204_22165)">
+<path d="M1900 400H1800V500H1900V400Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="499" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip200_204_22165)">
+<path d="M1300 300H1200V400H1300V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="399" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip201_204_22165)">
+<path d="M1400 0H1300V100H1400V0Z" stroke="white" stroke-width="2"/>
+<circle cx="1301" cy="99" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip202_204_22165)">
+<path d="M900 700H800V800H900V700Z" stroke="white" stroke-width="2"/>
+<circle cx="801" cy="799" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip203_204_22165)">
+<path d="M700 1000H600V1100H700V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="601" cy="1099" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip204_204_22165)">
+<path d="M300 900H200V1000H300V900Z" stroke="white" stroke-width="2"/>
+<circle cx="299" cy="999" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip205_204_22165)">
+<path d="M200 900H100V1000H200V900Z" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="999" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip206_204_22165)">
+<path d="M100 800H0V900H100V800Z" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="801" r="98" stroke="white" stroke-width="2"/>
+<circle cx="99" cy="801" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip207_204_22165)">
+<path d="M100 900H0V1000H100V900Z" stroke="white" stroke-width="2"/>
+<circle cx="50" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip208_204_22165)">
+<path d="M500 900H400V1000H500V900Z" stroke="white" stroke-width="2"/>
+<circle cx="450" cy="950" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip209_204_22165)">
+<path d="M1600 500H1500V600H1600V500Z" stroke="white" stroke-width="2"/>
+<circle cx="1550" cy="550" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip210_204_22165)">
+<path d="M2000 300H1900V400H2000V300Z" stroke="white" stroke-width="2"/>
+<circle cx="1950" cy="350" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip211_204_22165)">
+<path d="M1300 800H1200V900H1300V800Z" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="899" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1201" cy="899" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip212_204_22165)">
+<path d="M1900 1000H1800V1100H1900V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="1099" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1801" cy="1099" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip213_204_22165)">
+<path d="M1200 900H1100V1000H1200V900Z" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="999" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1101" cy="999" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip214_204_22165)">
+<path d="M800 900H700V1000H800V900Z" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="999" r="98" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="999" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip215_204_22165)">
+<path d="M400 1000H300V1100H400V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="1099" r="98" stroke="white" stroke-width="2"/>
+<circle cx="301" cy="1099" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip216_204_22165)">
+<path d="M300 1000H200V1100H300V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="201" cy="1099" r="98" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip217_204_22165)">
+<path d="M200 1000H100V1100H200V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="1099" r="98" stroke="white" stroke-width="2"/>
+<circle cx="199" cy="1099" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip218_204_22165)">
+<path d="M100 1000H0V1100H100V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="1" cy="1001" r="98" stroke="white" stroke-width="2"/>
+<circle cx="1" cy="1001" r="49" stroke="white" stroke-width="2"/>
+</g>
+<g clip-path="url(#clip219_204_22165)">
+<path d="M800 1000H700V1100H800V1000Z" stroke="white" stroke-width="2"/>
+<circle cx="799" cy="1001" r="98" transform="rotate(90 799 1001)" stroke="white" stroke-width="2"/>
+<circle cx="701" cy="1099" r="98" transform="rotate(90 701 1099)" stroke="white" stroke-width="2"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_204_22165">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+<clipPath id="clip1_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100)"/>
+</clipPath>
+<clipPath id="clip2_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 100)"/>
+</clipPath>
+<clipPath id="clip3_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 200)"/>
+</clipPath>
+<clipPath id="clip4_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 600)"/>
+</clipPath>
+<clipPath id="clip5_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 800)"/>
+</clipPath>
+<clipPath id="clip6_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 1000)"/>
+</clipPath>
+<clipPath id="clip7_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 900)"/>
+</clipPath>
+<clipPath id="clip8_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 100)"/>
+</clipPath>
+<clipPath id="clip9_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 300)"/>
+</clipPath>
+<clipPath id="clip10_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 200)"/>
+</clipPath>
+<clipPath id="clip11_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 200)"/>
+</clipPath>
+<clipPath id="clip12_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 100)"/>
+</clipPath>
+<clipPath id="clip13_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 600)"/>
+</clipPath>
+<clipPath id="clip14_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 900)"/>
+</clipPath>
+<clipPath id="clip15_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 100)"/>
+</clipPath>
+<clipPath id="clip16_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 100)"/>
+</clipPath>
+<clipPath id="clip17_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 200)"/>
+</clipPath>
+<clipPath id="clip18_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 200)"/>
+</clipPath>
+<clipPath id="clip19_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200)"/>
+</clipPath>
+<clipPath id="clip20_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 200)"/>
+</clipPath>
+<clipPath id="clip21_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 300)"/>
+</clipPath>
+<clipPath id="clip22_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 400)"/>
+</clipPath>
+<clipPath id="clip23_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 400)"/>
+</clipPath>
+<clipPath id="clip24_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 500)"/>
+</clipPath>
+<clipPath id="clip25_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 500)"/>
+</clipPath>
+<clipPath id="clip26_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 400)"/>
+</clipPath>
+<clipPath id="clip27_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 1000)"/>
+</clipPath>
+<clipPath id="clip28_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 800)"/>
+</clipPath>
+<clipPath id="clip29_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 100)"/>
+</clipPath>
+<clipPath id="clip30_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200)"/>
+</clipPath>
+<clipPath id="clip31_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 500)"/>
+</clipPath>
+<clipPath id="clip32_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 500)"/>
+</clipPath>
+<clipPath id="clip33_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 400)"/>
+</clipPath>
+<clipPath id="clip34_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 700)"/>
+</clipPath>
+<clipPath id="clip35_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 800)"/>
+</clipPath>
+<clipPath id="clip36_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 400)"/>
+</clipPath>
+<clipPath id="clip37_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 200)"/>
+</clipPath>
+<clipPath id="clip38_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 200)"/>
+</clipPath>
+<clipPath id="clip39_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 300)"/>
+</clipPath>
+<clipPath id="clip40_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 100)"/>
+</clipPath>
+<clipPath id="clip41_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700)"/>
+</clipPath>
+<clipPath id="clip42_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 300)"/>
+</clipPath>
+<clipPath id="clip43_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 800)"/>
+</clipPath>
+<clipPath id="clip44_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 600)"/>
+</clipPath>
+<clipPath id="clip45_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 300)"/>
+</clipPath>
+<clipPath id="clip46_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 200)"/>
+</clipPath>
+<clipPath id="clip47_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 100)"/>
+</clipPath>
+<clipPath id="clip48_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300)"/>
+</clipPath>
+<clipPath id="clip49_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 300)"/>
+</clipPath>
+<clipPath id="clip50_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 700)"/>
+</clipPath>
+<clipPath id="clip51_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 700)"/>
+</clipPath>
+<clipPath id="clip52_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 900)"/>
+</clipPath>
+<clipPath id="clip53_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 600)"/>
+</clipPath>
+<clipPath id="clip54_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 1000)"/>
+</clipPath>
+<clipPath id="clip55_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 400)"/>
+</clipPath>
+<clipPath id="clip56_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 300)"/>
+</clipPath>
+<clipPath id="clip57_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500)"/>
+</clipPath>
+<clipPath id="clip58_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 100)"/>
+</clipPath>
+<clipPath id="clip59_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 200)"/>
+</clipPath>
+<clipPath id="clip60_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 100)"/>
+</clipPath>
+<clipPath id="clip61_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 300)"/>
+</clipPath>
+<clipPath id="clip62_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 300)"/>
+</clipPath>
+<clipPath id="clip63_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 700)"/>
+</clipPath>
+<clipPath id="clip64_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 400)"/>
+</clipPath>
+<clipPath id="clip65_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 500)"/>
+</clipPath>
+<clipPath id="clip66_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 600)"/>
+</clipPath>
+<clipPath id="clip67_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 600)"/>
+</clipPath>
+<clipPath id="clip68_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 900)"/>
+</clipPath>
+<clipPath id="clip69_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 700)"/>
+</clipPath>
+<clipPath id="clip70_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 800)"/>
+</clipPath>
+<clipPath id="clip71_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 1000)"/>
+</clipPath>
+<clipPath id="clip72_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600)"/>
+</clipPath>
+<clipPath id="clip73_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 200)"/>
+</clipPath>
+<clipPath id="clip74_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000)"/>
+</clipPath>
+<clipPath id="clip75_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 400)"/>
+</clipPath>
+<clipPath id="clip76_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 800)"/>
+</clipPath>
+<clipPath id="clip77_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 1000)"/>
+</clipPath>
+<clipPath id="clip78_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 900)"/>
+</clipPath>
+<clipPath id="clip79_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 900)"/>
+</clipPath>
+<clipPath id="clip80_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 300)"/>
+</clipPath>
+<clipPath id="clip81_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 300)"/>
+</clipPath>
+<clipPath id="clip82_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 700)"/>
+</clipPath>
+<clipPath id="clip83_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 1000)"/>
+</clipPath>
+<clipPath id="clip84_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 800)"/>
+</clipPath>
+<clipPath id="clip85_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500)"/>
+</clipPath>
+<clipPath id="clip86_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 400)"/>
+</clipPath>
+<clipPath id="clip87_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 600)"/>
+</clipPath>
+<clipPath id="clip88_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 700)"/>
+</clipPath>
+<clipPath id="clip89_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 900)"/>
+</clipPath>
+<clipPath id="clip90_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 700)"/>
+</clipPath>
+<clipPath id="clip91_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 400)"/>
+</clipPath>
+<clipPath id="clip92_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 600)"/>
+</clipPath>
+<clipPath id="clip93_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 700)"/>
+</clipPath>
+<clipPath id="clip94_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 300)"/>
+</clipPath>
+<clipPath id="clip95_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700)"/>
+</clipPath>
+<clipPath id="clip96_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 100)"/>
+</clipPath>
+<clipPath id="clip97_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 100)"/>
+</clipPath>
+<clipPath id="clip98_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 200)"/>
+</clipPath>
+<clipPath id="clip99_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600)"/>
+</clipPath>
+<clipPath id="clip100_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 200)"/>
+</clipPath>
+<clipPath id="clip101_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 300)"/>
+</clipPath>
+<clipPath id="clip102_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 100)"/>
+</clipPath>
+<clipPath id="clip103_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 500)"/>
+</clipPath>
+<clipPath id="clip104_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 100)"/>
+</clipPath>
+<clipPath id="clip105_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 100)"/>
+</clipPath>
+<clipPath id="clip106_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 100)"/>
+</clipPath>
+<clipPath id="clip107_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 200)"/>
+</clipPath>
+<clipPath id="clip108_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900)"/>
+</clipPath>
+<clipPath id="clip109_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400)"/>
+</clipPath>
+<clipPath id="clip110_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 400)"/>
+</clipPath>
+<clipPath id="clip111_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 300)"/>
+</clipPath>
+<clipPath id="clip112_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 300)"/>
+</clipPath>
+<clipPath id="clip113_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 300)"/>
+</clipPath>
+<clipPath id="clip114_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 100)"/>
+</clipPath>
+<clipPath id="clip115_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 400)"/>
+</clipPath>
+<clipPath id="clip116_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 400)"/>
+</clipPath>
+<clipPath id="clip117_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 700)"/>
+</clipPath>
+<clipPath id="clip118_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 1000)"/>
+</clipPath>
+<clipPath id="clip119_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 600)"/>
+</clipPath>
+<clipPath id="clip120_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 500)"/>
+</clipPath>
+<clipPath id="clip121_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 800)"/>
+</clipPath>
+<clipPath id="clip122_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 500)"/>
+</clipPath>
+<clipPath id="clip123_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 600)"/>
+</clipPath>
+<clipPath id="clip124_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 700)"/>
+</clipPath>
+<clipPath id="clip125_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 700)"/>
+</clipPath>
+<clipPath id="clip126_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 400)"/>
+</clipPath>
+<clipPath id="clip127_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 400)"/>
+</clipPath>
+<clipPath id="clip128_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100)"/>
+</clipPath>
+<clipPath id="clip129_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 200)"/>
+</clipPath>
+<clipPath id="clip130_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 500)"/>
+</clipPath>
+<clipPath id="clip131_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 600)"/>
+</clipPath>
+<clipPath id="clip132_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 200)"/>
+</clipPath>
+<clipPath id="clip133_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 500)"/>
+</clipPath>
+<clipPath id="clip134_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 800)"/>
+</clipPath>
+<clipPath id="clip135_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 400)"/>
+</clipPath>
+<clipPath id="clip136_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 500)"/>
+</clipPath>
+<clipPath id="clip137_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800)"/>
+</clipPath>
+<clipPath id="clip138_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(500 500)"/>
+</clipPath>
+<clipPath id="clip139_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 200)"/>
+</clipPath>
+<clipPath id="clip140_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400)"/>
+</clipPath>
+<clipPath id="clip141_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 200)"/>
+</clipPath>
+<clipPath id="clip142_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 500)"/>
+</clipPath>
+<clipPath id="clip143_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 800)"/>
+</clipPath>
+<clipPath id="clip144_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 900)"/>
+</clipPath>
+<clipPath id="clip145_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 700)"/>
+</clipPath>
+<clipPath id="clip146_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 700)"/>
+</clipPath>
+<clipPath id="clip147_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 900)"/>
+</clipPath>
+<clipPath id="clip148_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 600)"/>
+</clipPath>
+<clipPath id="clip149_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 800)"/>
+</clipPath>
+<clipPath id="clip150_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 600)"/>
+</clipPath>
+<clipPath id="clip151_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 700)"/>
+</clipPath>
+<clipPath id="clip152_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 900)"/>
+</clipPath>
+<clipPath id="clip153_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 500)"/>
+</clipPath>
+<clipPath id="clip154_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 800)"/>
+</clipPath>
+<clipPath id="clip155_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 1000)"/>
+</clipPath>
+<clipPath id="clip156_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 900)"/>
+</clipPath>
+<clipPath id="clip157_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 400)"/>
+</clipPath>
+<clipPath id="clip158_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 500)"/>
+</clipPath>
+<clipPath id="clip159_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 300)"/>
+</clipPath>
+<clipPath id="clip160_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 600)"/>
+</clipPath>
+<clipPath id="clip161_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1000 500)"/>
+</clipPath>
+<clipPath id="clip162_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 1000)"/>
+</clipPath>
+<clipPath id="clip163_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 500)"/>
+</clipPath>
+<clipPath id="clip164_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 500)"/>
+</clipPath>
+<clipPath id="clip165_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 700)"/>
+</clipPath>
+<clipPath id="clip166_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 600)"/>
+</clipPath>
+<clipPath id="clip167_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 800)"/>
+</clipPath>
+<clipPath id="clip168_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 700)"/>
+</clipPath>
+<clipPath id="clip169_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 900)"/>
+</clipPath>
+<clipPath id="clip170_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 700)"/>
+</clipPath>
+<clipPath id="clip171_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 600)"/>
+</clipPath>
+<clipPath id="clip172_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 600)"/>
+</clipPath>
+<clipPath id="clip173_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 1000)"/>
+</clipPath>
+<clipPath id="clip174_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 800)"/>
+</clipPath>
+<clipPath id="clip175_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 800)"/>
+</clipPath>
+<clipPath id="clip176_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300 900)"/>
+</clipPath>
+<clipPath id="clip177_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 900)"/>
+</clipPath>
+<clipPath id="clip178_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 1000)"/>
+</clipPath>
+<clipPath id="clip179_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 1000)"/>
+</clipPath>
+<clipPath id="clip180_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 800)"/>
+</clipPath>
+<clipPath id="clip181_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 600)"/>
+</clipPath>
+<clipPath id="clip182_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 800)"/>
+</clipPath>
+<clipPath id="clip183_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1700 200)"/>
+</clipPath>
+<clipPath id="clip184_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 100)"/>
+</clipPath>
+<clipPath id="clip185_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 300)"/>
+</clipPath>
+<clipPath id="clip186_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900)"/>
+</clipPath>
+<clipPath id="clip187_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 100)"/>
+</clipPath>
+<clipPath id="clip188_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 700)"/>
+</clipPath>
+<clipPath id="clip189_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 600)"/>
+</clipPath>
+<clipPath id="clip190_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 800)"/>
+</clipPath>
+<clipPath id="clip191_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 500)"/>
+</clipPath>
+<clipPath id="clip192_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(900 1000)"/>
+</clipPath>
+<clipPath id="clip193_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1400 400)"/>
+</clipPath>
+<clipPath id="clip194_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 100)"/>
+</clipPath>
+<clipPath id="clip195_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1600 400)"/>
+</clipPath>
+<clipPath id="clip196_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 200)"/>
+</clipPath>
+<clipPath id="clip197_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800)"/>
+</clipPath>
+<clipPath id="clip198_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 600)"/>
+</clipPath>
+<clipPath id="clip199_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 400)"/>
+</clipPath>
+<clipPath id="clip200_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 300)"/>
+</clipPath>
+<clipPath id="clip201_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1300)"/>
+</clipPath>
+<clipPath id="clip202_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(800 700)"/>
+</clipPath>
+<clipPath id="clip203_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(600 1000)"/>
+</clipPath>
+<clipPath id="clip204_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 900)"/>
+</clipPath>
+<clipPath id="clip205_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 900)"/>
+</clipPath>
+<clipPath id="clip206_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 800)"/>
+</clipPath>
+<clipPath id="clip207_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 900)"/>
+</clipPath>
+<clipPath id="clip208_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(400 900)"/>
+</clipPath>
+<clipPath id="clip209_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1500 500)"/>
+</clipPath>
+<clipPath id="clip210_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1900 300)"/>
+</clipPath>
+<clipPath id="clip211_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1200 800)"/>
+</clipPath>
+<clipPath id="clip212_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1800 1000)"/>
+</clipPath>
+<clipPath id="clip213_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(1100 900)"/>
+</clipPath>
+<clipPath id="clip214_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 900)"/>
+</clipPath>
+<clipPath id="clip215_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(300 1000)"/>
+</clipPath>
+<clipPath id="clip216_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(200 1000)"/>
+</clipPath>
+<clipPath id="clip217_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(100 1000)"/>
+</clipPath>
+<clipPath id="clip218_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(0 1000)"/>
+</clipPath>
+<clipPath id="clip219_204_22165">
+<rect width="100" height="100" fill="white" transform="translate(700 1000)"/>
+</clipPath>
+</defs>
+</svg>

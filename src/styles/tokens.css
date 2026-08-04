@@ -1,0 +1,81 @@
+/* BOOKCOVERS design tokens — editorial/print palette */
+:root {
+  --color-cream: #faf6ee;
+  --color-cream-deep: #f3ede0;
+  --color-ink: #17171a;
+  --color-ink-soft: rgba(23, 23, 26, 0.62);
+  --color-ink-faint: rgba(23, 23, 26, 0.4);
+  --color-line: rgba(23, 23, 26, 0.1);
+  --color-line-soft: rgba(23, 23, 26, 0.06);
+
+  --color-orange: #f2994a;
+  --color-orange-deep: #ea6a1f;
+  --color-orange-tint: #fce6d0;
+  --color-orange-bright: #f97316;
+
+  --color-blue: #2f5fed;
+  --color-blue-deep: #1e46c2;
+  --color-blue-tint: #dbe4fd;
+  --color-blue-bright: #0057d9;
+
+  --color-pink: #ec4899;
+  --color-pink-deep: #cf2f7a;
+  --color-pink-tint: #fbdcec;
+
+  --color-green: #219653;
+  --color-green-tint: #d9f0e2;
+
+  --color-charcoal: #1c1b18;
+
+  --font-display: 'Bebas Neue', 'Noto Sans KR', sans-serif;
+  --font-kr: 'Noto Sans KR', 'Noto Sans', sans-serif;
+  --font-headline: 'PairToucan', 'Noto Sans KR', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+  --font-noto-arabic: 'Noto Sans Arabic', sans-serif;
+  --font-noto-sans: 'Noto Sans', sans-serif;
+  --font-britannic: 'Arya', Georgia, serif;
+
+  --section-pad-y: 140px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --section-pad-y: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad-y: 80px;
+  }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sora);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
