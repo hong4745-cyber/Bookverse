@@ -1,6 +1,7 @@
 import { VISIT_INFO_ROWS } from '../../data/visitData';
 import { BurstDeco } from '../deco/DecoIcons';
 import SubwayMap from './SubwayMap';
+import TextLoop from '../TextLoop';
 import useReveal from '../../hooks/useReveal';
 import usePatternOffset from '../../hooks/usePatternOffset';
 import styles from './VisitSection.module.css';
@@ -34,6 +35,47 @@ export default function VisitSection() {
         style={{ '--pattern-color': '#6155F5', '--pattern-offset-y': `${-patternOffset}px` }}
       />
       <BurstDeco className={styles.decoBurst} />
+
+      <div className={styles.loopBanner}>
+        <TextLoop
+          text="BOOKCOVERS"
+          shape="wave"
+          speed={70}
+          separator="✦"
+          curviness={35}
+          fontSize={28}
+          fontWeight={800}
+          letterSpacing={2}
+          uppercase
+          color="#ffffff"
+          ribbon
+          ribbonColor="#0057D9"
+          ribbonWidth={55}
+          pauseOnHover
+          style={{ height: 220, display: 'flex', alignItems: 'center' }}
+        />
+      </div>
+
+      <div className={styles.loopBanner}>
+        <TextLoop
+          text="BOOKCOVERS"
+          shape="wave"
+          speed={70}
+          direction="reverse"
+          separator="✦"
+          curviness={35}
+          fontSize={28}
+          fontWeight={800}
+          letterSpacing={2}
+          uppercase
+          color="#ffffff"
+          ribbon
+          ribbonColor="#EC4899"
+          ribbonWidth={55}
+          pauseOnHover
+          style={{ height: 220, display: 'flex', alignItems: 'center' }}
+        />
+      </div>
 
       <div className={`inner ${styles.inner}`}>
         <span className={`eyebrow ${styles.eyebrow}`}>VISIT BOOKCOVERSE</span>

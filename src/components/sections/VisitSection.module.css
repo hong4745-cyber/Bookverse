@@ -23,6 +23,7 @@
 
 .inner {
   position: relative;
+  padding-top: 150px;
 }
 
 .decoBurst {
@@ -35,8 +36,19 @@
   opacity: 0.45;
 }
 
+.loopBanner {
+  margin-top: calc(var(--section-pad-y) * -1 - 24px + 60px);
+  margin-bottom: -60px;
+  pointer-events: none;
+}
+
+.loopBanner + .loopBanner {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 .eyebrow {
-  color: var(--color-blue-deep);
+  color: #0057D9;
 }
 
 .giant {
@@ -54,11 +66,11 @@
 }
 
 .solidChar {
-  color: var(--color-blue);
+  color: #0057D9;
 }
 
 .outlineChar {
-  color: var(--color-blue);
+  color: #0057D9;
 }
 
 .content {
@@ -83,19 +95,32 @@
 }
 
 .table {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  border-top: 1px solid #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   gap: 20px;
-  padding: 27px 0;
-  border-bottom: 1px solid #000000;
+  padding: 20px;
+  border: 2px solid var(--color-ink);
+  background: #fff;
+  box-shadow: 4px 4px 0px var(--color-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.row:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.row:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
 }
 
 .rowLabel {
@@ -111,7 +136,8 @@
   align-items: flex-end;
   text-align: right;
   gap: 2px;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--color-ink-soft);
 }
 

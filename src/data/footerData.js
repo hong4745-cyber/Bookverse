@@ -12,6 +12,6 @@ export const FOOTER_LINK_GROUPS = [
   {
     id: 'contact',
     title: 'CONTACT',
-    links: ['02-123-4567', '@bookvers_official'],
+    links: ['02-123-4567', '@bookcovers_official'],
   },
 ];

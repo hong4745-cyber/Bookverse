@@ -1,16 +1,21 @@
 import { FOOTER_LINK_GROUPS } from '../../data/footerData';
-import { CloverDeco } from '../deco/DecoIcons';
+import MagneticLink from '../MagneticLink';
+import useReveal from '../../hooks/useReveal';
 import styles from './Footer.module.css';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const [topRef, topVisible] = useReveal();
+  const [barRef, barVisible] = useReveal();
+  const [wordmarkRef, wordmarkVisible] = useReveal({ threshold: 0.1 });
 
   return (
     <footer className={styles.footer}>
-      <CloverDeco className={styles.decoClover} />
-
       <div className={`inner ${styles.inner}`}>
-        <div className={styles.top}>
+        <div
+          ref={topRef}
+          className={`reveal ${topVisible ? 'is-visible' : ''} ${styles.top}`}
+        >
           <p className={styles.brand}>
             북커버스는 한 권의 책에 담긴 독창적인 세계를 존중하며,
             <br />
@@ -24,9 +29,9 @@ export default function Footer() {
                 <ul className={styles.linkList}>
                   {group.links.map((link) => (
                     <li key={link}>
-                      <a href="#" className={styles.link}>
+                      <MagneticLink href="#" className={styles.link}>
                         {link}
-                      </a>
+                      </MagneticLink>
                     </li>
                   ))}
                 </ul>
@@ -35,13 +40,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.bottomBar}>
+        <div
+          ref={barRef}
+          className={`reveal ${barVisible ? 'is-visible' : ''} ${styles.bottomBar}`}
+        >
           <span>© {year} 북커버스. All rights reserved.</span>
           <span>서울에서 정성껏 만들었습니다.</span>
         </div>
       </div>
 
-      <div className={styles.wordmarkWrap} aria-hidden="true">
+      <div
+        ref={wordmarkRef}
+        className={`${styles.wordmarkWrap} ${wordmarkVisible ? styles.wordmarkVisible : ''}`}
+        aria-hidden="true"
+      >
         <span className={styles.wordmark}>BOOKCOVERS</span>
       </div>
     </footer>

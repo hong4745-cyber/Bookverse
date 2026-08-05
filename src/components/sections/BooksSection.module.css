@@ -149,13 +149,13 @@
 }
 
 .cardTitleSm {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-ink);
 }
 
 .cardAuthorSm {
-  font-size: 11px;
+  font-size: 15px;
   color: var(--color-ink-soft);
   margin-top: -4px;
 }

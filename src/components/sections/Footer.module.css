@@ -6,16 +6,6 @@
   overflow: hidden;
 }
 
-.decoClover {
-  position: absolute;
-  top: 24px;
-  right: 6%;
-  width: 54px;
-  height: 54px;
-  color: var(--color-green);
-  opacity: 0.55;
-}
-
 .inner {
   position: relative;
 }
@@ -61,6 +51,7 @@
 }
 
 .link {
+  display: inline-block;
   color: rgba(250, 246, 238, 0.68);
   font-size: 14px;
   text-decoration: none;
@@ -101,6 +92,22 @@
   letter-spacing: -0.01em;
   -webkit-text-stroke: 0.02em #faf6ee;
   color: #faf6ee;
+  transform: translateY(14%) scale(0.94);
+  opacity: 0;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.9s ease;
+}
+
+.wordmarkVisible .wordmark {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wordmark {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
 }
 
 @media (max-width: 1024px) {

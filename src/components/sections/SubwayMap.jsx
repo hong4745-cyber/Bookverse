@@ -16,16 +16,6 @@ export default function SubwayMap() {
       role="img"
       aria-label="북커버스 오시는 길 약도: 3호선 안국역 1번 출구에서 도보 5분"
     >
-      {/* 배경 도로 그리드 */}
-      <g className={styles.roadGrid}>
-        {[80, 170, 260, 350, 440].map((x) => (
-          <line key={`v-${x}`} x1={x} y1="0" x2={x} y2="480" />
-        ))}
-        {[60, 150, 240, 330, 420].map((y) => (
-          <line key={`h-${y}`} x1="0" y1={y} x2="520" y2={y} />
-        ))}
-      </g>
-
       {/* 노선 2개 */}
       <line x1="20" y1="196" x2="500" y2="196" className={styles.linePink} />
       <path d="M 470 20 L 400 190 L 400 460" className={styles.lineBlue} fill="none" />

@@ -95,7 +95,7 @@ export default function HeroSection3() {
                 <BookCover book={book} />
                 <div className="s3-play-icon" aria-hidden="true">
                   <CircularText
-                    text="BOOKVERSE*BOOKVERSE*"
+                    text="BOOKCOVERSE*BOOKCOVERSE*"
                     onHover="speedUp"
                     spinDuration={16}
                     className="s3-play-circular-text"

@@ -1,4 +1,4 @@
-import { SPACE_TAGS, SPACE_PHOTOS, SPACE_INFO } from '../../data/spaceData';
+import { SPACE_TAGS, SPACE_PHOTOS } from '../../data/spaceData';
 import { DotClusterDeco } from '../deco/DecoIcons';
 import useReveal from '../../hooks/useReveal';
 import usePatternOffset from '../../hooks/usePatternOffset';
@@ -7,7 +7,6 @@ import styles from './SpaceSection.module.css';
 export default function SpaceSection() {
   const [headRef, headVisible] = useReveal();
   const [photosRef, photosVisible] = useReveal();
-  const [infoRef, infoVisible] = useReveal();
   const [sectionRef, patternOffset] = usePatternOffset();
 
   return (
@@ -35,25 +34,9 @@ export default function SpaceSection() {
           ref={photosRef}
           className={`reveal ${photosVisible ? 'is-visible' : ''} ${styles.photoRow}`}
         >
-          {SPACE_PHOTOS.map((photo, i) => (
-            <li key={photo.id} className={styles.photoItem} data-offset={i % 2}>
+          {SPACE_PHOTOS.map((photo) => (
+            <li key={photo.id} className={styles.photoItem}>
               <img src={photo.src} alt={photo.alt} loading="lazy" />
-            </li>
-          ))}
-        </ul>
-
-        <ul
-          ref={infoRef}
-          className={`reveal ${infoVisible ? 'is-visible' : ''} ${styles.infoRow}`}
-        >
-          {SPACE_INFO.map((col) => (
-            <li key={col.id} className={styles.infoCol}>
-              <p className={styles.infoLabel}>{col.label}</p>
-              {col.lines.map((line) => (
-                <p key={line} className={styles.infoLine}>
-                  {line}
-                </p>
-              ))}
             </li>
           ))}
         </ul>

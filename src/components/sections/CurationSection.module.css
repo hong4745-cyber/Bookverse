@@ -32,7 +32,7 @@
 }
 
 .eyebrow {
-  color: var(--color-blue-deep);
+  color: #F97316;
 }
 
 .headline {
@@ -85,30 +85,31 @@
 }
 
 .copy {
-  font-family: var(--font-sora);
-  font-weight: 700;
+  font-family: var(--font-headline);
+  font-weight: 400;
   font-size: 50px;
   line-height: 1.32;
   color: var(--color-ink);
 }
 
 .copyAccent {
-  color: var(--color-blue);
+  color: #F97316;
 }
 
 .blurb {
   margin-top: 22px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--color-ink-soft);
 }
 
 .colLabel {
+  font-family: var(--font-sora);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #000;
+  color: #F97316;
   margin-bottom: 20px;
 }
 
@@ -127,8 +128,20 @@
   align-items: center;
   gap: 14px;
   padding: 16px;
-  border: 1px solid var(--color-line);
+  border: 2px solid var(--color-ink);
   background: #fff;
+  box-shadow: 4px 4px 0px var(--color-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookItem:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.bookItem:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
 }
 
 .bookThumb {
@@ -169,14 +182,25 @@
 }
 
 .curatorCard {
-  border: 1px solid var(--color-line);
-  border-radius: 6px;
+  border: 2px solid var(--color-ink);
   background: #fff;
   padding: 22px;
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 14px;
+  box-shadow: 4px 4px 0px var(--color-ink);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.curatorCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+.curatorCard:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
 }
 
 .curatorHead {
@@ -186,8 +210,8 @@
 }
 
 .avatar {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;

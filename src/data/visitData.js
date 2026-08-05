@@ -2,7 +2,7 @@ export const VISIT_INFO_ROWS = [
   {
     id: 'visit-brand',
     label: 'BOOKCOVERSE',
-    lines: ['서울시 OO구 OO로 00', 'hello@bookverse.kr', '02-000-0000'],
+    lines: ['서울시 OO구 OO로 00', 'hello@bookcoverse.kr', '02-000-0000'],
   },
   {
     id: 'visit-hours',

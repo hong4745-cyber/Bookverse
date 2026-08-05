@@ -1,0 +1,191 @@
+.bubble-menu {
+  left: 0;
+  right: 0;
+  top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 2em;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.bubble-menu.fixed {
+  position: fixed;
+}
+
+.bubble-menu.absolute {
+  position: absolute;
+}
+
+.bubble-menu .bubble {
+  --bubble-size: 48px;
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.bubble-menu .toggle-bubble {
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  will-change: transform;
+}
+
+.bubble-menu .logo-plain {
+  display: inline-flex;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.bubble-menu .bubble-logo {
+  max-height: 32px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.bubble-menu .logo-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.bubble-menu .menu-btn {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.bubble-menu .menu-line {
+  width: 26px;
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.bubble-menu .menu-line + .menu-line {
+  margin-top: 6px;
+}
+
+.bubble-menu .menu-btn.open .menu-line:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.bubble-menu .menu-btn.open .menu-line:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .bubble-menu .bubble {
+    --bubble-size: 56px;
+  }
+}
+
+/* ── Sidebar overlay ─────────────────────────────────────────────────── */
+
+.bubble-menu-items {
+  position: absolute;
+  inset: 0;
+  display: none;
+  z-index: 98;
+}
+
+.bubble-menu-items.fixed {
+  position: fixed;
+}
+
+.bubble-menu-items.absolute {
+  position: absolute;
+}
+
+.bubble-menu-items .sidebar-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.4);
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.bubble-menu-items .sidebar-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  max-width: 88vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 32px 40px;
+  box-shadow: -16px 0 48px rgba(0, 0, 0, 0.18);
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.bubble-menu-items .pill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bubble-menu-items .pill-link {
+  --pill-color: #111;
+  --hover-bg: #f3f4f6;
+  --hover-color: #111;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 22px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: lowercase;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--pill-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  box-sizing: border-box;
+}
+
+.bubble-menu-items .pill-link:hover,
+.bubble-menu-items .pill-link:focus-visible {
+  background: var(--hover-bg);
+  color: var(--hover-color);
+  transform: translateX(-4px);
+}
+
+.bubble-menu-items .pill-link .pill-label {
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .bubble-menu-items .sidebar-panel {
+    width: 100%;
+    max-width: 100vw;
+    padding: 96px 24px 32px;
+  }
+}

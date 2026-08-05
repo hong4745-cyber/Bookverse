@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { PROGRAMS } from '../../data/programsData';
 import useReveal from '../../hooks/useReveal';
 import usePatternOffset from '../../hooks/usePatternOffset';
+import ApplyModal from '../ApplyModal';
 import styles from './ProgramsSection.module.css';
 
 function ClockIcon() {
@@ -23,7 +25,7 @@ function PeopleIcon() {
   );
 }
 
-function ProgramCard({ program }) {
+function ProgramCard({ program, onApply }) {
   return (
     <li className={styles.card}>
       <span className={styles.schedule}>{program.schedule}</span>
@@ -51,7 +53,7 @@ function ProgramCard({ program }) {
           <PeopleIcon /> {program.capacity}
         </span>
       </div>
-      <button type="button" className={styles.applyBtn}>
+      <button type="button" className={styles.applyBtn} onClick={() => onApply(program)}>
         신청하기
       </button>
     </li>
@@ -62,6 +64,7 @@ export default function ProgramsSection() {
   const [headRef, headVisible] = useReveal();
   const [gridRef, gridVisible] = useReveal();
   const [sectionRef, patternOffset] = usePatternOffset();
+  const [applyProgram, setApplyProgram] = useState(null);
 
   return (
     <section id="programs" className={styles.section} ref={sectionRef}>
@@ -98,10 +101,14 @@ export default function ProgramsSection() {
           className={`reveal ${gridVisible ? 'is-visible' : ''} ${styles.grid}`}
         >
           {PROGRAMS.map((program) => (
-            <ProgramCard key={program.id} program={program} />
+            <ProgramCard key={program.id} program={program} onApply={setApplyProgram} />
           ))}
         </ul>
       </div>
+
+      {applyProgram && (
+        <ApplyModal program={applyProgram} onClose={() => setApplyProgram(null)} />
+      )}
     </section>
   );
 }

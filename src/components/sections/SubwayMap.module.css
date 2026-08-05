@@ -4,11 +4,6 @@
   max-width: 520px;
 }
 
-.roadGrid line {
-  stroke: rgba(23, 23, 26, 0.08);
-  stroke-width: 1;
-}
-
 .linePink {
   stroke: var(--color-pink);
   stroke-width: 5;
