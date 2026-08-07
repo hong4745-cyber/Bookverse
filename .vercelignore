@@ -1,0 +1,4 @@
+.firebase-pack/
+node_modules/
+dist/
+*.log
