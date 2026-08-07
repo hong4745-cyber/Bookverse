@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { BOOK_CLUB_BOOKS } from '../data/booksData';
+import { createProgramApplication } from '../services/applications';
 import styles from './ApplyModal.module.css';
 
 function CloseIcon() {
@@ -36,6 +37,8 @@ export default function ApplyModal({ program, onClose }) {
   const [phone, setPhone] = useState('');
   const [paid, setPaid] = useState(false);
   const [selectedBooks, setSelectedBooks] = useState([]);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -49,9 +52,21 @@ export default function ApplyModal({ program, onClose }) {
     };
   }, [onClose]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setStep('success');
+    if (!program || submitting) return;
+
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      await createProgramApplication({ program, selectedBooks, name, phone, paid });
+      setStep('success');
+    } catch (error) {
+      console.error('프로그램 신청 저장 실패', error);
+      setSubmitError('신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const programTitle = program ? program.title.replace(/\n/g, ' ') : '';
@@ -172,10 +187,11 @@ export default function ApplyModal({ program, onClose }) {
                 <button type="button" className={styles.cancelBtn} onClick={onClose}>
                   취소
                 </button>
-                <button type="submit" className={styles.submitBtn} disabled={isBookClub && selectedBooks.length === 0}>
-                  프로그램 신청하기 <ArrowIcon />
+                <button type="submit" className={styles.submitBtn} disabled={submitting || (isBookClub && selectedBooks.length === 0)}>
+                  {submitting ? '저장 중...' : '프로그램 신청하기'} {!submitting && <ArrowIcon />}
                 </button>
               </div>
+              {submitError && <p className={styles.submitError} role="alert">{submitError}</p>}
             </form>
           </>
         ) : (

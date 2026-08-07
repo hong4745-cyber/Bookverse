@@ -162,7 +162,10 @@ export default function BubbleMenu({
                       '--hover-bg': item.hoverStyles?.bgColor || '#f3f4f6',
                       '--hover-color': item.hoverStyles?.textColor || menuContentColor
                     }}
-                    onClick={handleToggle}
+                    onClick={(event) => {
+                      item.onClick?.(event);
+                      handleToggle();
+                    }}
                     ref={el => {
                       if (el) bubblesRef.current[idx] = el;
                     }}

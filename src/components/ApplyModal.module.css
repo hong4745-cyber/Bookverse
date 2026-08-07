@@ -303,6 +303,14 @@
   cursor: not-allowed;
 }
 
+.submitError {
+  margin-top: -10px;
+  color: #d92d20;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

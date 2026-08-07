@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import BubbleMenu from './BubbleMenu';
+import AuthModal from './AuthModal';
+import { auth } from '../lib/firebase';
 import './Header.css';
 
 const NAV_ITEMS = [
@@ -11,17 +14,40 @@ const NAV_ITEMS = [
   { label: 'VISIT', href: '#visit' },
 ];
 
-const BUBBLE_ITEMS = [
+const BASE_BUBBLE_ITEMS = [
   { label: 'books', href: '#books', ariaLabel: 'Books', hoverStyles: { bgColor: '#2f5fed', textColor: '#ffffff' } },
   { label: 'curation', href: '#curation', ariaLabel: 'Curation', hoverStyles: { bgColor: '#ec4899', textColor: '#ffffff' } },
   { label: 'programs', href: '#programs', ariaLabel: 'Programs', hoverStyles: { bgColor: '#219653', textColor: '#ffffff' } },
   { label: 'space', href: '#space', ariaLabel: 'Space', hoverStyles: { bgColor: '#f2994a', textColor: '#ffffff' } },
   { label: 'visit', href: '#visit', ariaLabel: 'Visit', hoverStyles: { bgColor: '#6155F5', textColor: '#ffffff' } },
-  { label: 'login', href: '#', ariaLabel: 'Login', hoverStyles: { bgColor: '#17171a', textColor: '#ffffff' } },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => onAuthStateChanged(auth, setUser), []);
+
+  const bubbleItems = useMemo(() => [
+    ...BASE_BUBBLE_ITEMS,
+    {
+      label: user ? 'logout' : 'login',
+      href: '#',
+      ariaLabel: user ? 'Logout' : 'Login',
+      hoverStyles: { bgColor: '#17171a', textColor: '#ffffff' },
+      onClick: async (event) => {
+        event.preventDefault();
+        if (user) await signOut(auth);
+        else setAuthOpen(true);
+      },
+    },
+  ], [user]);
+
+  const handleAuthClick = async () => {
+    if (user) await signOut(auth);
+    else setAuthOpen(true);
+  };
 
   return (
     <header className="site-header">
@@ -35,7 +61,9 @@ export default function Header() {
         </nav>
 
         <div className="header-right">
-          <a href="#" className="login-btn">LOGIN</a>
+          <button type="button" className="login-btn" onClick={handleAuthClick} title={user?.email || undefined}>
+            {user ? 'LOGOUT' : 'LOGIN'}
+          </button>
           <button
             className={`hamburger ${menuOpen ? 'open' : ''}`}
             onClick={() => setMenuOpen((v) => !v)}
@@ -54,7 +82,7 @@ export default function Header() {
           hideTrigger
           open={menuOpen}
           onClose={() => setMenuOpen(false)}
-          items={BUBBLE_ITEMS}
+          items={bubbleItems}
           menuBg="#ffffff"
           menuContentColor="#17171a"
           useFixedPosition
@@ -64,6 +92,7 @@ export default function Header() {
         />,
         document.body
       )}
+      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
     </header>
   );
 }
