@@ -220,6 +220,8 @@ export default function VideoModal({ book, onClose }) {
         ref={videoRef}
         src={book.video}
         className={useChroma ? 'vm-video-src' : 'vm-video-fill'}
+        autoPlay
+        muted
         playsInline
         preload="auto"
         onEnded={() => setEnded(true)}

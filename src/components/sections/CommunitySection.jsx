@@ -56,9 +56,7 @@ export default function CommunitySection() {
         >
           <span className={`eyebrow ${styles.eyebrow}`}>COMMUNITY</span>
           <h2 className={styles.headline}>
-            우리 독자들의
-            <br />
-            <span className={styles.headlineAccent}>이야기</span>
+            우리 독자들의 <span className={styles.headlineAccent}>이야기</span>
           </h2>
         </div>
 

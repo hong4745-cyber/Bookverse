@@ -27,7 +27,9 @@ export default function SpaceSection() {
         >
           <DotClusterDeco className={styles.decoDots} />
           <span className={`eyebrow ${styles.eyebrow}`}>SPACE</span>
-          <h2 className={styles.headline}>북커버스 공간 소개</h2>
+          <h2 className={styles.headline}>
+            북커<span className={styles.headlineGap}>버스 공간 소개</span>
+          </h2>
           <div className={styles.tags}>
             <span>{SPACE_TAGS[0]}</span>
             <span className={styles.tagDash} aria-hidden="true" />

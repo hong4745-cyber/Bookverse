@@ -10,10 +10,17 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+@media (max-width: 1024px) {
+  .nav-center {
+    display: none;
+  }
+
+}
+
 .header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -31,14 +38,14 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;
+  justify-self: center;
+  transform: none;
 }
 
 .nav-item {
   font-family: var(--font-noto-arabic);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
   text-decoration: none;
@@ -76,7 +83,7 @@
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -107,4 +114,10 @@
 
 .hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
 }

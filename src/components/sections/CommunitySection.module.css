@@ -45,6 +45,8 @@
 
 .head {
   max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .eyebrow {
@@ -58,6 +60,7 @@
   font-size: 70px;
   line-height: 1.18;
   color: var(--color-ink);
+  white-space: nowrap;
 }
 
 .headlineAccent {

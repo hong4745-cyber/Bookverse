@@ -7,19 +7,21 @@ import { auth } from '../lib/firebase';
 import './Header.css';
 
 const NAV_ITEMS = [
-  { label: 'BOOKS', href: '#books' },
-  { label: 'CURATION', href: '#curation' },
-  { label: 'PROGRAMS', href: '#programs' },
-  { label: 'SPACE', href: '#space' },
-  { label: 'VISIT', href: '#visit' },
+  { label: 'BOOKS', href: '/#books' },
+  { label: 'CURATION', href: '/#curation' },
+  { label: 'PROGRAMS', href: '/#programs' },
+  { label: 'SPACE', href: '/#space' },
+  { label: 'VISIT', href: '/#visit' },
+  { label: 'MY', href: '/my' },
 ];
 
 const BASE_BUBBLE_ITEMS = [
-  { label: 'books', href: '#books', ariaLabel: 'Books', hoverStyles: { bgColor: '#2f5fed', textColor: '#ffffff' } },
-  { label: 'curation', href: '#curation', ariaLabel: 'Curation', hoverStyles: { bgColor: '#ec4899', textColor: '#ffffff' } },
-  { label: 'programs', href: '#programs', ariaLabel: 'Programs', hoverStyles: { bgColor: '#219653', textColor: '#ffffff' } },
-  { label: 'space', href: '#space', ariaLabel: 'Space', hoverStyles: { bgColor: '#f2994a', textColor: '#ffffff' } },
-  { label: 'visit', href: '#visit', ariaLabel: 'Visit', hoverStyles: { bgColor: '#6155F5', textColor: '#ffffff' } },
+  { label: 'books', href: '/#books', ariaLabel: 'Books', hoverStyles: { bgColor: '#2f5fed', textColor: '#ffffff' } },
+  { label: 'curation', href: '/#curation', ariaLabel: 'Curation', hoverStyles: { bgColor: '#ec4899', textColor: '#ffffff' } },
+  { label: 'programs', href: '/#programs', ariaLabel: 'Programs', hoverStyles: { bgColor: '#219653', textColor: '#ffffff' } },
+  { label: 'space', href: '/#space', ariaLabel: 'Space', hoverStyles: { bgColor: '#f2994a', textColor: '#ffffff' } },
+  { label: 'visit', href: '/#visit', ariaLabel: 'Visit', hoverStyles: { bgColor: '#6155F5', textColor: '#ffffff' } },
+  { label: 'my', href: '/my', ariaLabel: 'My applications', hoverStyles: { bgColor: '#f97316', textColor: '#ffffff' } },
 ];
 
 export default function Header() {
@@ -52,7 +54,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="inner header-inner">
-        <a href="#" className="logo">BOOKCOVERS</a>
+        <a href="/" className="logo">BOOKCOVERS</a>
 
         <nav className="nav-center">
           {NAV_ITEMS.map((item) => (

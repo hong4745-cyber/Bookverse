@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/my", "destination": "/index.html" },
+    { "source": "/community", "destination": "/index.html" }
+  ]
+}

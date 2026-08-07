@@ -25,13 +25,17 @@
   top: 16px;
   right: 18px;
   z-index: 1;
+  display: grid;
   width: 38px;
   height: 38px;
+  place-items: center;
+  padding: 2px 0 0;
   border: 2px solid var(--color-ink);
   border-radius: 50%;
   background: #fff;
   cursor: pointer;
   font-size: 25px;
+  line-height: 1;
 }
 
 .book-club-modal__cover {
@@ -74,6 +78,7 @@
   font-family: 'PairToucan', sans-serif;
   font-size: 20px;
   line-height: 1.6;
+  letter-spacing: 0.12em;
 }
 
 .book-club-modal h2 {
@@ -187,6 +192,7 @@
   width: 17px;
   height: 17px;
   accent-color: var(--color-ink);
+  transform: translateY(2px);
 }
 
 .book-club-modal__join {
@@ -203,8 +209,14 @@
 }
 
 .book-club-modal__join.is-joined {
-  background: #53d769;
   cursor: default;
+}
+
+.book-club-modal__result {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 @media (max-width: 760px) {

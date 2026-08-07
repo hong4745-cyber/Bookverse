@@ -63,7 +63,11 @@ export default function ApplyModal({ program, onClose }) {
       setStep('success');
     } catch (error) {
       console.error('프로그램 신청 저장 실패', error);
-      setSubmitError('신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.');
+      setSubmitError(
+        error.message === 'auth-required'
+          ? '로그인 후 참여 신청할 수 있습니다. 상단 LOGIN을 이용해 주세요.'
+          : '신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.',
+      );
     } finally {
       setSubmitting(false);
     }

@@ -25,11 +25,22 @@ export default function HeroScroller() {
   const outerRef = useRef(null);
   const trackRef = useRef(null);
   const stRef    = useRef(null);
+  const modalScrollRef = useRef(0);
 
   // 영상 모달 열릴 때 ScrollTrigger 일시 정지 / 닫힐 때 복원
   useEffect(() => {
-    const pause   = () => stRef.current?.disable();
-    const restore = () => stRef.current?.enable();
+    const pause = () => {
+      modalScrollRef.current = window.scrollY;
+      // pin과 타임라인 진행 상태를 되돌리지 않고 입력만 일시 정지
+      stRef.current?.disable(false, true);
+    };
+    const restore = () => {
+      const trigger = stRef.current;
+      if (!trigger) return;
+      trigger.enable(false, false);
+      window.scrollTo(0, modalScrollRef.current);
+      ScrollTrigger.update();
+    };
     window.addEventListener('videomodal:open',  pause);
     window.addEventListener('videomodal:close', restore);
     return () => {

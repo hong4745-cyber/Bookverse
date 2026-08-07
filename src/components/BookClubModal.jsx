@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
+import { createBookClubApplication } from '../services/applications';
 import './BookClubModal.css';
 
 export default function BookClubModal({ book, onClose }) {
   const [joined, setJoined] = useState(false);
+  const [paid, setPaid] = useState(false);
+  const [resultMessage, setResultMessage] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (event) => event.key === 'Escape' && onClose();
@@ -14,9 +18,29 @@ export default function BookClubModal({ book, onClose }) {
     };
   }, [onClose]);
 
-  const handleJoin = (event) => {
+  const handleJoin = async (event) => {
     event.preventDefault();
-    setJoined(true);
+    setSubmitting(true);
+    setResultMessage('');
+    const form = new FormData(event.currentTarget);
+    try {
+      await createBookClubApplication({
+        book,
+        name: String(form.get('name') || ''),
+        phone: String(form.get('phone') || ''),
+        paid,
+      });
+      setResultMessage(paid ? '신청되었습니다.' : '입금 완료 후 신청이 완료됩니다.');
+      setJoined(true);
+    } catch (error) {
+      setResultMessage(
+        error.message === 'auth-required'
+          ? '로그인 후 북클럽에 참여할 수 있습니다.'
+          : '신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.',
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -49,12 +73,21 @@ export default function BookClubModal({ book, onClose }) {
               <small>예금주: 북커버스</small>
             </div>
             <label className="book-club-modal__paid">
-              <input type="checkbox" name="paid" required disabled={joined} />
+              <input
+                type="checkbox"
+                name="paid"
+                checked={paid}
+                onChange={(event) => setPaid(event.target.checked)}
+                disabled={joined}
+              />
               입금을 완료했습니다
             </label>
-            <button type="submit" className={`book-club-modal__join ${joined ? 'is-joined' : ''}`} disabled={joined}>
-              {joined ? '참여 신청 완료' : '북클럽 참여하기'}
+            <button type="submit" className={`book-club-modal__join ${joined ? 'is-joined' : ''}`} disabled={joined || submitting}>
+              {submitting ? '신청 중...' : joined ? '참여 신청 완료' : '북클럽 참여하기'}
             </button>
+            {resultMessage && (
+              <p className="book-club-modal__result" role="status">{resultMessage}</p>
+            )}
           </form>
         </div>
       </article>

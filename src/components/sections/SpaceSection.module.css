@@ -47,11 +47,21 @@
 }
 
 .headline {
+  position: relative;
+  left: 50%;
+  width: max-content;
   margin-top: 14px;
   font-family: var(--font-headline);
   font-weight: 400;
   font-size: 70px;
   color: #000;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.headlineGap {
+  display: inline-block;
+  margin-left: 0.14em;
 }
 
 .tags {

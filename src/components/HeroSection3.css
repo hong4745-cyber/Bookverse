@@ -136,7 +136,7 @@
 .s3-curation-line-1 {
   font-family: var(--font-headline);
   font-size: 40px;
-  line-height: 72px;
+  line-height: 64px;
   font-weight: 700;
   color: #000;
   opacity: 0;
@@ -147,7 +147,7 @@
 .s3-curation-line-2 {
   font-family: var(--font-headline);
   font-size: 40px;
-  line-height: 72px;
+  line-height: 64px;
   font-weight: 400;
   color: #000;
   opacity: 0;

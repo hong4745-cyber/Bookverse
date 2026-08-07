@@ -7,17 +7,25 @@ service cloud.firestore {
     }
 
     match /programApplications/{applicationId} {
-      allow create: if request.resource.data.keys().hasAll([
-        'programId', 'programTitle', 'name', 'phone', 'paymentStatus', 'createdAt'
-      ]);
-      allow read, update, delete: if isAdmin();
+      allow create: if request.auth != null
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.keys().hasAll([
+          'userId', 'programId', 'programTitle', 'name', 'phone', 'paymentStatus', 'createdAt'
+        ]);
+      allow read: if isAdmin()
+        || (request.auth != null && resource.data.userId == request.auth.uid);
+      allow update, delete: if isAdmin();
     }
 
     match /spaceReservations/{reservationId} {
-      allow create: if request.resource.data.keys().hasAll([
-        'name', 'phone', 'date', 'time', 'people', 'status', 'createdAt'
-      ]);
-      allow read, update, delete: if isAdmin();
+      allow create: if request.auth != null
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.keys().hasAll([
+          'userId', 'name', 'phone', 'date', 'time', 'people', 'status', 'createdAt'
+        ]);
+      allow read: if isAdmin()
+        || (request.auth != null && resource.data.userId == request.auth.uid);
+      allow update, delete: if isAdmin();
     }
 
     match /bookClubApplications/{applicationId} {

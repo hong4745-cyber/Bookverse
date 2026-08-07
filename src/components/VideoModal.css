@@ -199,9 +199,14 @@
 }
 
 .vm-replay-center:hover {
-  color: #ec4899;
+  color: #000;
   opacity: 0.6;
   transform: scale(1.04);
+}
+
+.vm-end-controls,
+.vm-end-controls * {
+  color: #000;
 }
 
 
