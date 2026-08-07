@@ -6,10 +6,21 @@ import CurationSection from './components/sections/CurationSection';
 import SpaceSection from './components/sections/SpaceSection';
 import VisitSection from './components/sections/VisitSection';
 import CommunitySection from './components/sections/CommunitySection';
+import CommunityPage from './components/CommunityPage';
+import FloatingActions from './components/FloatingActions';
 import Footer from './components/sections/Footer';
 import './App.css';
 
 export default function App() {
+  if (window.location.pathname === '/community') {
+    return (
+      <>
+        <CommunityPage />
+        <FloatingActions />
+      </>
+    );
+  }
+
   return (
     <>
       <Header />
@@ -23,6 +34,7 @@ export default function App() {
         <CommunitySection />
       </main>
       <Footer />
+      <FloatingActions />
     </>
   );
 }

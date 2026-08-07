@@ -29,7 +29,7 @@
 .decoBurst {
   position: absolute;
   left: -20px;
-  bottom: 6%;
+  bottom: 12%;
   width: 140px;
   height: 140px;
   color: var(--color-pink);
@@ -109,13 +109,13 @@
   padding: 20px;
   border: 2px solid var(--color-ink);
   background: #fff;
-  box-shadow: 4px 4px 0px var(--color-ink);
+  box-shadow: 3px 3px 0px var(--color-ink);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .row:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px var(--color-ink);
+  box-shadow: 3px 3px 0px var(--color-ink);
 }
 
 .row:active {

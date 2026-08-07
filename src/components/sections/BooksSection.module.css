@@ -129,11 +129,15 @@
 }
 
 .clubCover {
+  width: 100%;
+  padding: 0;
+  border: 0;
   aspect-ratio: 341 / 492;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(23, 23, 26, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .clubCard:hover .clubCover {

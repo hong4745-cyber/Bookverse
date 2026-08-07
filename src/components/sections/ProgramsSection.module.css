@@ -124,13 +124,13 @@
   border: 2px solid var(--color-ink);
   border-radius: 4px;
   padding: 24px;
-  box-shadow: 4px 4px 0px var(--color-ink);
+  box-shadow: 3px 3px 0px var(--color-ink);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px var(--color-ink);
+  box-shadow: 3px 3px 0px var(--color-ink);
 }
 
 .card:active {

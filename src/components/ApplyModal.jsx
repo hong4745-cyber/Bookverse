@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { BOOK_CLUB_BOOKS } from '../data/booksData';
 import styles from './ApplyModal.module.css';
 
 function CloseIcon() {
@@ -34,6 +35,7 @@ export default function ApplyModal({ program, onClose }) {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [paid, setPaid] = useState(false);
+  const [selectedBooks, setSelectedBooks] = useState([]);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -53,10 +55,18 @@ export default function ApplyModal({ program, onClose }) {
   };
 
   const programTitle = program ? program.title.replace(/\n/g, ' ') : '';
+  const isBookClub = program?.id === 'prog-2';
+  const toggleBook = (book) => {
+    setSelectedBooks((current) => (
+      current.some((item) => item.id === book.id)
+        ? current.filter((item) => item.id !== book.id)
+        : [...current, book]
+    ));
+  };
 
   const modal = (
     <div className={styles.overlay} onMouseDown={(e) => { if (e.target === e.currentTarget) onClose(); }}>
-      <div className={styles.dialog} role="dialog" aria-modal="true" aria-labelledby="apply-modal-title">
+      <div className={`${styles.dialog} ${isBookClub ? styles.dialogWide : ''}`} role="dialog" aria-modal="true" aria-labelledby="apply-modal-title">
         <button type="button" className={styles.close} onClick={onClose} aria-label="닫기">
           <CloseIcon />
         </button>
@@ -67,10 +77,36 @@ export default function ApplyModal({ program, onClose }) {
               {program ? `${programTitle} 신청` : '프로그램 신청'}
             </h2>
             <p className={styles.subtitle}>
-              책방 프로그램 예약을 위해 신청 정보를 작성해 주세요.
+              {isBookClub
+                ? '참여할 책을 선택한 뒤 신청 정보를 작성해 주세요.'
+                : '책방 프로그램 예약을 위해 신청 정보를 작성해 주세요.'}
             </p>
 
             <form className={styles.form} onSubmit={handleSubmit}>
+              {isBookClub && (
+                <div className={styles.bookField}>
+                  <span className={styles.label}>참여 도서 선택 <span className={styles.required}>*</span></span>
+                  <div className={styles.bookOptions}>
+                    {BOOK_CLUB_BOOKS.map((book) => (
+                      <button
+                        type="button"
+                        key={book.id}
+                        className={`${styles.bookOption} ${selectedBooks.some((item) => item.id === book.id) ? styles.bookOptionActive : ''}`}
+                        onClick={() => toggleBook(book)}
+                        aria-pressed={selectedBooks.some((item) => item.id === book.id)}
+                      >
+                        {selectedBooks.some((item) => item.id === book.id) && (
+                          <span className={styles.bookCheck} aria-hidden="true" />
+                        )}
+                        <img src={book.src} alt="" />
+                        <span>{book.title}</span>
+                        <small>{book.date.split(' · ')[0]}</small>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="apply-name">
                   이름 (Name) <span className={styles.required}>*</span>
@@ -105,6 +141,11 @@ export default function ApplyModal({ program, onClose }) {
                 <span className={styles.label}>
                   입금여부 (Payment status) <span className={styles.required}>*</span>
                 </span>
+                <p className={styles.accountInfo}>
+                  <span>BOOKCOVERS 입금 계좌</span>
+                  <strong>신한은행 110-000-000000</strong>
+                  <small>예금주: 북커버스</small>
+                </p>
                 <div className={styles.payRow}>
                   <button
                     type="button"
@@ -131,7 +172,7 @@ export default function ApplyModal({ program, onClose }) {
                 <button type="button" className={styles.cancelBtn} onClick={onClose}>
                   취소
                 </button>
-                <button type="submit" className={styles.submitBtn}>
+                <button type="submit" className={styles.submitBtn} disabled={isBookClub && selectedBooks.length === 0}>
                   프로그램 신청하기 <ArrowIcon />
                 </button>
               </div>
@@ -154,8 +195,14 @@ export default function ApplyModal({ program, onClose }) {
               </div>
               <div className={styles.summaryRow}>
                 <dt>일시</dt>
-                <dd>{program?.schedule}</dd>
+                <dd>{selectedBooks.length > 0 ? selectedBooks.map((book) => book.date).join(' / ') : program?.schedule}</dd>
               </div>
+              {selectedBooks.length > 0 && (
+                <div className={styles.summaryRow}>
+                  <dt>선택 도서</dt>
+                  <dd>{selectedBooks.map((book) => book.title).join(', ')}</dd>
+                </div>
+              )}
               <div className={styles.summaryRow}>
                 <dt>장소</dt>
                 <dd>{DEFAULT_LOCATION}</dd>

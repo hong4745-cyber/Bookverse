@@ -40,7 +40,7 @@ export default function VisitSection() {
         <TextLoop
           text="BOOKCOVERS"
           shape="wave"
-          speed={70}
+          speed={45}
           separator="✦"
           curviness={35}
           fontSize={28}
@@ -60,7 +60,7 @@ export default function VisitSection() {
         <TextLoop
           text="BOOKCOVERS"
           shape="wave"
-          speed={70}
+          speed={45}
           direction="reverse"
           separator="✦"
           curviness={35}

@@ -1,0 +1,125 @@
+.community-page {
+  min-height: 100vh;
+  padding: 56px 24px 120px;
+  background: #faf9f5;
+  color: #17171a;
+}
+
+.community-page__inner {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.community-page__header {
+  margin-bottom: 76px;
+}
+
+.community-page__title {
+  display: inline-block;
+  color: #219653;
+  font-family: var(--font-headline);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.community-page__header p {
+  margin-top: 18px;
+  color: #77736d;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.community-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.community-page__card {
+  position: relative;
+  min-height: 124px;
+  padding: 20px;
+  border: 1px solid #e6e5e1;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.community-page__stars {
+  display: flex;
+  gap: 3px;
+  color: #ddd9d2;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.community-page__stars .is-filled {
+  color: #f97316;
+}
+
+.community-page__review {
+  margin-top: 16px;
+  padding-right: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.community-page__author {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.community-page__avatar {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #17171a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.community-page__author div {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-page__author strong {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+  .community-page {
+    padding: 40px 18px 80px;
+  }
+
+  .community-page__header {
+    margin-bottom: 48px;
+  }
+
+  .community-page__title {
+    font-size: 32px;
+  }
+
+  .community-page__header p {
+    font-size: 16px;
+  }
+
+  .community-page__card {
+    padding: 18px;
+  }
+
+  .community-page__review {
+    padding-right: 0;
+  }
+}

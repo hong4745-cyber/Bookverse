@@ -1,0 +1,231 @@
+.book-club-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(23, 23, 26, 0.68);
+}
+
+.book-club-modal__panel {
+  position: relative;
+  display: grid;
+  width: min(940px, 100%);
+  max-height: calc(100vh - 48px);
+  grid-template-columns: minmax(280px, 0.8fr) minmax(360px, 1.2fr);
+  overflow-y: auto;
+  border: 2px solid var(--color-ink);
+  background: #fff;
+  box-shadow: 7px 7px 0 var(--color-ink);
+}
+
+.book-club-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 1;
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.book-club-modal__cover {
+  display: flex;
+  min-height: 590px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 44px 44px 64px;
+}
+
+.book-club-modal__cover img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  flex: none;
+  object-fit: contain;
+}
+
+.book-club-modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+}
+
+.book-club-modal__eyebrow,
+.book-club-modal__schedule span {
+  color: #f97316;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.book-club-modal__schedule span {
+  letter-spacing: 0.08em;
+}
+
+.book-club-modal__eyebrow {
+  margin-top: 10px;
+  font-family: 'PairToucan', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.book-club-modal h2 {
+  margin-top: 10px;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.book-club-modal__heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.book-club-modal__author {
+  margin-top: 0;
+  color: var(--color-ink-soft);
+  font-size: 16px;
+}
+
+.book-club-modal__description {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.book-club-modal__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.book-club-modal__schedule strong {
+  font-size: 17px;
+}
+
+.book-club-modal__schedule small {
+  color: var(--color-ink-soft);
+  font-size: 12px;
+}
+
+.book-club-modal__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.book-club-modal__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.book-club-modal__fields input {
+  min-width: 0;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-line);
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.book-club-modal__fields input:focus {
+  border-bottom-color: var(--color-ink);
+  outline: none;
+}
+
+.book-club-modal__account {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: baseline;
+  column-gap: 10px;
+  row-gap: 4px;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.book-club-modal__account span {
+  grid-column: 1 / -1;
+  color: var(--color-ink-soft);
+  font-size: 11px;
+}
+
+.book-club-modal__account strong {
+  font-size: 14px;
+}
+
+.book-club-modal__account small {
+  color: var(--color-ink-soft);
+  font-size: 11px;
+}
+
+.book-club-modal__paid {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.book-club-modal__paid input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--color-ink);
+}
+
+.book-club-modal__join {
+  align-self: flex-start;
+  margin-top: 20px;
+  padding: 14px 25px;
+  border: 2px solid var(--color-ink);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.book-club-modal__join.is-joined {
+  background: #53d769;
+  cursor: default;
+}
+
+@media (max-width: 760px) {
+  .book-club-modal__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .book-club-modal__cover {
+    min-height: 380px;
+    padding: 32px 72px;
+  }
+
+  .book-club-modal__content {
+    padding: 36px 26px;
+  }
+
+  .book-club-modal__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .book-club-modal h2 {
+    font-size: 34px;
+  }
+}

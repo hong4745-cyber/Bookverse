@@ -28,7 +28,7 @@
 .decoClover {
   position: absolute;
   top: 90px;
-  right: 24%;
+  right: 10%;
   width: 77px;
   height: 79px;
   background-color: #219653;
@@ -80,6 +80,9 @@
 }
 
 .moreBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 40px;
   border: 2px solid var(--color-ink);
   border-radius: 999px;
@@ -89,13 +92,14 @@
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
-  box-shadow: 4px 4px 0px var(--color-ink);
+  text-decoration: none;
+  box-shadow: 3px 3px 0px var(--color-ink);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .moreBtn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px var(--color-ink);
+  box-shadow: 3px 3px 0px var(--color-ink);
 }
 
 .moreBtn:active {
@@ -110,13 +114,21 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 1px 0 rgba(23, 23, 26, 0.05);
+  box-shadow: 4px 4px 0px var(--color-ink);
+}
+
+.coloredCard {
+  box-shadow: none;
 }
 
 .stars {
   display: flex;
   gap: 2px;
-  color: var(--color-orange);
+  color: #000;
+}
+
+.coloredCard .stars {
+  color: #fff;
 }
 
 .text {

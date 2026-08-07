@@ -21,7 +21,7 @@ function StarRow() {
 function ReviewCard({ review }) {
   return (
     <li
-      className={styles.card}
+      className={`${styles.card} ${review.bg !== '#ffffff' ? styles.coloredCard : ''}`}
       style={{ background: review.bg, color: review.ink }}
     >
       <StarRow />
@@ -69,9 +69,9 @@ export default function CommunitySection() {
         </ul>
 
         <div className={styles.moreRow}>
-          <button type="button" className={styles.moreBtn}>
+          <a href="/community" className={styles.moreBtn}>
             더보기
-          </button>
+          </a>
         </div>
       </div>
     </section>

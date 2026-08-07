@@ -1,0 +1,235 @@
+.floating-actions {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  font-family: var(--font-kr);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition: visibility 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.floating-actions.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.chatbot,
+.chatbot * {
+  box-shadow: none !important;
+}
+
+.floating-actions__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-actions__button {
+  width: 54px;
+  height: 54px;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  cursor: pointer;
+  font-weight: 800;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.floating-actions__button:hover {
+  transform: translate(-2px, -2px);
+}
+
+.floating-actions__button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.floating-actions__button.is-top {
+  visibility: hidden;
+  background: #fff;
+  color: var(--color-ink);
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.floating-actions__button.is-top svg {
+  display: block;
+  margin: auto;
+}
+
+.floating-actions__button.is-top.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-actions__button.is-chat {
+  position: relative;
+  background: #f97316;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: -1px;
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.floating-actions__button.is-chat.is-active {
+  font-size: 25px;
+}
+
+.chatbot {
+  width: min(360px, calc(100vw - 36px));
+  overflow: hidden;
+  border: 2px solid var(--color-ink);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.chatbot__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  background: #f97316;
+  color: #fff;
+}
+
+.chatbot__header div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.chatbot__header strong {
+  font-family: var(--font-headline);
+  font-size: 18px;
+}
+
+.chatbot__header span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+}
+
+.chatbot__header i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #53d769;
+}
+
+.chatbot__header button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.chatbot__messages {
+  display: flex;
+  max-height: 260px;
+  min-height: 120px;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 18px;
+  background: #faf9f5;
+}
+
+.chatbot__message {
+  max-width: 82%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-ink);
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.chatbot__message.is-bot {
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+  background: #fff;
+}
+
+.chatbot__message.is-user {
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+  background: #ffcc00;
+}
+
+.chatbot__quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 0 18px 14px;
+  background: #faf9f5;
+}
+
+.chatbot__quick button {
+  padding: 7px 10px;
+  border: 1px solid var(--color-ink);
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.chatbot__quick button:hover {
+  background: #ffcc00;
+}
+
+.chatbot__form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--color-line);
+}
+
+.chatbot__form input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: 9px;
+  outline: none;
+  font: inherit;
+  font-size: 13px;
+}
+
+.chatbot__form input:focus {
+  border-color: var(--color-ink);
+}
+
+.chatbot__form button {
+  width: 40px;
+  border: 2px solid var(--color-ink);
+  border-radius: 9px;
+  background: #ffcc00;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .floating-actions {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .floating-actions__button {
+    width: 50px;
+    height: 50px;
+  }
+}

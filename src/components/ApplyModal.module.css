@@ -24,6 +24,10 @@
   animation: popIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.dialogWide {
+  max-width: 760px;
+}
+
 .close {
   position: absolute;
   top: 32px;
@@ -74,6 +78,81 @@
   gap: 10px;
 }
 
+.bookField {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookOptions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bookOption {
+  position: relative;
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  color: var(--color-ink);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.bookOption:hover {
+  border-color: var(--color-ink-faint);
+  transform: translateY(-2px);
+}
+
+.bookOptionActive {
+  border-color: var(--color-line);
+}
+
+.bookCheck {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--color-orange);
+  box-shadow: 0 0 0 2px var(--color-ink);
+}
+
+.bookOption img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 341 / 492;
+  object-fit: cover;
+}
+
+.bookOption span,
+.bookOption small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookOption span {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.bookOption small {
+  margin-top: 3px;
+  color: var(--color-ink-soft);
+  font-size: 10px;
+}
+
 .label {
   font-family: var(--font-kr);
   font-size: 15px;
@@ -83,6 +162,28 @@
 
 .required {
   color: var(--color-pink);
+}
+
+.accountInfo {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+}
+
+.accountInfo span {
+  flex-basis: 100%;
+}
+
+.accountInfo strong {
+  color: var(--color-ink);
+  font-size: 14px;
+}
+
+.accountInfo small {
+  font-size: 11px;
 }
 
 .input {
@@ -129,8 +230,7 @@
 }
 
 .payOptionActive {
-  background: var(--color-pink-tint);
-  border-color: var(--color-pink);
+  border: 2px solid var(--color-ink);
   color: var(--color-ink);
 }
 
@@ -198,6 +298,11 @@
   background: var(--color-blue-deep);
 }
 
+.submitBtn:disabled {
+  background: var(--color-line);
+  cursor: not-allowed;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -216,6 +321,10 @@
 
   .payRow {
     flex-direction: column;
+  }
+
+  .bookOptions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

@@ -1,15 +1,17 @@
+import { useState } from 'react';
 import { BOOK_CLUB_BOOKS } from '../../data/booksData';
 import { SparkleDeco } from '../deco/DecoIcons';
+import BookClubModal from '../BookClubModal';
 import useReveal from '../../hooks/useReveal';
 import usePatternOffset from '../../hooks/usePatternOffset';
 import styles from './BooksSection.module.css';
 
-function ClubCard({ book }) {
+function ClubCard({ book, onSelect }) {
   return (
     <li className={styles.clubCard}>
-      <div className={styles.clubCover}>
+      <button type="button" className={styles.clubCover} onClick={() => onSelect(book)} aria-label={`${book.title} 북클럽 상세 보기`}>
         <img src={book.src} alt={`${book.title} 표지`} loading="lazy" />
-      </div>
+      </button>
       <p className={styles.cardTitleSm}>{book.title}</p>
       <p className={styles.cardAuthorSm}>{book.author}</p>
     </li>
@@ -17,6 +19,7 @@ function ClubCard({ book }) {
 }
 
 export default function BooksSection() {
+  const [selectedBook, setSelectedBook] = useState(null);
   const [clubRef, clubVisible] = useReveal();
   const [sectionRef, patternOffset] = usePatternOffset();
 
@@ -41,11 +44,12 @@ export default function BooksSection() {
             className={`reveal ${clubVisible ? 'is-visible' : ''} ${styles.clubGrid}`}
           >
             {BOOK_CLUB_BOOKS.map((book) => (
-              <ClubCard key={book.id} book={book} />
+              <ClubCard key={book.id} book={book} onSelect={setSelectedBook} />
             ))}
           </ul>
         </div>
       </div>
+      {selectedBook && <BookClubModal book={selectedBook} onClose={() => setSelectedBook(null)} />}
     </section>
   );
 }
