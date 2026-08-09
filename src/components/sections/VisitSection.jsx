@@ -34,7 +34,7 @@ export default function VisitSection() {
         className={styles.pattern}
         style={{ '--pattern-color': '#6155F5', '--pattern-offset-y': `${-patternOffset}px` }}
       />
-      <BurstDeco className={styles.decoBurst} />
+      <BurstDeco className={`${styles.decoBurst} shape-deco-rotate`} />
 
       <div className={styles.loopBanner}>
         <TextLoop

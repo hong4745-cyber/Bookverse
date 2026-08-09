@@ -80,7 +80,7 @@ export default function CurationSection() {
           className={`reveal ${bodyVisible ? 'is-visible' : ''} ${styles.body}`}
         >
           <div className={styles.colCopy}>
-            <SparkleDeco className={styles.decoSparkle} />
+            <SparkleDeco className={`${styles.decoSparkle} shape-deco-rotate`} />
             <p className={styles.copy}>
               길 위에서 발견한
               <br />

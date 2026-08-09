@@ -72,6 +72,8 @@ export default function HeroScroller() {
     const s3Cs = sec3.querySelector('.s3-center-stage');
     const s3C1 = sec3.querySelector('.s3-curation-line-1');
     const s3C2 = sec3.querySelector('.s3-curation-line-2');
+    const s3Books = gsap.utils.toArray('.s3-center-book', sec3);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const masterTl = gsap.timeline({ paused: true });
 
@@ -109,6 +111,22 @@ export default function HeroScroller() {
       { opacity: 0, y: 24 }, { opacity: 1, y: 0, ease: 'none', duration: 22 }, T4 + 60);
     masterTl.fromTo(s3C2,
       { opacity: 0, y: 24 }, { opacity: 1, y: 0, ease: 'none', duration: 22 }, T4 + 60);
+
+    // Reveal the curated books one at a time as the H3 scroll progresses.
+    if (!reduceMotion) {
+      s3Books.forEach((book, index) => {
+        masterTl.fromTo(book,
+          { autoAlpha: 0, clipPath: 'inset(100% 0 0 0)', filter: 'blur(8px)' },
+          {
+            autoAlpha: 1,
+            clipPath: 'inset(0% 0 0 0)',
+            filter: 'blur(0px)',
+            ease: 'power2.out',
+            duration: 18,
+          },
+          T4 + 88 + (index * 14));
+      });
+    }
     // ── ScrollTrigger ─────────────────────────────
     const st = ScrollTrigger.create({
       trigger: outerRef.current,

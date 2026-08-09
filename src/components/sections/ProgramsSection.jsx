@@ -72,8 +72,8 @@ export default function ProgramsSection() {
         className={styles.pattern}
         style={{ '--pattern-color': '#34C759', '--pattern-offset-y': `${-patternOffset}px` }}
       />
-      <div className={styles.decoStar} />
-      <div className={styles.decoDots} />
+      <div className={`${styles.decoStar} shape-deco-rotate`} />
+      <div className={`${styles.decoDots} shape-deco-rotate`} />
       <div className={`inner ${styles.inner}`}>
         <div
           ref={headRef}

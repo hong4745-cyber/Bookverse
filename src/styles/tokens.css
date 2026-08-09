@@ -72,10 +72,26 @@
   transform: translateY(0);
 }
 
+@keyframes shape-deco-rotate {
+  to {
+    rotate: 1turn;
+  }
+}
+
+.shape-deco-rotate {
+  transform-origin: center;
+  animation: shape-deco-rotate 16s linear infinite;
+  will-change: rotate;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .shape-deco-rotate {
+    animation: none;
   }
 }

@@ -167,6 +167,7 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  will-change: opacity, clip-path, filter;
 }
 
 .s3-play-icon {
@@ -258,4 +259,14 @@
   .s3-center-book .book-cover { width: 100px; height: 150px; }
   .s3-curation-line-1,
   .s3-curation-line-2 { font-size: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s3-center-book {
+    visibility: visible !important;
+    opacity: 1 !important;
+    clip-path: none !important;
+    filter: none !important;
+    will-change: auto;
+  }
 }

@@ -47,7 +47,7 @@ export default function CommunitySection() {
         className={styles.pattern}
         style={{ '--pattern-color': '#CB30E0', '--pattern-offset-y': `${-patternOffset}px` }}
       />
-      <div className={styles.decoClover} />
+      <div className={`${styles.decoClover} shape-deco-rotate`} />
 
       <div className={`inner ${styles.inner}`}>
         <div

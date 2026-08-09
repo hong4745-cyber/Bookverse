@@ -30,7 +30,7 @@ export default function BooksSection() {
         style={{ '--pattern-color': '#FFCC00', '--pattern-offset-y': `${-patternOffset}px` }}
       />
       <div className={`inner ${styles.inner}`}>
-        <SparkleDeco className={styles.decoSparkle} />
+        <SparkleDeco className={`${styles.decoSparkle} shape-deco-rotate`} />
         <div className={styles.clubBlock}>
           <span className={`eyebrow ${styles.eyebrow}`}>book</span>
           <h3 className={styles.subhead}>THIS MONTH'S BOOK CLUB</h3>

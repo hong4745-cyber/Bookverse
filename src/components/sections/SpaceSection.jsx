@@ -25,7 +25,7 @@ export default function SpaceSection() {
           ref={headRef}
           className={`reveal ${headVisible ? 'is-visible' : ''} ${styles.head}`}
         >
-          <DotClusterDeco className={styles.decoDots} />
+          <DotClusterDeco className={`${styles.decoDots} shape-deco-rotate`} />
           <span className={`eyebrow ${styles.eyebrow}`}>SPACE</span>
           <h2 className={styles.headline}>
             북커<span className={styles.headlineGap}>버스 공간 소개</span>
