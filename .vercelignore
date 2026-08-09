@@ -2,4 +2,4 @@
 node_modules/
 dist/
 *.log
-public/videos/video_*.mp4
+public/videos/

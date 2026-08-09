@@ -10,13 +10,6 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-@media (max-width: 1024px) {
-  .nav-center {
-    display: none;
-  }
-
-}
-
 .header-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -116,8 +109,44 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
+  .header-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .nav-center {
+    gap: clamp(14px, 2vw, 28px);
+  }
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+  .header-right {
+    gap: 14px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nav-center,
+  .login-btn {
+    display: none;
+  }
+
   .hamburger {
     display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
   }
 }

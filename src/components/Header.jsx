@@ -69,7 +69,7 @@ export default function Header() {
           <button
             className={`hamburger ${menuOpen ? 'open' : ''}`}
             onClick={() => setMenuOpen((v) => !v)}
-            aria-label="메뉴"
+            aria-label={menuOpen ? '메뉴 닫기' : '메뉴 열기'}
             aria-pressed={menuOpen}
           >
             <span />

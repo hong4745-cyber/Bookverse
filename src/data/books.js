@@ -20,7 +20,6 @@ export const CURATED_BOOKS = Array.from({ length: 5 }, (_, i) => ({
   id: i + 1,
   src: `/images/Bookvers_${i + 1}.png`,
   title: CURATED_TITLES[i],
-  video: `/videos/${i + 1}.mp4?v=20260807-3`,
   chromaKey: false, // 모든 영상을 배경 제거 없이 원본 비율의 cover 방식으로 재생
   keyColor: undefined,
 }));
