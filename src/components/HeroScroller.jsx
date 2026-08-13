@@ -49,7 +49,7 @@ export default function HeroScroller() {
     masterTl.fromTo(s2L3, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 90);
     masterTl.fromTo(s2L4, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 102);
     masterTl.fromTo(s2D, { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 112);
-    masterTl.fromTo(track, { x: -vw }, { x: -2 * vw, ease: 'none', duration: P23 }, T3);
+    masterTl.fromTo(track, { x: -vw }, { x: -2 * vw, ease: 'steps(1)', duration: P23 }, T3);
     masterTl.fromTo(s3Track, { x: 0 }, { x: () => -3 * window.innerWidth, ease: 'steps(3)', duration: H3 }, T4);
 
     const st = ScrollTrigger.create({
@@ -58,7 +58,7 @@ export default function HeroScroller() {
       start: 'top top',
       end: () => `+=${T5 * window.innerHeight / 100}`,
       pin: true,
-      scrub: 1,
+      scrub: true,
       snap: reduceMotion ? false : {
         snapTo(progress) {
           const timelineTime = progress * T5;

@@ -18,10 +18,26 @@ const SLIDES = [
 
 export default function HeroSection3() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [visited, setVisited] = useState(() => new Set([0]));
   const touchStartX = useRef(null);
+  const lastIndexRef = useRef(0);
 
   useEffect(() => {
-    const handleChange = (event) => setActiveIndex(event.detail.index);
+    const handleChange = (event) => {
+      const index = event.detail.index;
+      setActiveIndex(index);
+      const from = Math.min(lastIndexRef.current, index);
+      const to = Math.max(lastIndexRef.current, index);
+      lastIndexRef.current = index;
+      setVisited((prev) => {
+        let changed = false;
+        const next = new Set(prev);
+        for (let i = from; i <= to; i += 1) {
+          if (!next.has(i)) { next.add(i); changed = true; }
+        }
+        return changed ? next : prev;
+      });
+    };
     window.addEventListener('hero3:change', handleChange);
     return () => window.removeEventListener('hero3:change', handleChange);
   }, []);
@@ -45,7 +61,7 @@ export default function HeroSection3() {
       tabIndex="0" onKeyDown={handleKeyDown} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
       <div className="s3-horizontal-track">
         {SLIDES.map((slide, index) => (
-          <article className={`s3-feature-slide s3-slide-${slide.theme}`} role="group" aria-roledescription="slide"
+          <article className={`s3-feature-slide s3-slide-${slide.theme}${visited.has(index) ? ' s3-visited' : ''}`} role="group" aria-roledescription="slide"
             aria-label={`${index + 1} / ${SLIDES.length}: ${slide.label}`} aria-hidden={index !== activeIndex} key={slide.theme}>
             <div className="s3-pattern" aria-hidden="true" />
             <div className="s3-copy" aria-hidden="true">
