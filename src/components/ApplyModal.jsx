@@ -185,6 +185,11 @@ export default function ApplyModal({ program, onClose }) {
                     입금완료
                   </button>
                 </div>
+                {!paid && (
+                  <p className={styles.unpaidNotice} role="status">
+                    입금확인이 되어야 신청이 완료됩니다.
+                  </p>
+                )}
               </div>
 
               <div className={styles.footer}>
