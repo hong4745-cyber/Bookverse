@@ -1,374 +1,718 @@
-# 🎧 Bowers & Wilkins All-in-One Renewal
+# 📚 BOOKCOVERS
 
-> 프리미엄 오디오 브랜드 Bowers & Wilkins를 모티브로 제작한 React 기반 커머스 페이지 리뉴얼 프로젝트
-
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![Firebase](https://img.shields.io/badge/Firebase-Authentication%20%7C%20Firestore-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)](https://onepage-khaki.vercel.app/)
+> **취향과 관점을 중심으로 책, 큐레이션, 프로그램, 공간을 연결하는 독립서점 브랜드 랜딩페이지**
 
 <p align="center">
-  <!-- 권장 이미지: 1600 × 900px / docs/images/main-preview.png -->
-  <img src="./docs/images/main-preview.png" width="90%" alt="Bowers & Wilkins 메인 페이지 미리보기" />
+  <!-- 대표 이미지: docs/images/bookcovers-main.png -->
+  <img src="./docs/images/bookcovers-main.png" width="90%" alt="BOOKCOVERS Main Preview" />
 </p>
+
 <p align="center"><sub>Desktop Main Preview</sub></p>
 
-> 🖼️ 위 이미지가 표시되지 않는 경우 `docs/images/main-preview.png` 경로에 대표 이미지를 추가하세요.
+> 🖼️ `docs/images/bookcovers-main.png` 경로에 대표 이미지를 추가하면 이 위치에 표시됩니다.
 
-## 프로젝트 소개
+---
 
-기존 브랜드 사이트의 고급스러운 디자인 감성을 유지하면서, 단순한 UI 구현을 넘어 실제 쇼핑몰의 구매 흐름을 경험할 수 있도록 리뉴얼한 프로젝트입니다.
+# ✨ 프로젝트 소개
 
-상품 탐색부터 장바구니, 결제, 주문 완료까지 하나의 서비스 흐름으로 구성했습니다. React 기반 SPA, Firebase 인증 및 게시판, Polar.sh 결제 연동, Three.js 인터랙션을 적용해 실제 커머스 서비스와 유사한 구조를 구현했습니다.
+BOOKCOVERS는 독립서점의 브랜드 경험을 웹으로 확장한 React 기반 데스크톱 랜딩페이지입니다. 화면은 `1920 × 1080` 해상도를 기준으로 제작했습니다.
 
-### 프로젝트 링크
+단순히 도서를 나열하는 화면을 넘어 책 표지 마키, 스크롤 기반 아트워크, 3D 인터랙티브 북을 통해 브랜드의 취향과 관점을 시각적으로 전달합니다. 추천 도서와 큐레이션 탐색부터 프로그램 신청, 공간 예약, 로그인, 사용자별 활동 확인까지 하나의 서비스 흐름으로 구성했습니다.
 
-- 🌐 [Live Demo](https://onepage-khaki.vercel.app/)
-- 💻 [GitHub Repository](https://github.com/hong4745-cyber/onepage)
-- 📄 [Project Documentation](https://github.com/user-attachments/files/29692864/Bowers_Wilkins_Project.pdf)
+---
 
-## 프로젝트 정보
+# ✨ Highlights
+
+- ✔ React 19 기반 `1920 × 1080` 데스크톱 웹 구현
+- ✔ GSAP·ScrollTrigger 기반 가로형 히어로 스크롤
+- ✔ 책 표지와 텍스트가 교차하는 무한 마키
+- ✔ CSS 3D Transform 기반 인터랙티브 북
+- ✔ Firebase Authentication 로그인
+- ✔ Firestore 기반 프로그램 신청 및 공간 예약
+- ✔ 서점 위치 안내를 위한 Naver Maps API 연동
+- ✔ 사용자별 신청·예약 내역을 제공하는 마이페이지
+- ✔ `prefers-reduced-motion`을 고려한 모션 최적화
+- ✔ 기획부터 디자인 구체화, 개발, 배포까지 100% 직접 구현
+
+---
+
+# 🎯 Project Goals
+
+- 독립서점의 취향과 관점을 전달하는 브랜드 경험 구현
+- 스크롤과 인터랙션을 활용한 몰입도 높은 랜딩페이지 제작
+- 도서·프로그램·공간·커뮤니티 콘텐츠를 하나의 흐름으로 연결
+- React 컴포넌트와 데이터 중심의 확장 가능한 구조 설계
+- Firebase 기반 인증과 사용자 데이터 관리
+- `1920 × 1080` 환경에 최적화된 데스크톱 UI 구현
+- 시각적 완성도와 실제 신청·예약 기능의 균형 확보
+
+---
+
+# 📋 프로젝트 정보
 
 | 항목 | 내용 |
 | --- | --- |
-| 프로젝트명 | Bowers & Wilkins All-in-One Renewal |
-| 프로젝트 유형 | 프리미엄 오디오 브랜드 커머스 페이지 리뉴얼 |
-| 개발 기간 | 2026.07 (3일) |
-| 개발 인원 | 1인 프로젝트 |
-| 담당 역할 | 기획, UI/UX 디자인, 프론트엔드 개발 |
-| 기여도 | 100% |
+| **프로젝트명** | BOOKCOVERS |
+| **프로젝트 유형** | 독립서점 브랜드·서비스 데스크톱 랜딩페이지 |
+| **작업 기간** | 2026.08 3일 |
+| **개발 인원** | 1인 프로젝트 |
+| **담당 역할** | 기획 · UI 디자인 구체화 · 프론트엔드 개발 · Firebase 연동 · 배포 |
+| **기여도** | 100% |
+| **배포 환경** | Vercel |
 
-## 프로젝트 목표
+---
 
-- 프리미엄 브랜드 감성을 반영한 UI/UX 구현
-- 상품 탐색부터 주문 완료까지 이어지는 커머스 흐름 구현
-- React 컴포넌트 중심의 확장 가능한 구조 설계
-- Context API를 활용한 전역 상태 관리
-- Firebase 기반 사용자 인증 및 데이터 관리
-- 실제 결제 시스템 연동 경험
-- 반응형 레이아웃과 사용자 중심 인터랙션 구현
+# 🛠 Tech Stack
 
-## 주요 기능
+## 💻 Front-end
 
-- [x] React Router 기반 SPA 및 동적 라우팅
-- [x] 상품 카테고리·BEST·NEW·SALE 필터와 정렬
-- [x] 실시간 상품 검색 오버레이
-- [x] 장바구니 및 위시리스트 상태 유지
-- [x] Polar.sh 결제 및 주문 완료 흐름
-- [x] Firebase 이메일·Google 로그인
-- [x] Firestore 기반 게시판 CRUD
-- [x] 다크모드 및 라이트모드
-- [x] Three.js 3D 배경과 GSAP·Motion 인터랙션
-- [x] 반응형 플로팅 퀵 내비게이션
+<p>
+  <img src="https://skillicons.dev/icons?i=react" width="22" alt="React" /> <strong>React 19</strong>
+  &nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=vite" width="22" alt="Vite" /> <strong>Vite 6</strong>
+  &nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=js" width="22" alt="JavaScript" /> <strong>JavaScript</strong>
+  &nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=css" width="22" alt="CSS" /> <strong>CSS Modules</strong>
+</p>
 
-## 기술 스택
+- React 컴포넌트 기반 UI
+- `1920 × 1080` 기준의 데스크톱 레이아웃
+- 콘텐츠 데이터와 화면 컴포넌트 분리
+- 재사용 가능한 섹션 및 모달 구조
 
-| 구분 | 기술 |
+---
+
+## 🔥 Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=firebase" width="22" alt="Firebase" /> <strong>Firebase</strong>
+</p>
+
+- Firebase Authentication
+- Cloud Firestore
+- 사용자별 프로그램 신청 및 공간 예약 데이터 관리
+- UID 기반 데이터 접근 제어
+
+---
+
+## 🎬 Animation
+
+- GSAP
+- ScrollTrigger
+- Motion
+- CSS 3D Transform
+
+---
+
+## 🗺 External API
+
+- Naver Maps API
+
+---
+
+## 🛠 Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=vscode,git,github,vercel" alt="VS Code, Git, GitHub, Vercel" />
+</p>
+
+- VS Code
+- Git
+- GitHub
+- Vercel
+- Oxlint
+
+---
+
+# 🤖 AI 활용
+
+| AI | 활용 내용 |
 | --- | --- |
-| Design | Figma |
-| Frontend | React 19, JavaScript, HTML5, CSS3 |
-| Build | Vite 8 |
-| Routing | React Router DOM |
-| State | Context API, Local Storage |
-| Backend | Firebase Authentication, Cloud Firestore |
-| Payment | Polar.sh API |
-| Animation | GSAP, Motion, Three.js |
-| UI Library | Font Awesome, React Icons |
-| Deployment | GitHub, Vercel |
+| Claude Code | 코드 분석 및 리팩토링 |
+| ChatGPT | 이미지 생성, README 작성, 프로젝트 기획 |
+| Claude | 기능 조사 및 구현 아이디어 검토 |
 
-## 화면 및 기능
+### 직접 구현한 내용
 
-### 1. Hero Visual
+- 브랜드 콘셉트와 페이지 구성 기획
+- 화면별 레이아웃, 타이포그래피, 컬러 및 그래픽 방향 결정
+- React 컴포넌트와 콘텐츠 데이터 구조 설계
+- 프로그램 신청, 공간 예약, 로그인 및 마이페이지 흐름 구현
+- 실제 콘텐츠와 이미지 적용 및 인터랙션 세부 조정
 
-<p align="center">
-  <!-- 권장 이미지: docs/images/hero.png -->
-  <img src="./docs/images/hero.png" width="80%" alt="Hero Visual" />
-</p>
+> AI는 구현과 검증을 보조하는 도구로 활용했으며, 최종 기능·디자인 판단과 결과물 검수는 직접 수행했습니다.
 
-- 브랜드 아이덴티티와 대표 제품을 강조하는 랜딩 화면
-- GSAP 진입 애니메이션과 Three.js 3D 배경 적용
-- CTA를 통한 상품 페이지 이동
-- 화면 크기에 대응하는 반응형 레이아웃
+---
 
-### 2. 상품 목록 및 상세
+# 🔗 프로젝트 링크
 
-<p align="center">
-  <!-- 권장 이미지: docs/images/product-list.png, docs/images/product-detail.png -->
-  <img src="./docs/images/product-list.png" width="48%" alt="상품 목록" />
-  <img src="./docs/images/product-detail.png" width="48%" alt="상품 상세" />
-</p>
+| Resource | Link |
+| --- | --- |
+| 🌐 Live Demo | [BOOKCOVERS 바로가기](https://bookverse-app-olive.vercel.app/) |
+| 💻 GitHub Repository | [Bookverse Repository](https://github.com/hong4745-cyber/Bookverse) |
 
-- 카테고리, BEST, NEW, SALE 필터와 가격 정렬
-- URL에 필터 상태를 반영해 공유 후에도 동일한 화면 유지
-- Dynamic Route를 활용한 상세 페이지 자동 매핑
-- 색상 옵션, 재고, 할인 가격, 리뷰 및 평점 제공
+---
 
-### 3. Search Overlay
+# 📖 프로젝트 개요
 
-<p align="center">
-  <!-- 권장 이미지: docs/images/search-overlay.png -->
-  <img src="./docs/images/search-overlay.png" width="80%" alt="상품 검색 오버레이" />
-</p>
+BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온라인으로 확장하기 위해 제작한 브랜드 랜딩페이지입니다.
 
-- Search Context 기반 전역 검색 상태 관리
-- 상품명과 카테고리를 대상으로 실시간 필터링
-- 현재 페이지를 벗어나지 않고 검색 결과 확인
-- 결과 선택 시 해당 상품 상세 페이지로 이동
+방문자는 책 표지와 텍스트가 교차하는 무한 마키와 가로형 히어로 스크롤을 통해 브랜드의 분위기를 경험하고, 추천 도서·북클럽·큐레이션 콘텐츠를 탐색할 수 있습니다. 로그인 후에는 프로그램 신청과 공간 예약을 진행하고 마이페이지에서 자신의 활동 내역을 확인할 수 있습니다.
 
-### 4. 장바구니 및 위시리스트
+브랜드 중심의 시각적 경험과 실제 사용 가능한 서비스 기능을 하나의 React 프로젝트 안에 연결했다는 점이 핵심입니다.
+
+---
+
+# 🚀 주요 기능
+
+## 1. 🎞 가로형 Hero Scroll
 
 <p align="center">
-  <!-- 권장 이미지: docs/images/cart.png, docs/images/wishlist.png -->
-  <img src="./docs/images/cart.png" width="48%" alt="장바구니" />
-  <img src="./docs/images/wishlist.png" width="48%" alt="위시리스트" />
+  <!-- 이미지: docs/images/hero-scroll.png -->
+  <img src="./docs/images/hero-scroll.png" width="80%" alt="BOOKCOVERS 가로형 히어로 스크롤" />
 </p>
 
-- Context API로 장바구니와 위시리스트 상태 관리
-- 상품 수량 변경, 삭제, 총 결제 금액 자동 계산
-- Local Storage 연동으로 새로고침 이후에도 데이터 유지
+### ✨ 주요 기능
 
-### 5. Checkout 및 Polar.sh 결제
+- 세 개의 히어로 섹션을 하나의 화면에서 가로로 전환
+- 화면 단위 스냅을 적용해 정확한 프레임에서 정지
+- 스크롤 진행에 따라 이미지와 텍스트가 유기적으로 변화
+- 모션 감소 설정을 고려한 대체 동작 제공
+
+### 💻 구현 내용
+
+- GSAP Timeline과 ScrollTrigger 결합
+- 고정된 화면 내부에서 가로 트랙 이동
+- `steps()` 기반 프레임 전환과 스냅 적용
+- `transform` 중심 애니메이션으로 렌더링 성능 개선
+
+---
+
+## 2. 📚 Infinite Book Marquee
 
 <p align="center">
-  <!-- 권장 이미지: docs/images/checkout.png, payment.png, order-complete.png -->
-  <img src="./docs/images/checkout.png" width="31%" alt="Checkout" />
-  <img src="./docs/images/payment.png" width="31%" alt="Polar.sh 결제" />
-  <img src="./docs/images/order-complete.png" width="31%" alt="주문 완료" />
+  <!-- 이미지: docs/images/book-marquee.png -->
+  <img src="./docs/images/book-marquee.png" width="80%" alt="책 표지 무한 마키" />
 </p>
 
-- 장바구니 상품과 총액을 Checkout 페이지에 자동 반영
-- 서버를 통한 Polar.sh 결제 요청
-- 결제 완료 후 주문 완료 페이지로 이동
-- API Key 및 Secret Key를 환경 변수로 분리
+### ✨ 주요 기능
 
-### 6. Firebase 게시판
+- 책 표지와 텍스트가 끊김 없이 반복되는 마키
+- 홀수·짝수 행이 서로 반대 방향으로 이동
+- 다양한 도서 콘텐츠를 리듬감 있게 노출
+- `1920 × 1080` 화면을 기준으로 자연스럽게 이어지는 트랙
+
+### 💻 구현 내용
+
+- 동일한 콘텐츠 묶음을 반복 렌더링해 루프 구성
+- 실제 트랙 너비를 기준으로 이동 거리 계산
+- `will-change: transform` 적용
+- 공통 hover 규칙과 애니메이션 충돌 제거
+
+---
+
+## 3. 🖼 Artwork Slider
 
 <p align="center">
-  <!-- 권장 이미지: docs/images/board-list.png, docs/images/board-write.png -->
-  <img src="./docs/images/board-list.png" width="48%" alt="게시판 목록" />
-  <img src="./docs/images/board-write.png" width="48%" alt="게시글 작성" />
+  <!-- 이미지: docs/images/artwork-slider.png -->
+  <img src="./docs/images/artwork-slider.png" width="80%" alt="BOOKCOVERS 아트워크 슬라이더" />
 </p>
 
-- 공지사항, 리뷰, Q&A, 이벤트 게시판 제공
-- Firestore 기반 게시글 CRUD와 실시간 반영
-- 게시글 검색 및 카테고리 필터
-- 인증 사용자 글쓰기와 관리자 이벤트 관리
+### ✨ 주요 기능
 
-### 7. 로그인 및 회원가입
+- 네 개의 아트워크 슬라이드 제공
+- 현재 화면을 표시하는 인디케이터
+- 인디케이터 클릭을 통한 즉시 화면 이동
+- 스크롤과 선택 상태가 자연스럽게 동기화
+
+### 💻 구현 내용
+
+- 트랙의 실제 `x` 위치를 기준으로 현재 인덱스 계산
+- 문서 스크롤과 내부 슬라이드 이동 상태 분리
+- 클릭과 스크롤 입력이 동일한 화면 상태를 공유하도록 구성
+
+---
+
+## 4. 📕 3D Interactive Book
 
 <p align="center">
-  <!-- 권장 이미지: docs/images/login.png, docs/images/signup.png -->
-  <img src="./docs/images/login.png" width="48%" alt="로그인" />
-  <img src="./docs/images/signup.png" width="48%" alt="회원가입" />
+  <!-- 이미지: docs/images/interactive-book.png -->
+  <img src="./docs/images/interactive-book.png" width="70%" alt="3D 인터랙티브 북" />
 </p>
 
-- Firebase Authentication 기반 이메일 회원가입 및 로그인
-- Google OAuth 소셜 로그인
-- 인증 상태 자동 유지 및 사용자별 UI 변경
-- Firestore 사용자 정보 저장
+### ✨ 주요 기능
 
-### 8. 다크모드 및 퀵 내비게이션
+- 마우스 움직임에 반응하는 3D 도서 오브젝트
+- 책의 앞면, 뒷면, 책등과 페이지 면 표현
+- 사용자가 책을 직접 돌려보는 듯한 상호작용
+- 콘텐츠 탐색 과정에 시각적 몰입감 제공
+
+### 💻 구현 내용
+
+- 각 면을 개별 요소로 분리한 뒤 CSS 3D Transform으로 결합
+- 포인터 위치를 X·Y축 회전값으로 변환
+- 위치 계산과 회전을 다른 요소로 분리해 transform 충돌 방지
+
+---
+
+## 5. 📖 도서·북클럽·큐레이션
 
 <p align="center">
-  <!-- 권장 이미지: docs/images/theme.png, docs/images/quick-navigation.png -->
-  <img src="./docs/images/theme.png" width="48%" alt="라이트 모드와 다크 모드" />
-  <img src="./docs/images/quick-navigation.png" width="48%" alt="플로팅 퀵 내비게이션" />
+  <!-- 이미지: docs/images/curation.png -->
+  <img src="./docs/images/curation.png" width="80%" alt="도서와 큐레이션 콘텐츠" />
 </p>
 
-- 전역 Theme Context 기반 테마 전환
-- 이미지와 영상은 원본 색상을 유지하도록 예외 처리
-- 카테고리, 장바구니, 페이지 상단으로 빠르게 이동
-- 공통 컴포넌트로 구현해 모든 페이지에서 재사용
+### ✨ 주요 기능
 
-## 핵심 구현 내용
+- 추천 도서와 북클럽 프로그램 소개
+- 독립서점의 관점을 담은 큐레이션 콘텐츠 제공
+- 책, 프로그램, 공간을 연결하는 콘텐츠 흐름
+- 정적 데이터를 활용한 일관된 콘텐츠 관리
 
-### 전역 상태 관리
+### 💻 구현 내용
 
-Cart, Wishlist, Search, Theme Context를 목적별로 분리해 Props Drilling을 줄였습니다. 영속성이 필요한 장바구니와 위시리스트는 Local Storage와 동기화했습니다.
+- 도서·프로그램·공간·커뮤니티 데이터를 `src/data`로 분리
+- 반복 가능한 카드와 섹션 컴포넌트 설계
+- 실제 콘텐츠와 이미지를 데이터에 매핑
 
-### 커머스 흐름
+---
 
-상품 목록, 상세 페이지, 검색, 장바구니, Checkout, 결제, 주문 완료를 하나의 사용자 흐름으로 연결했습니다. URL 기반 필터와 Dynamic Routing을 적용해 탐색 상태를 유지했습니다.
+## 6. 📝 프로그램 신청
 
-### 인증 및 게시판
+<p align="center">
+  <!-- 이미지: docs/images/program-application.png -->
+  <img src="./docs/images/program-application.png" width="75%" alt="프로그램 신청 화면" />
+</p>
 
-Firebase Authentication과 Firestore를 연동해 로그인 사용자만 게시글을 작성할 수 있도록 구성했습니다. 사용자 권한에 따라 이벤트 관리 기능도 구분했습니다.
+### ✨ 주요 기능
 
-### 인터랙션
+- 북클럽과 프로그램 상세 정보 확인
+- 로그인 사용자 프로그램 신청
+- 신청자 정보와 프로그램 정보 저장
+- 입금 상태 안내 및 사용자별 신청 내역 확인
 
-GSAP와 Motion으로 진입·스크롤·호버 애니메이션을 구현하고, Three.js로 브랜드 분위기에 맞는 3D 배경을 구성했습니다.
+### 💻 구현 내용
 
-## Trouble Shooting
+- Firebase Authentication의 사용자 UID 연동
+- Firestore에 프로그램 및 신청자 데이터 저장
+- 사용자 본인의 신청 데이터만 조회하도록 보안 규칙 구성
+- 신청 상태를 마이페이지에 반영
 
-| 문제 | 원인 | 해결 및 결과 |
-| --- | --- | --- |
-| Windows 환경에서만 빌드 실패 | 운영체제별 파일명 처리 차이 | 파일명 규칙과 구조를 정리해 플랫폼과 관계없이 빌드 가능하도록 개선 |
-| Polar.sh Secret Key 노출 위험 | 브라우저에서 결제 API 직접 호출 | Secret Key를 서버와 환경 변수에서만 관리하도록 변경 |
-| GitHub Pages에서 결제 미동작 | 정적 호스팅은 서버 기능을 지원하지 않음 | 결제 서비스는 Vercel에 배포하고 GitHub는 저장소로 활용 |
-| 다크모드에서 이미지까지 반전 | 상위 요소의 CSS Filter가 미디어에도 적용 | 이미지와 영상에 이중 반전 예외 처리 적용 |
-| Firebase 설정 누락 시 앱 중단 | 초기화 전 인증 기능 호출 | 초기화 여부 확인과 fallback을 추가해 기본 화면 유지 |
-| 이미지 교체 후 이전 이미지 표시 | 개발 서버 캐시와 이미지 관리 방식 | 파일명 규칙을 정리하고 변경 시 개발 서버를 재시작 |
+---
 
-## 성능 및 보안 개선
+## 7. 🏠 공간 예약
 
-- 필요한 상태만 Context로 관리해 불필요한 전역 상태 최소화
-- React Router 기반 SPA로 자연스러운 페이지 전환 제공
-- 상품 데이터는 JSON으로 관리해 불필요한 API 요청 방지
-- 실시간성이 필요한 게시판 데이터만 Firestore에서 관리
-- API Key 및 Secret Key를 환경 변수와 서버로 분리
-- 이미지 파일명 규칙을 통일해 자동 매핑 구조 적용
+<p align="center">
+  <!-- 이미지: docs/images/space-reservation.png -->
+  <img src="./docs/images/space-reservation.png" width="75%" alt="BOOKCOVERS 공간 예약" />
+</p>
 
-## 데이터 구조
+### ✨ 주요 기능
 
-### Product Data
+- 독립서점 공간 정보 제공
+- 모달에서 날짜, 시간, 인원 선택
+- 로그인 사용자 예약 정보 저장
+- 마이페이지에서 예약 상태 확인
+
+### 💻 구현 내용
+
+- 재사용 가능한 예약 모달 컴포넌트 구현
+- 예약 정보와 사용자 UID를 Firestore에 저장
+- 입력값 검증 및 예약 상태 데이터 관리
+
+---
+
+## 8. 🔐 로그인 및 마이페이지
+
+<p align="center">
+  <!-- 이미지: docs/images/login.png, docs/images/mypage.png -->
+  <img src="./docs/images/login.png" width="48%" alt="BOOKCOVERS 로그인" />
+  <img src="./docs/images/mypage.png" width="48%" alt="BOOKCOVERS 마이페이지" />
+</p>
+
+### ✨ 주요 기능
+
+- Firebase 기반 사용자 로그인
+- 인증 상태에 따른 화면과 기능 변경
+- 프로그램 신청 및 공간 예약 내역 확인
+- 사용자 활동을 한 화면에서 관리
+
+### 💻 구현 내용
+
+- Firebase Authentication 연동
+- 인증 사용자 UID 기반 데이터 조회
+- 신청·예약 컬렉션을 사용자별로 필터링
+- 비로그인 사용자의 보호 기능 접근 제한
+
+---
+
+## 9. 💬 Community & Floating UI
+
+<p align="center">
+  <!-- 이미지: docs/images/community.png -->
+  <img src="./docs/images/community.png" width="75%" alt="BOOKCOVERS 커뮤니티와 플로팅 UI" />
+</p>
+
+### ✨ 주요 기능
+
+- 독립서점의 소식과 커뮤니티 콘텐츠 제공
+- 주요 기능에 빠르게 접근하는 플로팅 액션 UI
+- 페이지 흐름을 방해하지 않는 고정형 내비게이션
+
+### 💻 구현 내용
+
+- 공통 컴포넌트로 설계해 화면 간 재사용
+- `1920 × 1080` 레이아웃을 기준으로 고정 위치 조정
+- 콘텐츠 영역과 겹치지 않도록 레이아웃 조정
+
+---
+
+## 10. 🗺 서점 위치 안내
+
+<p align="center">
+  <!-- 이미지: docs/images/naver-map.png -->
+  <img src="./docs/images/naver-map.png" width="75%" alt="Naver Maps API를 활용한 서점 위치 안내" />
+</p>
+
+### ✨ 주요 기능
+
+- Naver Maps API를 사용한 서점 위치 표시
+- 방문에 필요한 위치 정보 제공
+- 랜딩페이지 안에서 온라인과 오프라인 경험 연결
+
+### 💻 구현 내용
+
+- Naver Maps API 연동
+- 클라이언트 ID를 환경 변수로 분리
+- API 키에 허용 도메인과 사용량 제한 적용
+
+---
+
+# 💡 핵심 구현 내용
+
+## ⚛️ React
+
+- React 19 기반 컴포넌트 구조
+- 공통 UI, 모달, 메인 섹션 분리
+- 도서와 프로그램 데이터를 화면 로직에서 분리
+- 재사용 가능한 섹션 컴포넌트 설계
+
+---
+
+## 🎬 Scroll & Motion
+
+- GSAP Timeline과 ScrollTrigger 기반 가로 스크롤
+- 화면 단위 스냅과 실제 트랙 위치 기반 상태 계산
+- 무한 마키와 아트워크 슬라이더
+- `prefers-reduced-motion` 대응
+
+---
+
+## 📕 3D Interaction
+
+- CSS 3D Transform 기반 책 오브젝트
+- 포인터 위치 기반 회전값 계산
+- 위치와 회전을 분리해 transform 충돌 방지
+
+---
+
+## 🔥 Firebase
+
+- Firebase Authentication
+- 프로그램 신청 및 공간 예약 데이터 저장
+- 사용자 UID 기반 데이터 연결
+- Firestore 보안 규칙을 통한 본인 데이터 접근 제한
+
+---
+
+## 📱 UI / UX
+
+- 브랜드 중심의 타이포그래피와 그래픽 구성
+- `1920 × 1080` 데스크톱 화면에 최적화된 UI
+- 스크롤 상태와 UI 인디케이터 동기화
+- 키보드, 터치, 모션 감소 설정 고려
+
+---
+
+# 🔧 Trouble Shooting
+
+## 1. 아트워크 인디케이터 반응 지연
+
+### 문제
+
+스크롤 후 인디케이터가 실제 화면보다 한 박자 늦게 변경되었습니다.
+
+### 원인
+
+진행률을 `floor`로 계산해 추정한 인덱스와 실제 트랙 프레임의 시점이 일치하지 않았습니다.
+
+### 해결
+
+트랙의 실제 `x` 위치를 읽어 현재 인덱스를 계산하도록 변경했습니다.
+
+### 결과
+
+현재 화면과 인디케이터가 즉시 동기화되었습니다.
+
+---
+
+## 2. 인디케이터 클릭 시 페이지가 위로 이동
+
+### 문제
+
+아트워크 인디케이터를 클릭하면 내부 화면뿐 아니라 문서 스크롤 위치까지 변경되었습니다.
+
+### 해결
+
+문서 스크롤과 아트워크 내부 전환 상태를 분리했습니다.
+
+### 결과
+
+현재 문서 위치를 유지하면서 원하는 아트워크로 이동할 수 있게 되었습니다.
+
+---
+
+## 3. 마키가 호버 시 정지
+
+### 문제
+
+책 표지 위에 커서를 올리면 무한 마키가 멈췄습니다.
+
+### 원인
+
+공통 hover 스타일에 애니메이션을 중단하는 규칙이 포함되어 있었습니다.
+
+### 해결
+
+마키에 영향을 주는 hover 일시정지 규칙을 제거했습니다.
+
+### 결과
+
+사용자 포인터 상태와 관계없이 마키가 자연스럽게 이어집니다.
+
+---
+
+## 4. 회전 도형이 중심에서 벗어나는 문제
+
+### 문제
+
+위치 이동용 `translate`와 회전용 `rotate`가 동일한 요소에서 충돌했습니다.
+
+### 해결
+
+위치는 계산값으로 고정하고 회전은 중앙 요소에서만 처리하도록 역할을 분리했습니다.
+
+### 결과
+
+도형과 3D 오브젝트가 중심을 유지한 채 안정적으로 회전합니다.
+
+---
+
+## 5. 배포 파일 용량 증가
+
+### 문제
+
+로컬 영상과 검증용 빌드 파일이 배포 대상에 포함되어 용량이 증가했습니다.
+
+### 해결
+
+Vite 복사 필터와 `.vercelignore`를 적용해 불필요한 파일을 제외했습니다.
+
+### 결과
+
+프로덕션 배포 용량과 빌드 부담을 줄였습니다.
+
+---
+
+# ⚡ 성능 최적화
+
+| 항목 | 적용 내용 |
+| --- | --- |
+| Transform | 움직이는 요소를 `transform`과 `opacity` 중심으로 애니메이션 |
+| 렌더링 힌트 | 주요 트랙에 `will-change: transform` 적용 |
+| 데이터 재사용 | 반복되는 책 데이터를 재사용해 불필요한 요청 방지 |
+| 배포 용량 | 프로덕션 빌드에서 대용량 로컬 영상 제외 |
+| 빌드 | Vercel 빌드 캐시 활용 |
+| 접근성 | `prefers-reduced-motion`에서 불필요한 모션 제한 |
+
+---
+
+# 🗄️ 데이터 구조
 
 ```text
-products
-├─ id
+programApplications/{applicationId}
+├─ userId
+├─ programId
+├─ programTitle
 ├─ name
-├─ price
-├─ salePrice
-├─ discountRate
-├─ category
-├─ colors[]
-├─ description
-├─ stock
-├─ rating
-├─ reviewCount
-├─ reviewKeywords[]
-├─ isBest
-├─ isNew
-├─ isSale
-└─ reviews[]
+├─ phone
+├─ paymentStatus
+└─ createdAt
+
+spaceReservations/{reservationId}
+├─ userId
+├─ name
+├─ phone
+├─ date
+├─ time
+├─ people
+├─ status
+└─ createdAt
 ```
 
-### Firestore
+정적 도서·프로그램·공간·커뮤니티 콘텐츠는 `src/data`에서 화면 컴포넌트와 분리해 관리합니다.
+
+---
+
+# 📁 프로젝트 구조
 
 ```text
-Firestore
-├─ notices
-├─ reviews
-├─ qna
-└─ events
+bookverse-app/
+├─ public/
+│  └─ images/             # 도서 표지와 그래픽 에셋
+├─ src/
+│  ├─ components/         # 공통 UI, 모달, 히어로 컴포넌트
+│  │  ├─ deco/            # 장식용 SVG 컴포넌트
+│  │  └─ sections/        # 메인 페이지 섹션
+│  ├─ data/               # 화면 콘텐츠 데이터
+│  ├─ hooks/              # reveal, pattern offset 훅
+│  ├─ lib/                # Firebase 초기화
+│  ├─ services/           # 신청·예약 데이터 처리
+│  ├─ styles/             # 폰트와 디자인 토큰
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ firestore.rules
+├─ vercel.json
+├─ vite.config.js
+└─ package.json
 ```
 
-## 프로젝트 구조
+---
 
-```text
-src/
-├─ assets/          # 이미지, 영상, 폰트 등 정적 에셋
-├─ components/      # 재사용 가능한 UI 컴포넌트
-├─ contexts/        # Cart, Wishlist, Search, Theme 상태
-├─ data/            # 상품 및 정적 콘텐츠 데이터
-├─ hooks/           # 공통 커스텀 훅
-├─ layouts/         # 공통 페이지 레이아웃
-├─ pages/           # 라우트별 페이지
-├─ router/          # 라우팅 설정
-├─ services/        # Firebase 및 외부 API 처리
-├─ styles/          # 전역 스타일과 디자인 토큰
-├─ utils/           # 공통 유틸리티
-├─ App.jsx
-└─ main.jsx
-```
+# ▶️ 실행 방법
 
-## 실행 방법
-
-### 요구 환경
-
-- Node.js 20 이상
-- npm
-
-### 설치 및 실행
+## 1. 저장소 클론
 
 ```bash
-git clone https://github.com/hong4745-cyber/onepage.git
-cd onepage
+git clone https://github.com/hong4745-cyber/Bookverse.git
+```
+
+## 2. 프로젝트 폴더 이동
+
+```bash
+cd Bookverse
+```
+
+## 3. 패키지 설치
+
+```bash
 npm install
+```
+
+## 4. 환경 변수 설정
+
+```bash
+cp .env.example .env.local
+```
+
+`.env.local` 파일에 Firebase와 네이버 지도 설정을 입력합니다.
+
+```env
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_NAVER_MAP_CLIENT_ID=
+```
+
+> `.env.local`과 실제 API 키는 저장소에 포함하지 않습니다. 외부 API 키에는 허용 도메인과 사용량 제한을 설정해야 합니다.
+
+## 5. 개발 서버 실행
+
+```bash
 npm run dev
 ```
 
-개발 서버가 안내하는 로컬 주소로 접속합니다.
+브라우저에서 `http://localhost:5173`으로 접속합니다.
 
-### 환경 변수
-
-프로젝트 루트에 `.env` 파일을 만들고 Firebase 및 Polar.sh 설정을 입력합니다.
-
-```env
-VITE_FIREBASE_API_KEY=your_key
-VITE_FIREBASE_AUTH_DOMAIN=your_domain
-VITE_POLAR_ACCESS_TOKEN=your_token
-```
-
-> 실제 API Key와 Secret Key는 저장소에 커밋하지 않습니다. 결제용 Secret Key는 클라이언트가 아닌 서버 환경에서만 관리해야 합니다.
-
-### 빌드
+## 6. 프로덕션 빌드
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## AI 활용
+---
 
-| AI 도구 | 활용 내용 |
+# 🚀 배포
+
+| 구분 | 주소 |
 | --- | --- |
-| ChatGPT | 프로젝트 기획, UI/UX 개선, 코드 리뷰 및 README 작성 |
-| Claude Code | 코드 분석 및 리팩터링 |
-| Gemini | 기능 조사 및 구현 아이디어 검토 |
+| 🌐 Live Demo | [https://bookverse-app-olive.vercel.app/](https://bookverse-app-olive.vercel.app/) |
+| 📂 Repository | [https://github.com/hong4745-cyber/Bookverse](https://github.com/hong4745-cyber/Bookverse) |
 
-> AI가 생성한 결과를 그대로 사용하지 않고 프로젝트 목적에 맞게 수정·검증한 후 직접 구현했습니다.
+---
 
-## 개선 예정
+# 🔮 개선 예정
 
-- [ ] 관리자용 상품 등록 및 수정 기능
-- [ ] JSON 상품 데이터를 Firestore 기반 관리 방식으로 전환
-- [ ] Webhook을 활용한 주문 내역 자동 저장
-- [ ] Lazy Loading 및 반응형 이미지 최적화
-- [ ] Meta Tag와 Open Graph를 통한 SEO 개선
-- [ ] Keyboard Navigation과 ARIA 속성 보완
-- [ ] 상품 360° Viewer 기능 추가
+| 항목 | 내용 |
+| --- | --- |
+| 번들 | 코드 스플리팅으로 초기 로딩 크기 축소 |
+| 이미지 | WebP·AVIF 변환과 고해상도 이미지 최적화 |
+| 관리자 | 프로그램 및 예약 관리 화면 추가 |
+| 상태 관리 | 결제·입금 확인 상태 자동화 |
+| 테스트 | E2E 테스트와 시각 회귀 테스트 도입 |
+| 접근성 | 모바일 제스처와 키보드 접근성 개선 |
 
-## 프로젝트를 통해 배운 점
+---
 
-- React 컴포넌트 구조와 재사용 가능한 UI 설계 방법을 익혔습니다.
-- Context API를 활용한 목적별 전역 상태 관리 경험을 쌓았습니다.
-- Firebase Authentication과 Firestore를 연동해 실제 서비스 구조를 구현했습니다.
-- 결제 시스템 연동 과정에서 서버 처리와 환경 변수 관리의 중요성을 배웠습니다.
-- 운영체제와 배포 환경의 차이를 고려한 개발 및 디버깅 경험을 쌓았습니다.
-- 브랜드 경험과 사용성을 함께 고려한 인터랙션 구현 방법을 익혔습니다.
+# 📚 프로젝트를 통해 배운 점
 
-## 프로젝트 회고
+- 스크롤 진행률과 실제 화면 상태를 분리하면 인터랙션 동기화 문제가 발생할 수 있음을 배웠습니다.
+- 애니메이션은 시각적 효과뿐 아니라 키보드, 터치, 모션 감소 설정까지 함께 고려해야 합니다.
+- 인증과 데이터 저장은 UI 구현과 동시에 보안 규칙을 설계해야 안전한 서비스가 됩니다.
+- 배포 환경에서는 로컬 개발과 다른 파일 용량, 캐시, 환경 변수 조건을 별도로 검증해야 합니다.
+- 브랜드 중심의 시각적 랜딩페이지와 실제 서비스 기능을 하나의 사용자 흐름으로 연결하는 경험을 쌓았습니다.
 
-이번 프로젝트는 화면 구현을 넘어 실제 커머스 서비스의 전체 흐름을 직접 설계하고 연결한 프로젝트였습니다. React 컴포넌트 설계, Context API 상태 관리, Firebase 인증과 데이터 관리, Polar.sh 결제 연동을 적용하며 프론트엔드 서비스의 전반적인 구조를 경험했습니다.
+---
 
-다양한 문제를 해결하는 과정에서 배포 환경, 보안, 데이터 관리, 성능 최적화가 서비스 품질에 미치는 영향을 확인했습니다. 앞으로 관리자 기능과 상품 관리 시스템을 추가해 더욱 완성도 높은 커머스 프로젝트로 발전시킬 계획입니다.
+# 📝 프로젝트 회고
 
-## 이미지 추가 안내
+BOOKCOVERS를 통해 브랜드 중심의 시각적 웹사이트와 실제 신청·예약 기능을 하나의 React 프로젝트로 연결했습니다.
 
-README에서 사용한 이미지 경로는 다음과 같습니다. 저장소에 `docs/images/` 폴더를 만든 뒤 해당 이름으로 이미지를 추가하면 자동으로 표시됩니다.
+반복 마키, 고정형 가로 스크롤, 3D 도서처럼 복합적인 인터랙션을 구현하면서 화면에 보이는 프레임과 상태 관리의 동기화가 사용자 경험에 직접 영향을 준다는 점을 확인했습니다. 또한 Firebase 인증 및 데이터 저장 기능을 적용하며 시각적 완성도뿐 아니라 보안 규칙과 사용자별 데이터 흐름도 함께 설계해야 한다는 점을 배웠습니다.
+
+앞으로는 현재의 브랜드 경험을 유지하면서 번들 최적화, 자동화 테스트, 관리자 기능과 접근성을 보강할 계획입니다.
+
+---
+
+# 🖼️ 이미지 추가 안내
+
+저장소에 `docs/images/` 폴더를 만든 뒤 아래 이름으로 이미지를 추가하면 각 위치에 자동으로 표시됩니다.
 
 ```text
 docs/images/
-├─ main-preview.png
-├─ hero.png
-├─ product-list.png
-├─ product-detail.png
-├─ search-overlay.png
-├─ cart.png
-├─ wishlist.png
-├─ checkout.png
-├─ payment.png
-├─ order-complete.png
-├─ board-list.png
-├─ board-write.png
+├─ bookcovers-main.png
+├─ hero-scroll.png
+├─ book-marquee.png
+├─ artwork-slider.png
+├─ interactive-book.png
+├─ curation.png
+├─ program-application.png
+├─ space-reservation.png
 ├─ login.png
-├─ signup.png
-├─ theme.png
-└─ quick-navigation.png
+├─ mypage.png
+├─ community.png
+└─ naver-map.png
 ```
 
-## License
+---
 
-본 프로젝트는 학습 및 포트폴리오 목적으로 제작되었습니다. Bowers & Wilkins 브랜드를 참고해 UI/UX를 리뉴얼했으며 상업적 목적의 공식 웹사이트가 아닙니다.
+# 📄 License
 
-모든 상표와 브랜드의 권리는 해당 소유자에게 있습니다.
+본 프로젝트는 학습 및 포트폴리오 목적으로 제작되었습니다.
+
+프로젝트에 포함된 도서 이미지, 폰트 및 브랜드 에셋의 저작권은 각 원저작자에게 있으며 별도의 허가 없이 상업적으로 사용할 수 없습니다. 코드 사용 범위는 저장소의 라이선스 정책을 따릅니다.
