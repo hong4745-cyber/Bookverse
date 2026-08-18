@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import InteractiveBook from './InteractiveBook';
 import './HeroSection3.css';
 
@@ -22,27 +22,35 @@ export default function HeroSection3() {
   const touchStartX = useRef(null);
   const lastIndexRef = useRef(0);
 
+  const commitActiveIndex = useCallback((index) => {
+    const nextIndex = Math.max(0, Math.min(SLIDES.length - 1, index));
+    setActiveIndex(nextIndex);
+    const from = Math.min(lastIndexRef.current, nextIndex);
+    const to = Math.max(lastIndexRef.current, nextIndex);
+    lastIndexRef.current = nextIndex;
+    setVisited((prev) => {
+      let changed = false;
+      const next = new Set(prev);
+      for (let i = from; i <= to; i += 1) {
+        if (!next.has(i)) { next.add(i); changed = true; }
+      }
+      return changed ? next : prev;
+    });
+  }, []);
+
   useEffect(() => {
     const handleChange = (event) => {
-      const index = event.detail.index;
-      setActiveIndex(index);
-      const from = Math.min(lastIndexRef.current, index);
-      const to = Math.max(lastIndexRef.current, index);
-      lastIndexRef.current = index;
-      setVisited((prev) => {
-        let changed = false;
-        const next = new Set(prev);
-        for (let i = from; i <= to; i += 1) {
-          if (!next.has(i)) { next.add(i); changed = true; }
-        }
-        return changed ? next : prev;
-      });
+      commitActiveIndex(event.detail.index);
     };
     window.addEventListener('hero3:change', handleChange);
     return () => window.removeEventListener('hero3:change', handleChange);
-  }, []);
+  }, [commitActiveIndex]);
 
-  const goTo = (index) => window.dispatchEvent(new CustomEvent('hero3:goto', { detail: { index } }));
+  const goTo = (index) => {
+    const nextIndex = Math.max(0, Math.min(SLIDES.length - 1, index));
+    commitActiveIndex(nextIndex);
+    window.dispatchEvent(new CustomEvent('hero3:goto', { detail: { index: nextIndex } }));
+  };
   const handleKeyDown = (event) => {
     if (event.key === 'ArrowLeft') { event.preventDefault(); goTo(Math.max(0, activeIndex - 1)); }
     if (event.key === 'ArrowRight') { event.preventDefault(); goTo(Math.min(SLIDES.length - 1, activeIndex + 1)); }

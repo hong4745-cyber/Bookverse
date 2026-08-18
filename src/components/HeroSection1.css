@@ -61,6 +61,35 @@
   animation: marquee-rtl linear infinite;
 }
 
+.text-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.text-marquee-track.ltr {
+  animation: text-marquee-ltr linear infinite;
+}
+
+.text-marquee-item {
+  display: inline-flex;
+  align-items: center;
+  color: #111;
+  font-size: clamp(44px, 6.5vw, 96px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.text-marquee-symbol {
+  margin: 0 0.28em;
+  color: var(--symbol-color, #ff6b00);
+  font-size: 0.55em;
+  letter-spacing: 0;
+}
+
 /* LTR: 왼쪽 → 오른쪽 */
 @keyframes marquee-ltr {
   0%   { transform: translateX(0); }
@@ -73,7 +102,9 @@
   100% { transform: translateX(0); }
 }
 
-/* 호버 시 일시정지 */
-.marquee-row:hover .marquee-track {
-  animation-play-state: paused;
+@keyframes text-marquee-ltr {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
+
+/* 호버 시 일시정지 */

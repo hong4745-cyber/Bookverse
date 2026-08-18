@@ -24,8 +24,7 @@
 .decoStar {
   position: absolute;
   left: 24px;
-  top: 55%;
-  transform: translateY(-50%);
+  top: calc(55% - 45px);
   width: 90px;
   height: 90px;
   background-color: #A483D0;

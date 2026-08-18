@@ -13,6 +13,9 @@ const ROW_CONFIG = [
   { dir: 'rtl', duration: 160 },
 ];
 
+const TEXT_MARQUEE_ITEMS = ['READ', 'DISCOVER', 'CONNECT', 'BOOKVERSE'];
+const TEXT_MARQUEE_COLORS = ['#22a447', '#ff8d28', '#2357ff'];
+
 // 행마다 책 목록을 다르게 섞기
 function getRowBooks(rowIndex) {
   const books = [...BOOK_COVERS];
@@ -21,6 +24,27 @@ function getRowBooks(rowIndex) {
 }
 
 function MarqueeRow({ config, rowIndex }) {
+  if (rowIndex % 2 === 0) {
+    const repeatedText = Array.from({ length: 6 }, () => TEXT_MARQUEE_ITEMS).flat();
+    const symbolColor = TEXT_MARQUEE_COLORS[rowIndex / 2];
+
+    return (
+      <div className="marquee-row marquee-text-row" aria-label="READ, DISCOVER, CONNECT, BOOKVERSE">
+        <div
+          className="text-marquee-track ltr"
+          style={{ animationDuration: `${config.duration}s`, '--symbol-color': symbolColor }}
+          data-row={rowIndex}
+        >
+          {repeatedText.map((text, i) => (
+            <span className="text-marquee-item" key={`${text}-${i}`} aria-hidden="true">
+              {text}<span className="text-marquee-symbol">✦</span>
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   const books = getRowBooks(rowIndex);
   // 무한 루프를 위해 3배 복제
   const tripled = [...books, ...books, ...books];

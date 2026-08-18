@@ -39,6 +39,7 @@ export default function HeroSection2() {
                 <div
                   className={`s2-marquee-track ${config.dir === 'rtl' ? 'rtl' : 'ltr'}`}
                   style={{ animationDuration: `${config.base}s` }}
+                  data-row={i}
                 >
                   {tripled.map((book, j) => (
                     <BookCover key={`s2-${i}-${j}`} book={book} />

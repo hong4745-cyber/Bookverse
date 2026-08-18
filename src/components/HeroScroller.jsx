@@ -41,7 +41,7 @@ export default function HeroScroller() {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const masterTl = gsap.timeline({ paused: true });
 
-    masterTl.fromTo(track, { x: 0 }, { x: -vw, ease: 'none', duration: P12 }, T1);
+    masterTl.fromTo(track, { x: 0 }, { x: -vw, ease: 'steps(1)', duration: P12 }, T1);
     masterTl.to([s2M, s2I], { opacity: 0.15, ease: 'none', duration: 80 }, T2);
     masterTl.fromTo(s2T, { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: 'none', duration: 20 }, T2 + 60);
     masterTl.fromTo(s2L1, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 65);
@@ -62,6 +62,9 @@ export default function HeroScroller() {
       snap: reduceMotion ? false : {
         snapTo(progress) {
           const timelineTime = progress * T5;
+          if (timelineTime < T2) {
+            return timelineTime < T2 / 2 ? 0 : T2 / T5;
+          }
           if (timelineTime < T4) return progress;
           const slideIndex = Math.round(((timelineTime - T4) / H3) * 3);
           return (T4 + (Math.max(0, Math.min(3, slideIndex)) / 3) * H3) / T5;
@@ -77,8 +80,8 @@ export default function HeroScroller() {
 
     let lastSlide = -1;
     const announceSlide = () => {
-      const h3Progress = Math.max(0, Math.min(1, (masterTl.time() - T4) / H3));
-      const index = Math.min(3, Math.floor(h3Progress * 3 + 0.0001));
+      const trackX = Number(gsap.getProperty(s3Track, 'x')) || 0;
+      const index = Math.max(0, Math.min(3, Math.round(Math.abs(trackX) / window.innerWidth)));
       if (index === lastSlide) return;
       lastSlide = index;
       window.dispatchEvent(new CustomEvent('hero3:change', { detail: { index } }));
@@ -88,8 +91,8 @@ export default function HeroScroller() {
     const goToSlide = (event) => {
       const index = Math.max(0, Math.min(3, event.detail?.index ?? 0));
       const timelineTime = T4 + (index / 3) * H3;
-      const scrollY = st.start + (timelineTime / T5) * (st.end - st.start);
-      window.scrollTo({ top: scrollY, behavior: reduceMotion ? 'auto' : 'smooth' });
+      masterTl.time(timelineTime, false);
+      announceSlide();
     };
     window.addEventListener('hero3:goto', goToSlide);
 

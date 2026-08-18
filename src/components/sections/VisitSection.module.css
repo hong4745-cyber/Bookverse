@@ -116,11 +116,6 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.row:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 3px 3px 0px var(--color-ink);
-}
-
 .row:active {
   transform: translate(4px, 4px);
   box-shadow: none;
