@@ -163,7 +163,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 1. 🎞 가로형 Hero Scroll
 
 <p align="center">
-  <img width="1988" height="961" alt="Image" src="https://github.com/user-attachments/assets/9ae1a4b4-01bd-4066-83da-26efaba6ae13" />
+  <img width="1988" height="961" alt="Image" src="https://github.com/user-attachments/assets/ede5a654-7a53-43aa-b504-8ba3b070ba6a" />
 </p>
 
 ### ✨ 주요 기능
