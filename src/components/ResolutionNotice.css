@@ -1,0 +1,128 @@
+.resolution-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  padding: 24px;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.resolution-notice__card {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: calc(100svh - 48px);
+  overflow-y: auto;
+  padding: 48px 40px 40px;
+  color: #292827;
+  text-align: center;
+  background: #fbfaf7;
+  border: 1px solid #171717;
+  border-radius: 26px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.resolution-notice__close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  color: #222;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.resolution-notice__monitor {
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: -18px auto 0;
+  object-fit: contain;
+}
+
+.resolution-notice h2 {
+  margin-top: -8px;
+  font-size: clamp(38px, 5vw, 46px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.resolution-notice strong {
+  display: block;
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.resolution-notice strong span {
+  color: #ec4899;
+}
+
+.resolution-notice p {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.resolution-notice__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #ccc8c2;
+}
+
+.resolution-notice__features > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resolution-notice__feature-icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 7px;
+  fill: none;
+  stroke: #ec4899;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.resolution-notice__features b { font-size: 14px; }
+.resolution-notice__features span { margin-top: 3px; color: #777; font-size: 12px; }
+
+.resolution-notice__confirm {
+  width: 100%;
+  height: 54px;
+  margin-top: 24px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background: #000;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.resolution-notice__close:focus-visible,
+.resolution-notice__confirm:focus-visible {
+  outline: 3px solid #ff3d91;
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .resolution-notice { padding: 14px; }
+  .resolution-notice__card { padding: 42px 22px 24px; border-radius: 22px; }
+  .resolution-notice__monitor { width: 84px; height: 84px; }
+  .resolution-notice h2 { font-size: 34px; }
+  .resolution-notice strong { font-size: 16px; }
+  .resolution-notice p { font-size: 15px; }
+  .resolution-notice__features { margin-top: 24px; padding-top: 22px; }
+}

@@ -9,6 +9,7 @@ import CommunitySection from './components/sections/CommunitySection';
 import CommunityPage from './components/CommunityPage';
 import MyPage from './components/MyPage';
 import FloatingActions from './components/FloatingActions';
+import ResolutionNotice from './components/ResolutionNotice';
 import Footer from './components/sections/Footer';
 import './App.css';
 
@@ -28,6 +29,7 @@ export default function App() {
 
   return (
     <>
+      <ResolutionNotice />
       <Header />
       <main>
         <HeroScroller />

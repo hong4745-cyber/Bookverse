@@ -65,6 +65,11 @@ export default function HeroSection2() {
         </div>
       </div>
 
+      <div className="s2-motifs" aria-hidden="true">
+        <div className="s2-motif-flower" />
+        <div className="s2-motif-bow" />
+      </div>
+
     </section>
   );
 }

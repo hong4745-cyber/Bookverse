@@ -24,6 +24,10 @@ export default function HeroScroller() {
   const trackRef = useRef(null);
   const stRef = useRef(null);
 
+  const scrollToNextHero = () => {
+    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const track = trackRef.current;
     const vw = window.innerWidth;
@@ -111,6 +115,14 @@ export default function HeroScroller() {
         <HeroSection2 />
         <HeroSection3 />
       </div>
+      <button
+        className="hero-scroll-down"
+        type="button"
+        aria-label="다음 히어로 화면으로 스크롤"
+        onClick={scrollToNextHero}
+      >
+        <img className="hero-scroll-icon-default" src="/images/down-arrow_9240877.svg?v=2" alt="" aria-hidden="true" />
+      </button>
     </div>
   );
 }

@@ -130,3 +130,56 @@
   margin-top: 8px;
   margin-left: 2px;
 }
+
+.s2-motifs {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.s2-motif-flower {
+  position: absolute;
+  top: 14.7%;
+  right: -1.2%;
+  width: 198.82px;
+  height: 198.82px;
+  background: #ec4899;
+  -webkit-mask: url('/images/shaper_01.png') center / contain no-repeat;
+  mask: url('/images/shaper_01.png') center / contain no-repeat;
+  transform-origin: center;
+  animation: s2-flower-spin 16s linear infinite;
+}
+
+@keyframes s2-flower-spin {
+  to { transform: rotate(360deg); }
+}
+
+.s2-motif-bow {
+  position: absolute;
+  left: 60.3%;
+  bottom: 8.5%;
+  width: clamp(75px, 4.82vw, 94px);
+  aspect-ratio: 1.05;
+  background: #0057d9;
+  -webkit-mask: url('/images/shaper_07.png') center / contain no-repeat;
+  mask: url('/images/shaper_07.png') center / contain no-repeat;
+  transform: translateX(-50%);
+  transform-origin: center;
+  animation: s2-bow-spin 16s linear infinite;
+}
+
+@keyframes s2-bow-spin {
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+@media (max-width: 767px) {
+  .s2-motif-flower { top: 16%; right: -65px; }
+  .s2-motif-bow { left: 74%; bottom: 10%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .s2-motif-flower { animation: none; }
+  .s2-motif-bow { animation: none; }
+}

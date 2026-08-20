@@ -19,3 +19,46 @@
   width: 100vw;
   height: 100vh;
 }
+
+.hero-scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(18px, 3vh, 34px);
+  z-index: 20;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #111;
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.hero-scroll-down img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  animation: hero-arrow-down 1.5s ease-in-out infinite;
+}
+
+
+@keyframes hero-arrow-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-down img { animation: none; }
+}
+
+.hero-scroll-down:focus-visible {
+  outline: 3px solid #2357ff;
+  outline-offset: 3px;
+}
