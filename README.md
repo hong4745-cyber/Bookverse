@@ -229,8 +229,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 4. 📕 3D Interactive Book
 
 <p align="center">
-  <!-- 이미지: docs/images/interactive-book.png -->
-  <img src="./docs/images/interactive-book.png" width="70%" alt="3D 인터랙티브 북" />
+  <img width="1988" height="961" alt="Image" src="https://github.com/user-attachments/assets/1c67fca0-89b1-4014-9553-4f138cbec7a7" />
 </p>
 
 ### ✨ 주요 기능
