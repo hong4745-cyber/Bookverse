@@ -14,7 +14,13 @@ service cloud.firestore {
         ]);
       allow read: if isAdmin()
         || (request.auth != null && resource.data.userId == request.auth.uid);
-      allow update, delete: if isAdmin();
+      allow update: if isAdmin()
+        || (request.auth != null
+          && resource.data.userId == request.auth.uid
+          && request.resource.data.userId == resource.data.userId
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+          && request.resource.data.status == 'cancelled');
+      allow delete: if isAdmin();
     }
 
     match /spaceReservations/{reservationId} {
@@ -25,7 +31,13 @@ service cloud.firestore {
         ]);
       allow read: if isAdmin()
         || (request.auth != null && resource.data.userId == request.auth.uid);
-      allow update, delete: if isAdmin();
+      allow update: if isAdmin()
+        || (request.auth != null
+          && resource.data.userId == request.auth.uid
+          && request.resource.data.userId == resource.data.userId
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+          && request.resource.data.status == 'cancelled');
+      allow delete: if isAdmin();
     }
 
     match /bookClubApplications/{applicationId} {

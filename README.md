@@ -23,8 +23,9 @@ BOOKCOVERS는 독립서점의 브랜드 경험을 웹으로 확장한 React 기�
 - ✔ CSS 3D Transform 기반 인터랙티브 북
 - ✔ Firebase Authentication 로그인
 - ✔ Firestore 기반 프로그램 신청 및 공간 예약
+- ✔ 중복 신청 방지와 북클럽 일정 충돌 검증
 - ✔ 서점 위치 안내를 위한 Naver Maps API 연동
-- ✔ 사용자별 신청·예약 내역을 제공하는 마이페이지
+- ✔ 사용자별 신청·예약 내역 확인 및 취소를 제공하는 마이페이지
 - ✔ `prefers-reduced-motion`을 고려한 모션 최적화
 - ✔ 기획부터 디자인 구체화, 개발, 배포까지 100% 직접 구현
 
@@ -282,11 +283,14 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 - 로그인 사용자 프로그램 신청
 - 신청자 정보와 프로그램 정보 저장
 - 입금 상태 안내 및 사용자별 신청 내역 확인
+- 동일 프로그램의 중복 신청 사전 차단
+- 북클럽은 책 제목과 일정이 모두 다를 때 별도 신청 허용
 
 ### 💻 구현 내용
 
 - Firebase Authentication의 사용자 UID 연동
 - Firestore에 프로그램 및 신청자 데이터 저장
+- 책 ID와 북클럽 일정을 함께 저장해 중복·시간 충돌 검사
 - 사용자 본인의 신청 데이터만 조회하도록 보안 규칙 구성
 - 신청 상태를 마이페이지에 반영
 
@@ -305,12 +309,14 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 - 모달에서 날짜, 시간, 인원 선택
 - 로그인 사용자 예약 정보 저장
 - 마이페이지에서 예약 상태 확인
+- 예약 완료 후 마이페이지에서 직접 취소
 
 ### 💻 구현 내용
 
 - 재사용 가능한 예약 모달 컴포넌트 구현
 - 예약 정보와 사용자 UID를 Firestore에 저장
 - 입력값 검증 및 예약 상태 데이터 관리
+- 본인 예약만 취소할 수 있도록 Firestore 보안 규칙 제한
 
 ---
 
@@ -327,13 +333,16 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 - Firebase 기반 사용자 로그인
 - 인증 상태에 따른 화면과 기능 변경
 - 프로그램 신청 및 공간 예약 내역 확인
-- 사용자 활동을 한 화면에서 관리
+- 북클럽을 프로그램 활동에 통합해 한 화면에서 관리
+- 프로그램 신청과 공간 예약 취소
 
 ### 💻 구현 내용
 
 - Firebase Authentication 연동
 - 인증 사용자 UID 기반 데이터 조회
 - 신청·예약 컬렉션을 사용자별로 필터링
+- 기존 중복 신청 데이터는 프로그램과 책 조합별 최신 한 건만 표시
+- 취소 시 카드 상태를 즉시 갱신하고 Firestore에 반영
 - 비로그인 사용자의 보호 기능 접근 제한
 
 ---
@@ -413,6 +422,8 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 - Firebase Authentication
 - 프로그램 신청 및 공간 예약 데이터 저장
 - 사용자 UID 기반 데이터 연결
+- 프로그램·책·일정 조합을 이용한 중복 신청 검사
+- 본인 신청의 `cancelled` 상태 변경만 허용하는 보안 규칙
 - Firestore 보안 규칙을 통한 본인 데이터 접근 제한
 
 ---
@@ -500,13 +511,19 @@ programApplications/{applicationId}
 ├─ userId
 ├─ programId
 ├─ programTitle
+├─ schedule
+├─ bookIds
+├─ bookTitles
+├─ bookSchedules
 ├─ name
 ├─ phone
 ├─ paymentStatus
+├─ status
 └─ createdAt
 
 spaceReservations/{reservationId}
 ├─ userId
+├─ spaceName
 ├─ name
 ├─ phone
 ├─ date

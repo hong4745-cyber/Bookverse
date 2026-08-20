@@ -99,6 +99,9 @@
   font-weight: 800;
 }
 
+.space-reservation__submit:disabled { opacity: .55; cursor: wait; }
+.space-reservation__error { color: #d93025; font-size: 13px; line-height: 1.5; }
+
 .space-reservation__complete {
   padding: 24px 0 8px;
   text-align: center;

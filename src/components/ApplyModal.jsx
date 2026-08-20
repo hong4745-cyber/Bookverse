@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { BOOK_CLUB_BOOKS } from '../data/booksData';
-import { createProgramApplication } from '../services/applications';
+import { createProgramApplication, hasProgramApplication } from '../services/applications';
 import styles from './ApplyModal.module.css';
 
 function CloseIcon() {
@@ -52,6 +52,20 @@ export default function ApplyModal({ program, onClose }) {
     };
   }, [onClose]);
 
+  useEffect(() => {
+    let active = true;
+    if (!program?.id) return undefined;
+    if (program.id === 'prog-2') return undefined;
+
+    hasProgramApplication(program.id)
+      .then((isDuplicate) => {
+        if (active && isDuplicate) setStep('duplicate');
+      })
+      .catch((error) => console.error('중복 신청 확인 실패', error));
+
+    return () => { active = false; };
+  }, [program?.id]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!program || submitting) return;
@@ -63,6 +77,10 @@ export default function ApplyModal({ program, onClose }) {
       setStep('success');
     } catch (error) {
       console.error('프로그램 신청 저장 실패', error);
+      if (error.message === 'duplicate-application') {
+        setStep('duplicate');
+        return;
+      }
       setSubmitError(
         error.message === 'auth-required'
           ? '로그인 후 참여 신청할 수 있습니다. 상단 LOGIN을 이용해 주세요.'
@@ -203,6 +221,26 @@ export default function ApplyModal({ program, onClose }) {
               {submitError && <p className={styles.submitError} role="alert">{submitError}</p>}
             </form>
           </>
+        ) : step === 'duplicate' ? (
+          <div className={styles.success}>
+            <span className={styles.successIcon} aria-hidden="true">
+              <CheckCircleIcon />
+            </span>
+            <h2 id="apply-modal-title" className={styles.successTitle}>
+              이미 신청한 프로그램입니다
+            </h2>
+            <p className={styles.successDesc}>
+              동일한 프로그램은 중복으로 신청할 수 없습니다.<br />MY PAGE에서 기존 신청 내역을 확인해 주세요.
+            </p>
+            <div className={styles.successFooter}>
+              <button type="button" className={styles.submitBtn} onClick={onClose}>
+                확인
+              </button>
+              <button type="button" className={styles.cancelBtn} onClick={() => { window.location.href = '/my'; }}>
+                MY PAGE로 이동
+              </button>
+            </div>
+          </div>
         ) : (
           <div className={styles.success}>
             <span className={styles.successIcon}>
@@ -246,7 +284,7 @@ export default function ApplyModal({ program, onClose }) {
               <button type="button" className={styles.submitBtn} onClick={onClose}>
                 확인
               </button>
-              <button type="button" className={styles.cancelBtn} onClick={onClose}>
+              <button type="button" className={styles.cancelBtn} onClick={() => { window.location.href = '/my'; }}>
                 나의 신청 내역 보기
               </button>
             </div>

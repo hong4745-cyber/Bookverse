@@ -31,13 +31,16 @@
 .my-page__selected-books { margin-top: 22px; padding: 17px 20px; background: #faf9f5; }
 .my-page__selected-books span { color: var(--color-ink-soft); font-size: 11px; }
 .my-page__selected-books p { margin-top: 5px; font-size: 14px; font-weight: 700; }
-.my-page__details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 26px; border-top: 1px solid var(--color-line); border-left: 1px solid var(--color-line); }
-.my-page__details div { min-height: 78px; padding: 16px 18px; border-right: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); }
+.my-page__details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 26px; }
+.my-page__details div { min-height: 78px; padding: 16px 18px; }
 .my-page__details dt { color: var(--color-ink-soft); font-size: 11px; }
 .my-page__details dd { margin-top: 7px; font-size: 14px; font-weight: 700; line-height: 1.5; }
 .my-page__guide { display: grid; grid-template-columns: 54px 1fr; gap: 16px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--color-line); }
 .my-page__guide span { color: #f97316; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; }
 .my-page__guide p { font-size: 13px; line-height: 1.6; }
+.my-page__cancel { margin-top: 18px; padding: 10px 16px; color: #666; font: inherit; font-size: 13px; background: transparent; border: 1px solid var(--color-line); border-radius: 999px; cursor: pointer; transition: color .2s,border-color .2s; }
+.my-page__cancel:hover { color: #d93025; border-color: #d93025; }
+.my-page__cancel:disabled { opacity: .5; cursor: wait; }
 
 .my-page__empty, .my-page__notice { padding: 70px 30px; border: 1px solid var(--color-line); background: #fff; text-align: center; }
 .my-page__empty--activity { margin-top: 0; }

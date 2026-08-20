@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { createSpaceReservation } from '../services/applications';
 import './SpaceReservationModal.css';
 
 export default function SpaceReservationModal({ onClose }) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -16,9 +19,32 @@ export default function SpaceReservationModal({ onClose }) {
     };
   }, [onClose]);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+
+    setSubmitting(true);
+    setSubmitError('');
+    const form = new FormData(event.currentTarget);
+    try {
+      await createSpaceReservation({
+        name: String(form.get('name') || ''),
+        phone: String(form.get('phone') || ''),
+        date: String(form.get('date') || ''),
+        time: String(form.get('time') || ''),
+        people: String(form.get('people') || ''),
+      });
+      setSubmitted(true);
+    } catch (error) {
+      console.error('공간 예약 저장 실패', error);
+      setSubmitError(
+        error.message === 'auth-required'
+          ? '로그인 후 공간을 예약할 수 있습니다.'
+          : '예약을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.',
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -45,7 +71,10 @@ export default function SpaceReservationModal({ onClose }) {
                 <label>예약 시간<select name="time" required defaultValue=""><option value="" disabled>시간 선택</option><option>10:00</option><option>13:00</option><option>16:00</option><option>19:00</option></select></label>
               </div>
               <label>이용 인원<select name="people" required defaultValue=""><option value="" disabled>인원 선택</option><option>2명</option><option>3~4명</option><option>5~6명</option><option>7~10명</option></select></label>
-              <button type="submit" className="space-reservation__submit">예약 요청하기</button>
+              <button type="submit" className="space-reservation__submit" disabled={submitting}>
+                {submitting ? '예약 저장 중...' : '예약 요청하기'}
+              </button>
+              {submitError && <p className="space-reservation__error" role="alert">{submitError}</p>}
             </form>
           </>
         )}

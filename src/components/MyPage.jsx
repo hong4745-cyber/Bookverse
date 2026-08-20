@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './sections/Footer';
 import FloatingActions from './FloatingActions';
 import { auth } from '../lib/firebase';
-import { getMyProgramApplications, getMySpaceReservations } from '../services/applications';
+import { cancelMyActivity, getMyProgramApplications, getMySpaceReservations } from '../services/applications';
 import './MyPage.css';
 
 const STATUS_LABELS = {
@@ -23,17 +23,16 @@ const PAYMENT_LABELS = {
 const FILTERS = [
   ['all', '전체'],
   ['program', '프로그램'],
-  ['bookClub', '북클럽'],
   ['space', '공간 예약'],
 ];
 
 function getActivityType(activity) {
   if (activity.activityType === 'space') return 'space';
-  return activity.bookTitles?.length ? 'bookClub' : 'program';
+  return 'program';
 }
 
 function getTypeLabel(type) {
-  return { program: 'PROGRAM', bookClub: 'BOOK CLUB', space: 'SPACE' }[type];
+  return { program: 'PROGRAM', space: 'SPACE' }[type];
 }
 
 function formatCreatedAt(timestamp) {
@@ -57,6 +56,24 @@ export default function MyPage() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [cancellingId, setCancellingId] = useState('');
+
+  const handleCancel = async (activity, type) => {
+    if (!window.confirm('이 신청을 취소하시겠습니까?')) return;
+    setCancellingId(activity.id);
+    setError('');
+    try {
+      await cancelMyActivity({ id: activity.id, activityType: type });
+      setActivities((current) => current.map((item) => (
+        item.id === activity.id ? { ...item, status: 'cancelled' } : item
+      )));
+    } catch (cancelError) {
+      console.error('활동 취소 실패', cancelError);
+      setError('신청을 취소하지 못했습니다. 잠시 후 다시 시도해 주세요.');
+    } finally {
+      setCancellingId('');
+    }
+  };
 
   useEffect(() => onAuthStateChanged(auth, async (currentUser) => {
     setUser(currentUser);
@@ -184,7 +201,7 @@ export default function MyPage() {
                         <dl className="my-page__details">
                           <div><dt>신청일</dt><dd>{formatCreatedAt(activity.createdAt)}</dd></div>
                           <div><dt>일정</dt><dd>{isSpace ? `${activity.date || '날짜 확인 중'} ${activity.time || ''}` : (activity.schedule || '일정 확인 중')}</dd></div>
-                          {isSpace && <div><dt>인원</dt><dd>{activity.people ? `${activity.people}명` : '확인 중'}</dd></div>}
+                          {isSpace && <div><dt>인원</dt><dd>{activity.people || '확인 중'}</dd></div>}
                           {!isSpace && <div><dt>입금</dt><dd>{PAYMENT_LABELS[activity.paymentStatus] || activity.paymentStatus || '확인 중'}</dd></div>}
                           <div><dt>신청자</dt><dd>{activity.name || user.displayName || '-'}</dd></div>
                           <div><dt>연락처</dt><dd>{activity.phone || '-'}</dd></div>
@@ -194,6 +211,16 @@ export default function MyPage() {
                           <span>NEXT</span>
                           <p>{getNextGuide(activity)}</p>
                         </div>
+                        {!['cancelled', 'completed'].includes(activity.status) && (
+                          <button
+                            type="button"
+                            className="my-page__cancel"
+                            disabled={cancellingId === activity.id}
+                            onClick={() => handleCancel(activity, type)}
+                          >
+                            {cancellingId === activity.id ? '취소 처리 중...' : (isSpace ? '예약 취소' : '신청 취소')}
+                          </button>
+                        )}
                       </li>
                     );
                   })}

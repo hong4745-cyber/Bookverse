@@ -36,6 +36,8 @@ export default function BookClubModal({ book, onClose }) {
       setResultMessage(
         error.message === 'auth-required'
           ? '로그인 후 북클럽에 참여할 수 있습니다.'
+          : error.message === 'duplicate-application'
+            ? '이미 신청한 프로그램입니다. MY PAGE에서 기존 신청 내역을 확인해 주세요.'
           : '신청을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.',
       );
     } finally {
