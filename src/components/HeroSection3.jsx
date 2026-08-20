@@ -82,10 +82,6 @@ export default function HeroSection3() {
           </article>
         ))}
       </div>
-      <div className="s3-indicators" aria-label="슬라이드 선택">
-        {SLIDES.map((slide, index) => <button className={`s3-indicator${index === activeIndex ? ' is-active' : ''}`} type="button"
-          onClick={() => goTo(index)} aria-label={`${index + 1}번 슬라이드로 이동`} aria-current={index === activeIndex ? 'true' : undefined} key={slide.theme} />)}
-      </div>
       <p className="sr-only" aria-live="polite">{`${activeIndex + 1} / ${SLIDES.length}: ${SLIDES[activeIndex].label}`}</p>
     </section>
   );

@@ -148,6 +148,7 @@
   background: #ec4899;
   -webkit-mask: url('/images/shaper_01.png') center / contain no-repeat;
   mask: url('/images/shaper_01.png') center / contain no-repeat;
+  opacity: 0;
   transform-origin: center;
   animation: s2-flower-spin 16s linear infinite;
 }
