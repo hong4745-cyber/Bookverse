@@ -2,14 +2,8 @@
 
 > **취향과 관점을 중심으로 책, 큐레이션, 프로그램, 공간을 연결하는 독립서점 브랜드 랜딩페이지**
 
-<p align="center">
-  <!-- 대표 이미지: docs/images/bookcovers-main.png -->
-  <img src="./docs/images/bookcovers-main.png" width="90%" alt="BOOKCOVERS Main Preview" />
-</p>
+<img width="435" height="3522" alt="Image" src="https://github.com/user-attachments/assets/5aff1b10-c31a-472e-b0ec-4e4a6ba204e6" />
 
-<p align="center"><sub>Desktop Main Preview</sub></p>
-
-> 🖼️ `docs/images/bookcovers-main.png` 경로에 대표 이미지를 추가하면 이 위치에 표시됩니다.
 
 ---
 
@@ -192,8 +186,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 2. 📚 Infinite Book Marquee
 
 <p align="center">
-  <!-- 이미지: docs/images/book-marquee.png -->
-  <img src="./docs/images/book-marquee.png" width="80%" alt="책 표지 무한 마키" />
+ <img width="1346" height="848" alt="Image" src="https://github.com/user-attachments/assets/851f59be-25ec-410e-9b10-68a91173666b" />
 </p>
 
 ### ✨ 주요 기능
