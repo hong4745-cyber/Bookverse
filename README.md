@@ -211,7 +211,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 3. 🖼 Artwork Slider
 
 <p align="center">
- <img width="1346" height="848" alt="Image" src="https://github.com/user-attachments/assets/851f59be-25ec-410e-9b10-68a91173666b" />
+ <img width="2049" height="5397" alt="Image" src="https://github.com/user-attachments/assets/1b8a7f4d-1a0c-4f6d-a363-c44ed6a378e3" />
 </p>
 
 ### ✨ 주요 기능
