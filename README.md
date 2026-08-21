@@ -277,7 +277,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 <p align="center">
   <img width="2022" height="1012" alt="Image" src="https://github.com/user-attachments/assets/58a37065-773c-45da-bf9c-55ff051c8804" />
-  <img width="1002" height="1705" alt="Image" src="https://github.com/user-attachments/assets/a313dc7d-2904-48ed-b8ed-04a2fe3c2a97" />
+  <img width="1970" height="1088" alt="Image" src="https://github.com/user-attachments/assets/82931695-d3b2-4dcc-aa2d-5d3780308116" />
 </p>
 
 ### ✨ 주요 기능
