@@ -251,8 +251,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 5. 📖 도서·북클럽·큐레이션
 
 <p align="center">
-  <!-- 이미지: docs/images/curation.png -->
-  <img src="./docs/images/curation.png" width="80%" alt="도서와 큐레이션 콘텐츠" />
+  <img width="2049" height="5397" alt="Image" src="https://github.com/user-attachments/assets/1b8a7f4d-1a0c-4f6d-a363-c44ed6a378e3" />
 </p>
 
 ### ✨ 주요 기능
@@ -273,8 +272,8 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 6. 📝 프로그램 신청
 
 <p align="center">
-  <!-- 이미지: docs/images/program-application.png -->
-  <img src="./docs/images/program-application.png" width="75%" alt="프로그램 신청 화면" />
+  <img width="2022" height="1012" alt="Image" src="https://github.com/user-attachments/assets/58a37065-773c-45da-bf9c-55ff051c8804" />
+  <img width="1002" height="1705" alt="Image" src="https://github.com/user-attachments/assets/a313dc7d-2904-48ed-b8ed-04a2fe3c2a97" />
 </p>
 
 ### ✨ 주요 기능
@@ -299,8 +298,8 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 7. 🏠 공간 예약
 
 <p align="center">
-  <!-- 이미지: docs/images/space-reservation.png -->
-  <img src="./docs/images/space-reservation.png" width="75%" alt="BOOKCOVERS 공간 예약" />
+  <img width="2016" height="987" alt="Image" src="https://github.com/user-attachments/assets/e07999b8-6485-4514-8331-1df07bc9d7bf" />
+  <img width="1857" height="982" alt="Image" src="https://github.com/user-attachments/assets/d025aef1-64cc-4471-a155-5584d9b310ce" />
 </p>
 
 ### ✨ 주요 기능
@@ -323,9 +322,8 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 8. 🔐 로그인 및 마이페이지
 
 <p align="center">
-  <!-- 이미지: docs/images/login.png, docs/images/mypage.png -->
-  <img src="./docs/images/login.png" width="48%" alt="BOOKCOVERS 로그인" />
-  <img src="./docs/images/mypage.png" width="48%" alt="BOOKCOVERS 마이페이지" />
+  <img width="1685" height="986" alt="Image" src="https://github.com/user-attachments/assets/9fb4fb28-4f3a-4511-8ffb-a9a5bba53f24" />
+  <img width="2049" height="7094" alt="Image" src="https://github.com/user-attachments/assets/29e5bfd5-71bf-4e4f-856f-0d289f59639b" />
 </p>
 
 ### ✨ 주요 기능
@@ -350,8 +348,8 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 9. 💬 Community & Floating UI
 
 <p align="center">
-  <!-- 이미지: docs/images/community.png -->
-  <img src="./docs/images/community.png" width="75%" alt="BOOKCOVERS 커뮤니티와 플로팅 UI" />
+  <img width="2049" height="3022" alt="Image" src="https://github.com/user-attachments/assets/0965afba-ed76-44b6-b881-06f09f325458" />
+  <img width="1772" height="902" alt="Image" src="https://github.com/user-attachments/assets/280a1070-c3e8-440d-bb8c-8971bca07581" />
 </p>
 
 ### ✨ 주요 기능
@@ -371,8 +369,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 10. 🗺 서점 위치 안내
 
 <p align="center">
-  <!-- 이미지: docs/images/naver-map.png -->
-  <img src="./docs/images/naver-map.png" width="75%" alt="Naver Maps API를 활용한 서점 위치 안내" />
+  <img width="2049" height="1480" alt="Image" src="https://github.com/user-attachments/assets/930a0ada-005f-419f-89b5-1548c3170015" />
 </p>
 
 ### ✨ 주요 기능
