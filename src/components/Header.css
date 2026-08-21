@@ -73,12 +73,13 @@
   color: #000;
   text-decoration: none;
   letter-spacing: 0.02em;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
   cursor: pointer;
 }
 
 .login-btn:hover {
-  background: var(--color-orange-tint);
+  color: #fff;
+  background: var(--color-ink);
   transform: translate(-1px, -1px);
 }
 
