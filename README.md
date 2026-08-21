@@ -329,7 +329,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 ## 8. 💬 Community & Floating UI
 
 <p align="center">
-  <img width="2049" height="3022" alt="Image" src="https://github.com/user-attachments/assets/0965afba-ed76-44b6-b881-06f09f325458" />
+  <img width="2049" height="3171" alt="Image" src="https://github.com/user-attachments/assets/8220b8b1-056e-49b5-a859-ae949980e866" />
   <img width="1772" height="902" alt="Image" src="https://github.com/user-attachments/assets/280a1070-c3e8-440d-bb8c-8971bca07581" />
 </p>
 
