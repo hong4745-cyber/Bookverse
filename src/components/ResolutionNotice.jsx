@@ -1,6 +1,18 @@
 import { useState } from 'react';
 import './ResolutionNotice.css';
 
+const RESOLUTION_NOTICE_HIDDEN_UNTIL_KEY = 'resolutionNoticeHiddenUntil';
+const TWELVE_HOURS_IN_MS = 12 * 60 * 60 * 1000;
+
+const shouldShowNotice = () => {
+  try {
+    const hiddenUntil = Number(window.localStorage.getItem(RESOLUTION_NOTICE_HIDDEN_UNTIL_KEY));
+    return !Number.isFinite(hiddenUntil) || hiddenUntil <= Date.now();
+  } catch {
+    return true;
+  }
+};
+
 const MonitorIcon = () => (
   <img className="resolution-notice__monitor" src="/images/lcd_5164148.svg" alt="" aria-hidden="true" />
 );
@@ -14,10 +26,21 @@ const FeatureIcon = ({ type }) => (
 );
 
 export default function ResolutionNotice() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(shouldShowNotice);
   if (!open) return null;
 
   const close = () => setOpen(false);
+  const hideForTwelveHours = () => {
+    try {
+      window.localStorage.setItem(
+        RESOLUTION_NOTICE_HIDDEN_UNTIL_KEY,
+        String(Date.now() + TWELVE_HOURS_IN_MS),
+      );
+    } catch {
+      // The notice can still be closed when browser storage is unavailable.
+    }
+    close();
+  };
 
   return (
     <div className="resolution-notice" role="presentation">
@@ -46,7 +69,10 @@ export default function ResolutionNotice() {
           </div>
         </div>
 
-        <button className="resolution-notice__confirm" type="button" onClick={close}>확인했습니다</button>
+        <div className="resolution-notice__actions">
+          <button className="resolution-notice__confirm" type="button" onClick={close}>확인했습니다</button>
+          <button className="resolution-notice__snooze" type="button" onClick={hideForTwelveHours}>12시간 동안 보지 않기</button>
+        </div>
       </section>
     </div>
   );

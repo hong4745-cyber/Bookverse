@@ -101,7 +101,6 @@
 .resolution-notice__confirm {
   width: 100%;
   height: 54px;
-  margin-top: 24px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -111,8 +110,33 @@
   cursor: pointer;
 }
 
+.resolution-notice__actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.resolution-notice__snooze {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 4px 8px;
+  color: #666;
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.resolution-notice__snooze:hover {
+  color: #111;
+}
+
 .resolution-notice__close:focus-visible,
-.resolution-notice__confirm:focus-visible {
+.resolution-notice__confirm:focus-visible,
+.resolution-notice__snooze:focus-visible {
   outline: 3px solid #ff3d91;
   outline-offset: 3px;
 }
