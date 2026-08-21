@@ -42,6 +42,7 @@ export default function HeroScroller() {
     const s2L4 = sec2.querySelector('.s2-line-4');
     const s2D = sec2.querySelector('.s2-desc');
     const s2Flower = sec2.querySelector('.s2-motif-flower');
+    const s2Bow = sec2.querySelector('.s2-motif-bow');
     const s3Track = document.querySelector('#hero3 .s3-horizontal-track');
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const masterTl = gsap.timeline({ paused: true });
@@ -50,6 +51,7 @@ export default function HeroScroller() {
     masterTl.to([s2M, s2I], { opacity: 0.15, ease: 'none', duration: 80 }, T2);
     masterTl.fromTo(s2T, { opacity: 0, y: 20 }, { opacity: 1, y: 0, ease: 'none', duration: 20 }, T2 + 60);
     masterTl.set(s2Flower, { opacity: 1 }, T2 + 55);
+    masterTl.fromTo(s2Bow, { opacity: 0 }, { opacity: 1, ease: 'none', duration: 10 }, T2 + 55);
     masterTl.fromTo(s2L1, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 65);
     masterTl.fromTo(s2L2, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 78);
     masterTl.fromTo(s2L3, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: 'none', duration: 18 }, T2 + 90);

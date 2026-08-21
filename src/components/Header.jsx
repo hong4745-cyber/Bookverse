@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: 'PROGRAMS', href: '/#programs' },
   { label: 'SPACE', href: '/#space' },
   { label: 'VISIT', href: '/#visit' },
+  { label: 'COMMUNITY', href: '/community' },
   { label: 'MY', href: '/my' },
 ];
 
@@ -51,6 +52,18 @@ export default function Header() {
     else setAuthOpen(true);
   };
 
+  const handleNavClick = (event, href) => {
+    if (window.location.pathname !== '/' || !href.startsWith('/#')) return;
+
+    const targetId = href.slice(2);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'auto', block: 'start' });
+    window.history.pushState(null, '', `#${targetId}`);
+  };
+
   return (
     <header className="site-header">
       <div className="inner header-inner">
@@ -58,7 +71,14 @@ export default function Header() {
 
         <nav className="nav-center">
           {NAV_ITEMS.map((item) => (
-            <a key={item.label} href={item.href} className="nav-item">{item.label}</a>
+            <a
+              key={item.label}
+              href={item.href}
+              className="nav-item"
+              onClick={(event) => handleNavClick(event, item.href)}
+            >
+              {item.label}
+            </a>
           ))}
         </nav>
 

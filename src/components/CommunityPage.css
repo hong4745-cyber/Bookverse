@@ -98,6 +98,44 @@
   line-height: 1.2;
 }
 
+.community-page__back-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.community-page__back {
+  display: inline-flex;
+  min-width: 148px;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border: 2px solid #17171a;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 3px 3px 0 #17171a;
+  color: #17171a;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-page__back:hover {
+  transform: translate(-2px, -2px);
+}
+
+.community-page__back:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.community-page__back:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+}
+
 @media (max-width: 640px) {
   .community-page {
     padding: 40px 18px 80px;

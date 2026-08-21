@@ -42,7 +42,7 @@ export default function CommunitySection() {
   const [sectionRef, patternOffset] = usePatternOffset();
 
   return (
-    <section className={styles.section} ref={sectionRef}>
+    <section id="community" className={styles.section} ref={sectionRef}>
       <div
         className={styles.pattern}
         style={{ '--pattern-color': '#CB30E0', '--pattern-offset-y': `${-patternOffset}px` }}

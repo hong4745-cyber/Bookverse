@@ -205,29 +205,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 3. 🖼 Artwork Slider
-
-<p align="center">
-  <!-- 이미지: docs/images/artwork-slider.png -->
-  <img src="./docs/images/artwork-slider.png" width="80%" alt="BOOKCOVERS 아트워크 슬라이더" />
-</p>
-
-### ✨ 주요 기능
-
-- 네 개의 아트워크 슬라이드 제공
-- 스크롤 흐름에 맞춰 전환되는 네 개의 아트워크 장면
-- 키보드와 터치 제스처를 통한 화면 이동
-- 스크롤 위치와 현재 슬라이드 상태가 자연스럽게 동기화
-
-### 💻 구현 내용
-
-- 트랙의 실제 `x` 위치를 기준으로 현재 인덱스 계산
-- 문서 스크롤과 내부 슬라이드 이동 상태 분리
-- 스크롤·키보드·터치 입력이 동일한 화면 상태를 공유하도록 구성
-
----
-
-## 4. 📕 3D Interactive Book
+## 3. 📕 3D Interactive Book
 
 <p align="center">
   <img width="1988" height="961" alt="Image" src="https://github.com/user-attachments/assets/1c67fca0-89b1-4014-9553-4f138cbec7a7" />
@@ -248,7 +226,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 5. 📖 도서·북클럽·큐레이션
+## 4. 📖 도서·북클럽·큐레이션
 
 <p align="center">
   <img width="2049" height="5397" alt="Image" src="https://github.com/user-attachments/assets/1b8a7f4d-1a0c-4f6d-a363-c44ed6a378e3" />
@@ -269,7 +247,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 6. 📝 프로그램 신청
+## 5. 📝 프로그램 신청
 
 <p align="center">
   <img width="2022" height="1012" alt="Image" src="https://github.com/user-attachments/assets/58a37065-773c-45da-bf9c-55ff051c8804" />
@@ -295,7 +273,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 7. 🏠 공간 예약
+## 6. 🏠 공간 예약
 
 <p align="center">
   <img width="2016" height="987" alt="Image" src="https://github.com/user-attachments/assets/e07999b8-6485-4514-8331-1df07bc9d7bf" />
@@ -319,7 +297,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 8. 🔐 로그인 및 마이페이지
+## 7. 🔐 로그인 및 마이페이지
 
 <p align="center">
   <img width="1685" height="986" alt="Image" src="https://github.com/user-attachments/assets/9fb4fb28-4f3a-4511-8ffb-a9a5bba53f24" />
@@ -345,7 +323,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 9. 💬 Community & Floating UI
+## 8. 💬 Community & Floating UI
 
 <p align="center">
   <img width="2049" height="3022" alt="Image" src="https://github.com/user-attachments/assets/0965afba-ed76-44b6-b881-06f09f325458" />
@@ -366,7 +344,7 @@ BOOKCOVERS는 독립서점의 큐레이션 관점과 오프라인 경험을 온�
 
 ---
 
-## 10. 🗺 서점 위치 안내
+## 9. 🗺 서점 위치 안내
 
 <p align="center">
   <img width="2049" height="1480" alt="Image" src="https://github.com/user-attachments/assets/930a0ada-005f-419f-89b5-1548c3170015" />

@@ -48,6 +48,10 @@ export default function CommunityPage() {
             </li>
           ))}
         </ul>
+
+        <div className="community-page__back-row">
+          <a className="community-page__back" href="/#community">돌아가기</a>
+        </div>
       </div>
     </main>
   );
