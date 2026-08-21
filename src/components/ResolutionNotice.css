@@ -109,12 +109,13 @@
   border: 2px solid var(--color-ink);
   border-radius: 999px;
   box-shadow: 2px 2px 0 var(--color-ink);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
   cursor: pointer;
 }
 
 .resolution-notice__confirm:hover {
-  background: var(--color-orange-tint);
+  color: #fff;
+  background: var(--color-ink);
   transform: translate(-1px, -1px);
 }
 

@@ -30,7 +30,7 @@ export default function CommunityPage() {
     <main className="community-page">
       <div className="community-page__inner">
         <header className="community-page__header">
-          <a className="community-page__title" href="/">COMMUNITY</a>
+          <a className="community-page__title" href="/#community">COMMUNITY</a>
           <p>BOOKCOVERS 공간과 책을 사랑하는 사람들의 진솔한 마음이 담긴 리뷰를 만나보세요.</p>
         </header>
 
