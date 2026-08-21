@@ -6,6 +6,9 @@ const TWELVE_HOURS_IN_MS = 12 * 60 * 60 * 1000;
 
 const shouldShowNotice = () => {
   try {
+    const forceShow = new URLSearchParams(window.location.search).get('showResolutionNotice') === '1';
+    if (forceShow) return true;
+
     const hiddenUntil = Number(window.localStorage.getItem(RESOLUTION_NOTICE_HIDDEN_UNTIL_KEY));
     return !Number.isFinite(hiddenUntil) || hiddenUntil <= Date.now();
   } catch {
