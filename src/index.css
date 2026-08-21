@@ -26,6 +26,10 @@ html {
   scroll-margin-top: var(--header-height);
 }
 
+#community {
+  scroll-margin-top: calc(var(--header-height) + 120px);
+}
+
 body {
   font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
   background-color: #fff;

@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { label: 'PROGRAMS', href: '/#programs' },
   { label: 'SPACE', href: '/#space' },
   { label: 'VISIT', href: '/#visit' },
-  { label: 'COMMUNITY', href: '/community' },
+  { label: 'COMMUNITY', href: '/#community' },
   { label: 'MY', href: '/my' },
 ];
 

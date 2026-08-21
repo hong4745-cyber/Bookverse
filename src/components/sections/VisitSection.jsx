@@ -29,7 +29,7 @@ export default function VisitSection() {
   const [sectionRef, patternOffset] = usePatternOffset();
 
   return (
-    <section id="visit" className={styles.section} ref={sectionRef}>
+    <section className={styles.section} ref={sectionRef}>
       <div
         className={styles.pattern}
         style={{ '--pattern-color': '#6155F5', '--pattern-offset-y': `${-patternOffset}px` }}
@@ -77,7 +77,7 @@ export default function VisitSection() {
         />
       </div>
 
-      <div className={`inner ${styles.inner}`}>
+      <div id="visit" className={`inner ${styles.inner}`}>
         <span className={`eyebrow ${styles.eyebrow}`}>VISIT BOOKCOVERSE</span>
         <h2 className={styles.giant}>
           <span className={styles.giantLine}>COME IN,</span>

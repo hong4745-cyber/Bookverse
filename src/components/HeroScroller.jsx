@@ -86,6 +86,18 @@ export default function HeroScroller() {
     });
     stRef.current = st;
 
+    let hashLayoutFrame = 0;
+    let hashScrollFrame = 0;
+    const hashTargetId = decodeURIComponent(window.location.hash.slice(1));
+    if (hashTargetId) {
+      hashLayoutFrame = window.requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+        hashScrollFrame = window.requestAnimationFrame(() => {
+          document.getElementById(hashTargetId)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+        });
+      });
+    }
+
     let lastSlide = -1;
     const announceSlide = () => {
       const trackX = Number(gsap.getProperty(s3Track, 'x')) || 0;
@@ -105,6 +117,8 @@ export default function HeroScroller() {
     window.addEventListener('hero3:goto', goToSlide);
 
     return () => {
+      window.cancelAnimationFrame(hashLayoutFrame);
+      window.cancelAnimationFrame(hashScrollFrame);
       window.removeEventListener('hero3:goto', goToSlide);
       st.kill();
       masterTl.kill();

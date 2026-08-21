@@ -42,14 +42,14 @@ export default function CommunitySection() {
   const [sectionRef, patternOffset] = usePatternOffset();
 
   return (
-    <section id="community" className={styles.section} ref={sectionRef}>
+    <section className={styles.section} ref={sectionRef}>
       <div
         className={styles.pattern}
         style={{ '--pattern-color': '#CB30E0', '--pattern-offset-y': `${-patternOffset}px` }}
       />
       <div className={`${styles.decoClover} shape-deco-rotate`} />
 
-      <div className={`inner ${styles.inner}`}>
+      <div id="community" className={`inner ${styles.inner}`}>
         <div
           ref={headRef}
           className={`reveal ${headVisible ? 'is-visible' : ''} ${styles.head}`}
